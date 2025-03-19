@@ -77,8 +77,11 @@ To better understand the dataset, we conducted Exploratory Data Analysis (EDA). 
   </tr>
 </table>
 
-For a detailed analysis, refer to our Jupyter Notebook:  
-[Exploratory Data Analysis Notebook](analysis.ipynb)
+
+<p align="center">
+  For a detailed analysis, refer to our Jupyter Notebook: <br>
+  <a href="analysis.ipynb">Exploratory Data Analysis Notebook</a>
+</p>
 
 
 ## **Related work**
