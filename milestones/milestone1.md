@@ -38,10 +38,10 @@ This dataset is presented as a .sqlite file, containing several tables. The main
 <table align="center">
   <tr>
     <td align="center">
-      <img src="../plots/n_matches_accross_years.png" alt="Number of Matches per Month" width="500" height="200">
+      <img src="../plots/n_matches_accross_years.png" alt="Number of Matches per Month" width="500" height="350">
     </td>
     <td align="center">
-      <img src="../plots/number_of_matches_per_player.png" alt="Players by Number of Matches" width="500" height="200">
+      <img src="../plots/number_of_matches_per_player.png" alt="Players by Number of Matches" width="500" height="350">
     </td>
   </tr>
 </table>
