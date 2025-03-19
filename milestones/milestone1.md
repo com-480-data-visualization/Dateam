@@ -35,13 +35,13 @@ This visualization could be beneficial for:
 
 This dataset is presented as a .sqlite file, containing several tables. The main tables that we will use are “PLAYER” (~11k entries), “MATCH” (~29k entries), “LEAGUE” (11) and “TEAM” (299). We mention that all unique players are present in the “MATCH” table, some preprocessing will be done to remove them. Additionally, we provide the two following charts to show the distribution of the number of matches per months across years, which is pretty homogenous, and the top players with the largest amount of matches played.
 
-<table>
+<table align="center">
   <tr>
     <td align="center">
-      <img src="../plots/n_matches_accross_years.png" alt="Number of Matches per Month" width="400">
+      <img src="../plots/n_matches_accross_years.png" alt="Number of Matches per Month" width="500" height="200">
     </td>
     <td align="center">
-      <img src="../plots/number_of_matches_per_player.png" alt="Players by Number of Matches" width="400">
+      <img src="../plots/number_of_matches_per_player.png" alt="Players by Number of Matches" width="500" height="200">
     </td>
   </tr>
 </table>
