@@ -17,13 +17,13 @@ These two datasets are widely recognized and of high quality, as confirmed by ve
 
 ## **Problematic**
 
-**Overview**
+**Overview**:
 In modern football, transfers play a crucial role in shaping team success, financial stability, and league competitiveness. Every season, clubs invest heavily in new signings, player development, and strategic transfers to strengthen their squads.  This project aims to analyze football match statistics and player transfers across different leagues and seasons. We will explore detailed match data, player movements, and transfer fees to uncover key trends and assess the impact of transfers on team performance. By studying these factors, we seek to understand how transfers influence team dynamics, squad strength, and overall league competitiveness.
 
-**Motivation**
+**Motivation**:
 Our goal is to provide a clear visual representation of match performance and transfer activity, enabling a deeper understanding of player market trends and their effects on club success. By examining historical data, we can highlight patterns in transfer spending, team strategies, and the financial evolution of the sport.
 
-**Target Audience**
+**Target Audience**:
 This visualization could be beneficial for:
 - **Football clubs & managers** → Assessing transfer market trends and optimizing team-building strategies.
 - **Medical professionals & sports scientists** → Identifying patterns in match statistics and transfer impact.
@@ -35,8 +35,13 @@ This visualization could be beneficial for:
 
 This dataset is presented as a .sqlite file, containing several tables. The main tables that we will use are “PLAYER” (~11k entries), “MATCH” (~29k entries), “LEAGUE” (11) and “TEAM” (299). We mention that all unique players are present in the “MATCH” table, some preprocessing will be done to remove them. Additionally, we provide the two following charts to show the distribution of the number of matches per months across years, which is pretty homogenous, and the top players with the largest amount of matches played.
 
-![Number of Matches per Month](../plots/n_matches_accross_years.png)
-![Players by Number of Matches](../plots/number_of_matches_per_player.png)
+<p align="center">
+  <img src="../plots/n_matches_accross_years.png" alt="Number of Matches per Month" width="600">
+</p>
+
+<p align="center">
+  <img src="../plots/number_of_matches_per_player.png" alt="Players by Number of Matches" width="600">
+</p>
 
 - **Football transfers 2000-2018**
 
