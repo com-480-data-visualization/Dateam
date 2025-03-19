@@ -61,17 +61,21 @@ The dataset includes the following attributes:
 
 To better understand the dataset, we conducted Exploratory Data Analysis (EDA). The following visualizations provide an overview of key trends in market dynamics over time, including transfer activity and fee distributions.
 
-<p align="center">
-  <img src="../plots/top_leagues_by_transfers.png" alt="Top Leagues by Number of Transfers" width="600">
-</p>
-
-<p align="center">
-  <img src="../plots/top_teams_by_transfers.png" alt="Top Teams by Number of Transfers" width="600">
-</p>
-
-<p align="center">
-  <img src="../plots/transfer_fee_per_season.png" alt="Average Transfer Fee per Season" width="600">
-</p>
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="../plots/top_leagues_by_transfers.png" alt="Top Leagues by Number of Transfers" width="500" height="350">
+    </td>
+    <td align="center">
+      <img src="../plots/top_teams_by_transfers.png" alt="Top Teams by Number of Transfers" width="500" height="350">
+    </td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
+      <img src="../plots/transfer_fee_per_season.png" alt="Average Transfer Fee per Season" width="500" height="350">
+    </td>
+  </tr>
+</table>
 
 For a detailed analysis, refer to our Jupyter Notebook:  
 [Exploratory Data Analysis Notebook](analysis.ipynb)
