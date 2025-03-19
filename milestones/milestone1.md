@@ -7,10 +7,10 @@ Football is the most popular sport in the world. In this project, we will focus 
 We use two publicly available datasets from Kaggle. The first records all match history from seasons 2008 to 2016, covering over 25,000 matches with detailed statistics, including teams, lineups, and in-game events such as goal types, possession, corners, crosses, fouls, and cards. The second dataset documents football transfers from 2000 to 2018, listing player movements along with their transfer fees, market values, and origin/destination clubs. 
 
 - **Mathien**, “European Soccer Database”, 2017.  
-  📌 [Dataset Link](https://www.kaggle.com/datasets/hugomathien/soccer)
+   [Dataset Link](https://www.kaggle.com/datasets/hugomathien/soccer)
 
 - **Slehkyi**, “Football transfers 2000-2018”, 2018.  
-  📌 [Dataset Link](https://www.kaggle.com/code/slehkyi/football-transfers-2000-2018)
+   [Dataset Link](https://www.kaggle.com/code/slehkyi/football-transfers-2000-2018)
 
 
 These two datasets are widely recognized and of high quality, as confirmed by verified feedback. We ensured this by applying basic preprocessing steps and exploring the general data structure through initial visualizations (more details in the Exploratory Data Analysis section).
