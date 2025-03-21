@@ -25,9 +25,9 @@ Our goal is to provide a clear visual representation of match performance and tr
 
 **Target Audience**:
 This visualization could be beneficial for:
-- **Football clubs & managers** → Assessing transfer market trends and optimizing team-building strategies.
-- **Medical professionals & sports scientists** → Identifying patterns in match statistics and transfer impact.
-- **Fans & analysts** → Gaining insights into player transfers, team performance, and financial trends in football.
+- **Football clubs & managers** → Assessing transfer market trends and optimizing team-building strategies.  
+- **Football analysts & scouts** → Evaluating player movements, team strategies, and market value fluctuations.  
+- **Fans & data enthusiasts** → Gaining insights into player transfers, team performance, and financial trends in football.  
 
 ## **Exploratory Data Analysis**
 
