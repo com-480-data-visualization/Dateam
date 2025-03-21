@@ -33,7 +33,7 @@ This visualization could be beneficial for:
 
 - **European Soccer Database**
 
-This dataset is presented as a .sqlite file, containing several tables. The main tables that we will use are “PLAYER” (~11k entries), “MATCH” (~29k entries), “LEAGUE” (11) and “TEAM” (299). We mention that all unique players are present in the “MATCH” table, some preprocessing will be done to remove them. Additionally, we provide the two following charts to show the distribution of the number of matches per months across years, which is pretty homogenous, and the top players with the largest amount of matches played.
+This dataset is presented as a .sqlite file, containing several tables. The main tables that we will use are “PLAYER” (~11k entries), “MATCH” (~29k entries), “LEAGUE” (11) and “TEAM” (299). We mention that not all unique players are present in the “MATCH” table, some preprocessing will be done to remove them. Additionally, we provide the two following charts to show the distribution of the number of matches per months across years, which is pretty homogenous, and the top players with the largest amount of matches played.
 
 <table align="center">
   <tr>
