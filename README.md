@@ -6,7 +6,7 @@
 | Schwabedal Georg Tilman Peter | 328434 |
 | Gafsi Amene| 345583 |
 
-[Milestone 1](#milestone-1) • [Milestone 2](#milestone-2) • [Milestone 3](#milestone-3)
+[Milestone 1](#milestone-1-21st-march-5pm) • [Milestone 2](#milestone-2-18th-april-5pm) • [Milestone 3](#milestone-3-30th-may-5pm)
 
 ## Milestone 1 (21st March, 5pm)
 
