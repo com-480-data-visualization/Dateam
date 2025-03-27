@@ -1,0 +1,23 @@
+{
+  "name": "com-480-dateam",
+  "version": "1.0.0",
+  "description": "A website to display football stats across clubs and leagues",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel -p 8081",
+    "build": "parcel build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/bootstrap": "^5.2.10",
+    "@types/d3": "^7.4.3",
+    "parcel": "^2.14.2",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "@types/node": "^22.13.14",
+    "bootstrap": "^5.3.3",
+    "d3": "^7.9.0"
+  }
+}
