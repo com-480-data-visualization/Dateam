@@ -3,15 +3,18 @@
   "version": "1.0.0",
   "description": "A website to display football stats across clubs and leagues",
   "source": "src/index.html",
+  "homepage": "https://com-480-data-visualization.github.io/Dateam/",
   "scripts": {
     "start": "parcel -p 8081",
-    "build": "parcel build"
+    "build": "parcel build src/index.html --public-url ./",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/bootstrap": "^5.2.10",
     "@types/d3": "^7.4.3",
+    "gh-pages": "^6.3.0",
     "parcel": "^2.14.2",
     "typescript": "^5.8.2"
   },
