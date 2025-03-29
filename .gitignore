@@ -1,5 +1,7 @@
 venv
-data
+data/database.sqlite
+data/processed
+data/transfers.csv
 web/.parcel-cache
 web/dist
 web/node_modules
