@@ -5,12 +5,14 @@
         "allowJs": true,
         "outDir": "dist",
         "esModuleInterop": true,
-        "resolveJsonModule": true
+        "resolveJsonModule": true,
+        "rootDir": "src",
+        "types": []
     },
     "include": [
         "src"
     ],
     "exclude": [
         "node_modules"
-    ]
+    ],
 }

@@ -14,12 +14,13 @@
   "devDependencies": {
     "@types/bootstrap": "^5.2.10",
     "@types/d3": "^7.4.3",
+    "@types/geojson": "^7946.0.16",
+    "@types/node": "^22.14.0",
     "gh-pages": "^6.3.0",
     "parcel": "^2.14.2",
     "typescript": "^5.8.2"
   },
   "dependencies": {
-    "@types/node": "^22.13.14",
     "bootstrap": "^5.3.3",
     "d3": "^7.9.0"
   }

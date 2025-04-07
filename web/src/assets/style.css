@@ -1,0 +1,22 @@
+.main-wrapper {
+    width: 55vw;
+    margin: auto;
+}
+
+.choose-year:hover {
+    cursor: pointer;
+}
+
+.input-year-group {
+    width: 180px !important;
+}
+
+.custom-navbar {
+    position: fixed;
+    width: 100vw;
+    height: 62px;
+}
+
+.custom-navbar-spacer {
+    height: 62px;
+}
