@@ -111,14 +111,36 @@
       </div>
     </div>
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-          <svg xmlns="http://www.w3.org/2000/svg" height="calc(100vh - 72px)" width="100%" viewBox="0 0 500 500">
-            <rect x="10" y="10" width="480" height="480" fill="#0dcaf0" stroke-width="1" stroke="#000000"></rect>
-          </svg>
+      <div class="row justify-content-center">
+        <div class="col-md-auto">
+          <div class="position-relative" style="width: 480px; height: 480px;">
+            <button id="exit-button"
+                    type="button"
+                    class="btn btn-sm btn-danger position-absolute"
+                    style="top: 0; right: 20; z-index: 0;">
+              ×
+            </button>
+            <div id="sidebar-scroll"
+                 class="position-absolute bg-light"
+                 style="overflow-y: auto;
+                        height: 460;
+                        width: 100;
+                        left: 0;
+                        top: 0;
+                        z-index: 10;">
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 width="480"
+                 height="480"
+                 viewBox="0 0 500 500">
+              <rect x="0" y="0" width="480" height="480"
+                    fill="#0dcaf0" stroke-width="1" stroke="#000000" />
+            </svg>
+    
+          </div>
         </div>
       </div>
-    </div>
+    </div>    
     <div class="main-wrapper">
       <div class="container-fluid">
         <hr>
