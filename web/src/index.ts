@@ -2,7 +2,7 @@ import * as d3 from 'd3'
 
 import { YearSelectorService } from './scripts/year-selector';
 import { ScrollSidebar } from './scripts/sidebar';
-import { initMap } from './scripts/map';
+import './scripts/map';
 
 const yearSelectorService = new YearSelectorService();
 yearSelectorService.init();
@@ -17,7 +17,4 @@ document.addEventListener("DOMContentLoaded", () => {
     sidebar.init(itemList);
   });
 
-  document.addEventListener("DOMContentLoaded", () => {
-    initMap();
-  });
   

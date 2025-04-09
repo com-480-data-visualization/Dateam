@@ -20,3 +20,7 @@
 .custom-navbar-spacer {
     height: 62px;
 }
+
+#map {
+    border: 2px black;
+}
