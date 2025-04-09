@@ -1,0 +1,300 @@
+id,team_api_id,team_fifa_api_id,team_long_name,team_short_name,transfers_name,matched_team,match_score,country,league,logo_filename,cleaned_query,latitude,longitude
+1,9987,673.0,KRC Genk,GEN,KRC Genk,krc genk,100.0,Belgium,Jupiler Pro League,KRC Genk - Belgium - Jupiler Pro League.png,"Genk, Belgium",50.9654864,5.5001456
+2,9993,675.0,Beerschot AC,BAC,Beerschot AC,beerhot v.a.,73.6842105263158,Belgium,Jupiler Pro League,Beerschot V.A. - Belgium - Jupiler Pro League.png,"Beerhot, Belgium",,
+3,10000,15005.0,SV Zulte-Waregem,ZUL,Zulte Waregem,sv zulte waregem,96.7741935483871,Belgium,Jupiler Pro League,SV Zulte Waregem - Belgium - Jupiler Pro League.png,"Sv Zulte-Waregem, Belgium",,
+4,9994,2007.0,Sporting Lokeren,LOK,KSC Lokeren,sporting cp,66.66666666666667,Portugal,Liga Portugal,Sporting CP - Portugal - Liga Portugal.png,"Lokeren, Portugal",,
+5,9984,1750.0,KSV Cercle Brugge,CEB,Club Brugge,club brugge,64.28571428571428,Belgium,Jupiler Pro League,Club Brugge - Belgium - Jupiler Pro League.png,"Ksv Cercle Brugge, Belgium",,
+6,8635,229.0,RSC Anderlecht,AND,RSC Anderlecht,r anderlecht,100.0,Belgium,Jupiler Pro League,RSC Anderlecht - Belgium - Jupiler Pro League.png,"R Anderlecht, Belgium",50.845386412012935,4.340770380198071
+7,9991,674.0,KAA Gent,GEN,KAA Gent,krc genk,62.5,Belgium,Jupiler Pro League,KRC Genk - Belgium - Jupiler Pro League.png,"Gent, Belgium",51.0538286,3.7250121
+8,9998,1747.0,RAEC Mons,MON,,as mono,62.5,France,Ligue 1,AS Monaco - France - Ligue 1.png,"Mons, France",43.6118557,1.5721111
+9,7947,,FCV Dender EH,DEN,,v dender eh,100.0,Belgium,Jupiler Pro League,FCV Dender EH - Belgium - Jupiler Pro League.png,"V Dender Eh, Belgium",,
+10,9985,232.0,Standard de Liège,STL,Standard Liège,standard liege,90.32258064516128,Belgium,Jupiler Pro League,Standard Liège - Belgium - Jupiler Pro League.png,"Standard De Liege, Belgium",50.61095765,5.54393415
+11,8203,110724.0,KV Mechelen,MEC,KV Mechelen,kv mechelen,100.0,Belgium,Jupiler Pro League,KV Mechelen - Belgium - Jupiler Pro League.png,"Kv Mechelen, Belgium",51.0371829,4.4863913
+12,8342,231.0,Club Brugge KV,CLB,Club Brugge,club brugge,88.0,Belgium,Jupiler Pro League,Club Brugge - Belgium - Jupiler Pro League.png,"Brugge Kv, Belgium",51.2085526,3.226772
+13,9999,546.0,KSV Roeselare,ROS,,kv mechelen,58.33333333333333,Belgium,Jupiler Pro League,KV Mechelen - Belgium - Jupiler Pro League.png,"Ksv Roeselare, Belgium",50.9520177,3.1047304
+14,8571,100081.0,KV Kortrijk,KOR,,kv kortrijk,100.0,Belgium,Jupiler Pro League,KV Kortrijk - Belgium - Jupiler Pro League.png,"Kv Kortrijk, Belgium",50.8276429,3.2659884
+15,4049,,Tubize,TUB,,vizela,50.0,Portugal,Liga Portugal,FC Vizela - Portugal - Liga Portugal.png,"Tubize, Portugal",,
+16,9996,111560.0,Royal Excel Mouscron,MOU,Exc. Mouscron,royal antwerp,51.61290322580645,Belgium,Jupiler Pro League,Royal Antwerp - Belgium - Jupiler Pro League.png,"Royal Excel Mouron, Belgium",,
+17,10001,681.0,KVC Westerlo,WES,KVC Westerlo,kvc westerlo,100.0,Belgium,Jupiler Pro League,KVC Westerlo - Belgium - Jupiler Pro League.png,"Kvc Westerlo, Belgium",51.094091,4.92812145796815
+18,9986,670.0,Sporting Charleroi,CHA,RSC Charleroi,r charleroi,75.86206896551724,Belgium,Jupiler Pro League,R Charleroi SC - Belgium - Jupiler Pro League.png,"Charleroi, Belgium",50.4116233,4.444528
+614,9997,680.0,Sint-Truidense VV,STT,,sinttruidense vv,100.0,Belgium,Jupiler Pro League,Sint-Truidense VV - Belgium - Jupiler Pro League.png,"Sint-Truidense Vv, Belgium",,
+1034,9989,239.0,Lierse SK,LIE,Lierse SK,lillestrm sk,66.66666666666667,Norway,Eliteserien,Lillestrøm SK - Norway - Eliteserien.png,"Lierse Sk, Norway",,
+1042,6351,2013.0,KAS Eupen,EUP,KAS Eupen,kas eupen,100.0,Belgium,Jupiler Pro League,KAS Eupen - Belgium - Jupiler Pro League.png,"Kas Eupen, Belgium",50.6263653,6.0453424
+1513,1773,100087.0,Oud-Heverlee Leuven,O-H,,oudheverlee leuven,100.0,Belgium,Jupiler Pro League,Oud-Heverlee Leuven - Belgium - Jupiler Pro League.png,"Oud-Heverlee Leuven, Belgium",50.8376275,4.6629253
+2004,8475,110913.0,Waasland-Beveren,WAA,,slovan liberec,55.172413793103445,Czech Republic,Chance Liga,Slovan Liberec - Czech Republic - Chance Liga.png,"Waasland-Beveren, Czech Republic",,
+2476,8573,682.0,KV Oostende,OOS,KV Oostende,kv oostende,100.0,Belgium,Jupiler Pro League,KV Oostende - Belgium - Jupiler Pro League.png,"Kv Oostende, Belgium",51.2258565,2.919496
+2510,274581,111560.0,Royal Excel Mouscron,MOP,Exc. Mouscron,royal antwerp,51.61290322580645,Belgium,Jupiler Pro League,Royal Antwerp - Belgium - Jupiler Pro League.png,"Royal Excel Mouron, Belgium",,
+3457,10260,11.0,Manchester United,MUN,Man Utd,manchester united,100.0,England,Premier League,Manchester United - England - Premier League.png,"Manchester United, England",53.4649481,-2.2906349
+3458,10261,13.0,Newcastle United,NEW,Newcastle,newcastle united,100.0,England,Premier League,Newcastle United - England - Premier League.png,"Newcastle United, England",55.0041755,-1.5649326866735827
+3459,9825,1.0,Arsenal,ARS,Arsenal,arsenal,100.0,England,Premier League,Arsenal - England - Premier League.png,"Arsenal, England",51.5583839,-0.1074866
+3460,8659,109.0,West Bromwich Albion,WBA,West Brom,brighton & hove albion,52.38095238095239,England,Premier League,Brighton & Hove Albion - England - Premier League.png,"West Bromwich Albion, England",52.56115045,-1.9507114384017314
+3461,8472,106.0,Sunderland,SUN,Sunderland,nordsjaelland,60.86956521739131,Denmark,Superliga,FC Nordsjaelland - Denmark - Superliga.png,"Sunderland, Denmark",,
+3462,8650,9.0,Liverpool,LIV,Liverpool,liverpool,100.0,England,Premier League,Liverpool FC - England - Premier League.png,"Liverpool, England",53.4071991,-2.99168
+3463,8654,19.0,West Ham United,WHU,West Ham,west ham united,100.0,England,Premier League,West Ham United - England - Premier League.png,"West Ham United, England",51.5697731,0.460239
+3464,8528,1917.0,Wigan Athletic,WIG,Wigan,athletic,72.72727272727273,Spain,LaLiga,Athletic - Spain - LaLiga.png,"Wigan Athletic, Spain",,
+3465,10252,2.0,Aston Villa,AVL,Aston Villa,aston villa,100.0,England,Premier League,Aston Villa - England - Premier League.png,"Aston Villa, England",51.32041745,-2.5063290769304234
+3466,8456,10.0,Manchester City,MCI,Man City,manchester united,81.25,England,Premier League,Manchester United - England - Premier League.png,"Manchester City, England",53.48309105,-2.2002520023433307
+3467,8668,7.0,Everton,EVE,Everton,everton,100.0,England,Premier League,Everton FC - England - Premier League.png,"Everton, England",52.1462041,-0.2430129
+3468,8655,3.0,Blackburn Rovers,BLB,Blackburn,caykur rizespor,48.27586206896552,Türkiye,Süper Lig,Caykur Rizespor - Türkiye - Süper Lig.png,"Blkburn Rovers, Türkiye",,
+3469,8549,12.0,Middlesbrough,MID,Middlesbrough,if elfsborg,50.0,Sweden,Allsvenskan,IF Elfsborg - Sweden - Allsvenskan.png,"Middlesbrough, Sweden",,
+3470,8586,18.0,Tottenham Hotspur,TOT,Spurs,tottenham hotspur,100.0,England,Premier League,Tottenham Hotspur - England - Premier League.png,"Tottenham Hotspur, England",51.604157,-0.0662604100000004
+3471,8559,4.0,Bolton Wanderers,BOL,Bolton,wolverhampton wanderers,76.92307692307692,England,Premier League,Wolverhampton Wanderers - England - Premier League.png,"Bolton Wanderers, England",53.5794299,-2.515916282730622
+3472,10194,1806.0,Stoke City,STK,Stoke City,leicester city,66.66666666666667,England,Premier League,Leicester City - England - Premier League.png,"Stoke City, England",53.006213,-2.1777553842365402
+3473,8667,1952.0,Hull City,HUL,Hull City,almere city,60.0,Netherlands,Eredivisie,Almere City FC - Netherlands - Eredivisie.png,"Hull City, Netherlands",,
+3474,9879,144.0,Fulham,FUL,Fulham,fulham,100.0,England,Premier League,Fulham FC - England - Premier League.png,"Fulham, England",51.474408,-0.206809
+3475,8455,5.0,Chelsea,CHE,Chelsea,chelsea,100.0,England,Premier League,Chelsea FC - England - Premier League.png,"Chelsea, England",51.4875167,-0.1687007
+3476,8462,1790.0,Portsmouth,POR,Portsmouth,porto,66.66666666666667,Portugal,Liga Portugal,FC Porto - Portugal - Liga Portugal.png,"Portsmouth, Portugal",,
+4218,8658,88.0,Birmingham City,BIR,Birmingham,man city,60.86956521739131,England,Premier League,Man City - England - Premier League.png,"Birmingham City, England",52.4822706,-1.8888147987150585
+4225,8602,110.0,Wolverhampton Wanderers,WOL,Wolves,wolverhampton wanderers,100.0,England,Premier League,Wolverhampton Wanderers - England - Premier League.png,"Wolverhampton Wanderers, England",52.58927385,-2.1293414704232267
+4234,8191,1796.0,Burnley,BUR,Burnley,burnley,100.0,England,Premier League,Burnley - England - Premier League.png,"Burnley, England",53.7907262,-2.2439196
+4996,8483,1926.0,Blackpool,BLA,Blackpool,liverpool,62.5,England,Premier League,Liverpool FC - England - Premier League.png,"Blkpool, England",,
+5744,10003,1960.0,Swansea City,SWA,Swansea,man city,70.0,England,Premier League,Man City - England - Premier League.png,"Swansea City, England",53.35696333976217,-2.9078394173368336
+5747,10172,15.0,Queens Park Rangers,QPR,QPR,sparta prague,56.25,Czech Republic,Chance Liga,AC Sparta Prague - Czech Republic - Chance Liga.png,"Queens Park Rangers, Czech Republic",,
+5756,9850,1792.0,Norwich City,NOR,Norwich,norwich,73.6842105263158,England,Premier League,Norwich - England - Premier League.png,"Norwich City, England",52.6348426,1.2871862
+6504,8466,17.0,Southampton,SOU,Southampton,southampton,100.0,England,Premier League,Southampton FC - England - Premier League.png,"Southampton, England",50.9025349,-1.404189
+6509,9798,1793.0,Reading,REA,Reading,r seraing,75.0,Belgium,Jupiler Pro League,RFC Seraing - Belgium - Jupiler Pro League.png,"Reading, Belgium",50.79410505,5.351775734375002
+7261,9826,1799.0,Crystal Palace,CRY,Crystal Palace,crystal pale,100.0,England,Premier League,Crystal Palace - England - Premier League.png,"Crystal Pale, England",,
+7276,8344,1961.0,Cardiff City,CAR,Cardiff,almere city,60.86956521739131,Netherlands,Eredivisie,Almere City FC - Netherlands - Eredivisie.png,"Cardiff City, Netherlands",,
+8021,8197,95.0,Leicester City,LEI,Leicester,leicester city,100.0,England,Premier League,Leicester City - England - Premier League.png,"Leicester City, England",52.6232734,-1.1350487
+8779,8678,1943.0,Bournemouth,BOU,Bournemouth,a bournemouth,91.66666666666666,England,Premier League,AFC Bournemouth - England - Premier League.png,"Bournemouth, England",50.7201514,-1.8799118
+8784,9817,1795.0,Watford,WAT,Watford,watford,100.0,England,Premier League,Watford FC - England - Premier League.png,"Watford, England",51.6553875,-0.3957425
+9537,8583,57.0,AJ Auxerre,AUX,AJ Auxerre,aj auxerre,100.0,France,Ligue 1,AJ Auxerre - France - Ligue 1.png,"Aj Auxerre, France",47.7865182,3.5873446
+9538,9830,71.0,FC Nantes,NAN,FC Nantes,nantes,100.0,France,Ligue 1,FC Nantes - France - Ligue 1.png,"Nantes, France",47.2186371,-1.5541362
+9539,9827,59.0,Girondins de Bordeaux,BOR,G. Bordeaux,g. bordeaux,62.5,France,Ligue 1,G. Bordeaux - France - Ligue 1.png,"Girondins De Bordeaux, France",44.874122042924654,-0.6711750968323617
+9540,7819,210.0,SM Caen,CAE,SM Caen,st. gallen,58.82352941176471,Switzerland,Super League,FC St. Gallen - Switzerland - Super League.png,"Sm Caen, Switzerland",,
+9541,9746,1738.0,Le Havre AC,LEH,AC Le Havre,le havre,100.0,France,Ligue 1,Le Havre AC - France - Ligue 1.png,"Le Havre, France",49.4938975,0.1079732
+9542,9831,72.0,OGC Nice,NIC,OGC Nice,ogc nice,100.0,France,Ligue 1,OGC Nice - France - Ligue 1.png,"Ogc Nice, France",43.7041331,7.1936019
+9543,8682,1739.0,Le Mans FC,LEM,Le Mans,lechia gdansk,60.0,Poland,PKO BP Ekstraklasa,Lechia Gdansk - Poland - PKO BP Ekstraklasa.png,"Le Mans, Poland",51.142874,16.9438726
+9544,8689,217.0,FC Lorient,LOR,FC Lorient,lorient,100.0,France,Ligue 1,FC Lorient - France - Ligue 1.png,"Lorient, France",47.7477336,-3.3660907
+9545,9748,66.0,Olympique Lyonnais,LYO,Olympique Lyon,olympique lyon,87.5,France,Ligue 1,Olympique Lyon - France - Ligue 1.png,"Olympique Lyonnais, France",45.9878622,4.7185309
+9546,9941,1809.0,Toulouse FC,TOU,Toulouse,toulouse,100.0,France,Ligue 1,FC Toulouse - France - Ligue 1.png,"Toulouse, France",43.6044622,1.4442469
+9547,9829,69.0,AS Monaco,MON,Monaco,as mono,100.0,France,Ligue 1,AS Monaco - France - Ligue 1.png,"As Mono, France",,
+9548,9847,73.0,Paris Saint-Germain,PSG,Paris SG,paris saintgermain,100.0,France,Ligue 1,Paris Saint-Germain - France - Ligue 1.png,"Paris Saint-Germain, France",48.8715545,2.3031549
+9549,8481,1823.0,AS Nancy-Lorraine,NAN,AS Nancy,paris saintgermain,52.94117647058824,France,Ligue 1,Paris Saint-Germain - France - Ligue 1.png,"As Nancy-Lorraine, France",48.6937223,6.1834097
+9550,8639,65.0,LOSC Lille,LIL,LOSC Lille,lo lille,100.0,France,Ligue 1,LOSC Lille - France - Ligue 1.png,"Lo Lille, France",50.6365654,3.0635282
+9551,9851,74.0,Stade Rennais FC,REN,Stade Rennais,stade rennais,100.0,France,Ligue 1,Stade Rennais - France - Ligue 1.png,"Stade Rennais, France",47.6359676,-2.95758165
+9552,8592,219.0,Olympique de Marseille,MAR,Marseille,olympique marseille,92.6829268292683,France,Ligue 1,Olympique Marseille - France - Ligue 1.png,"Olympique De Marseille, France",43.3063963,5.4609981
+9553,9874,226.0,FC Sochaux-Montbéliard,SOC,FC Sochaux,montpellier,55.172413793103445,France,Ligue 1,Montpellier - France - Ligue 1.png,"Sochaux-Montbeliard, France",47.5138641,6.8305344
+9554,9855,1805.0,Grenoble Foot 38,GRE,,clermont foot 63,56.25,France,Ligue 1,Clermont Foot 63 - France - Ligue 1.png,"Grenoble Foot 38, France",45.1713763,5.724695351878733
+9555,9873,110456.0,Valenciennes FC,VAL,Valenciennes FC,valencia,70.0,Spain,LaLiga,Valencia - Spain - LaLiga.png,"Valenciennes, Spain",,
+9556,9853,1819.0,AS Saint-Étienne,ETI,Saint-Étienne,as saintetienne,100.0,France,Ligue 1,AS Saint-Étienne - France - Ligue 1.png,"As Saint-Etienne, France",44.409448749999996,0.6947147630053399
+10300,8588,64.0,RC Lens,LEN,Lens,rc lens,100.0,France,Ligue 1,RC Lens - France - Ligue 1.png,"Rc Lens, France",,
+10309,10249,70.0,Montpellier Hérault SC,MON,Montpellier,montpellier,73.33333333333334,France,Ligue 1,Montpellier - France - Ligue 1.png,"Montpellier Herault, France",43.6112422,3.8767337
+10312,4170,111376.0,US Boulogne Cote D'Opale,BOU,,sv zulte waregem,44.99999999999999,Belgium,Jupiler Pro League,SV Zulte Waregem - Belgium - Jupiler Pro League.png,"Us Boulogne Cote D'Opale, Belgium",,
+11074,108893,111989.0,AC Arles-Avignon,ARL,,livingston,54.54545454545454,Scotland,Scottish Premiership,Livingston FC - Scotland - Scottish Premiership.png,"Arles-Avignon, Scotland",,
+11076,8521,378.0,Stade Brestois 29,BRE,Stade Brest 29,stade brestois 29,100.0,France,Ligue 1,Stade Brestois 29 - France - Ligue 1.png,"Stade Brestois 29, France",48.4276292,-4.4699827
+11817,8576,614.0,AC Ajaccio,AJA,,ajcio,100.0,France,Ligue 1,AC Ajaccio - France - Ligue 1.png,"Ajcio, France",,
+11822,4087,111271.0,Évian Thonon Gaillard FC,ETG,,aston villa,56.25,England,Premier League,Aston Villa - England - Premier League.png,"Evian Thonon Gaillard, England",,
+11825,9836,110569.0,Dijon FCO,DIJ,Dijon,sion,54.54545454545454,Switzerland,Super League,FC Sion - Switzerland - Super League.png,"Dijon O, Switzerland",,
+12587,9837,379.0,Stade de Reims,REI,Reims,stade rennais,74.07407407407408,France,Ligue 1,Stade Rennais - France - Ligue 1.png,"Stade De Reims, France",49.2858867,4.038407300941009
+12594,7794,58.0,SC Bastia,BAS,SC Bastia,boavista,71.42857142857143,Portugal,Liga Portugal,Boavista FC - Portugal - Liga Portugal.png,"Bastia, Portugal",,
+12595,10242,294.0,ES Troyes AC,TRO,Troyes,est troyes,94.73684210526316,France,Ligue 1,ESTAC Troyes - France - Ligue 1.png,"Es Troyes, France",,
+13343,9747,62.0,En Avant de Guingamp,GUI,Guingamp,levante ud,53.333333333333336,Spain,LaLiga,Levante UD - Spain - LaLiga.png,"En Avant De Guingamp, Spain",,
+14106,8550,68.0,FC Metz,MET,FC Metz,metz,100.0,France,Ligue 1,FC Metz - France - Ligue 1.png,"Metz, France",49.1196964,6.1763552
+14868,8121,1530.0,Angers SCO,ANG,SCO Angers,angers o,100.0,France,Ligue 1,Angers SCO - France - Ligue 1.png,"Angers O, France",47.4739884,-0.5515588
+14876,6391,110316.0,GFC Ajaccio,GAJ,,ajcio,83.33333333333334,France,Ligue 1,AC Ajaccio - France - Ligue 1.png,"G Ajcio, France",,
+15617,9823,21.0,FC Bayern Munich,BMU,Bayern Munich,bayern munich,100.0,Germany,Bundesliga,Bayern Munich - Germany - Bundesliga.png,"Bayern Munich, Germany",48.1768926,11.5325626
+15618,9790,28.0,Hamburger SV,HAM,Hamburger SV,rangers,52.63157894736843,Scotland,Scottish Premiership,Rangers FC - Scotland - Scottish Premiership.png,"Hamburger Sv, Scotland",,
+15619,8178,32.0,Bayer 04 Leverkusen,LEV,Bay. Leverkusen,bayer 04 leverkusen,100.0,Germany,Bundesliga,Bayer 04 Leverkusen - Germany - Bundesliga.png,"Bayer 04 Leverkusen, Germany",51.015165709387816,6.994099896740656
+15620,9789,22.0,Borussia Dortmund,DOR,Bor. Dortmund,borussia dortmund,100.0,Germany,Bundesliga,Borussia Dortmund - Germany - Bundesliga.png,"Borussia Dortmund, Germany",51.2817024,8.858377
+15621,10189,34.0,FC Schalke 04,S04,FC Schalke 04,halke 04,100.0,Germany,Bundesliga,FC Schalke 04 - Germany - Bundesliga.png,"Halke 04, Germany",51.4787857,6.2582643
+15622,9904,485.0,Hannover 96,HAN,Hannover 96,angers o,52.63157894736843,France,Ligue 1,Angers SCO - France - Ligue 1.png,"Hannover 96, France",42.69405228715932,2.8831919614466783
+15623,8721,175.0,VfL Wolfsburg,WOL,VfL Wolfsburg,vfl wolfsburg,100.0,Germany,Bundesliga,VfL Wolfsburg - Germany - Bundesliga.png,"Vfl Wolfsburg, Germany",52.434490800000006,10.806857351231887
+15624,8722,31.0,1. FC Köln,FCK,1. FC Köln,1.  koln,100.0,Germany,Bundesliga,1. FC Köln - Germany - Bundesliga.png,"1.  Koln, Germany",51.0849669,6.8476485
+15625,9810,1824.0,Eintracht Frankfurt,EFR,E. Frankfurt,eintrht frankfurt,100.0,Germany,Bundesliga,Eintracht Frankfurt - Germany - Bundesliga.png,"Eintrht Frankfurt, Germany",,
+15626,8177,166.0,Hertha BSC Berlin,HBE,Hertha BSC,hertha b,69.56521739130434,Germany,Bundesliga,Hertha BSC - Germany - Bundesliga.png,"Hertha B Berlin, Germany",52.487676,13.2786903
+15627,9912,159.0,DSC Arminia Bielefeld,BIE,Arm. Bielefeld,arminia bielefeld,94.44444444444444,Germany,Bundesliga,Arminia Bielefeld - Germany - Bundesliga.png,"D Arminia Bielefeld, Germany",,
+15628,8697,38.0,SV Werder Bremen,WBR,Werder Bremen,sv werder bremen,100.0,Germany,Bundesliga,SV Werder Bremen - Germany - Bundesliga.png,"Sv Werder Bremen, Germany",53.0717335,8.841534813937642
+15629,8398,162.0,FC Energie Cottbus,COT,Energie Cottbus,universitatea cluj,48.48484848484848,Romania,SuperLiga,FC Universitatea Cluj - Romania - SuperLiga.png,"Energie Cottbus, Romania",,
+15630,8226,10029.0,TSG 1899 Hoffenheim,HOF,TSG Hoffenheim,tsg 1899 hoffenheim,100.0,Germany,Bundesliga,TSG 1899 Hoffenheim - Germany - Bundesliga.png,"Tsg 1899 Hoffenheim, Germany",49.27807285,8.84247955656506
+15631,9788,23.0,Borussia Mönchengladbach,GLA,Bor. M'gladbach,borussia monchengladbh,100.0,Germany,Bundesliga,Borussia Mönchengladbach - Germany - Bundesliga.png,"Borussia Monchengladbh, Germany",,
+15632,10269,36.0,VfB Stuttgart,STU,VfB Stuttgart,vfb stuttgart,100.0,Germany,Bundesliga,VfB Stuttgart - Germany - Bundesliga.png,"Vfb Stuttgart, Germany",48.7788452,9.1783022
+15633,8295,1832.0,Karlsruher SC,KAR,Karlsruher SC,kas eupen,52.63157894736843,Belgium,Jupiler Pro League,KAS Eupen - Belgium - Jupiler Pro League.png,"Karlsruher, Belgium",,
+15634,9911,160.0,VfL Bochum,BOC,VfL Bochum,vfl bochum,100.0,Germany,Bundesliga,VfL Bochum - Germany - Bundesliga.png,"Vfl Bochum, Germany",51.5042713,7.238554021441496
+16237,8358,25.0,SC Freiburg,FRE,SC Freiburg,freiburg,100.0,Germany,Bundesliga,SC Freiburg - Germany - Bundesliga.png,"Freiburg, Germany",47.9960901,7.8494005
+16239,8165,171.0,1. FC Nürnberg,NUR,1.FC Nuremberg,1. union berlin,59.25925925925925,Germany,Bundesliga,1.FC Union Berlin - Germany - Bundesliga.png,"1.  Nurnberg, Germany",49.41744905,11.117022511298138
+16243,9905,169.0,1. FSV Mainz 05,MAI,1.FSV Mainz 05,1.fsv mainz 05,96.55172413793105,Germany,Bundesliga,1.FSV Mainz 05 - Germany - Bundesliga.png,"1. Fsv Mainz 05, Germany",50.00087035,8.245562992298598
+16848,8350,29.0,1. FC Kaiserslautern,KAI,1.FC K'lautern,1.  koln,53.84615384615385,Germany,Bundesliga,1. FC Köln - Germany - Bundesliga.png,"1.  Kaiserslautern, Germany",49.46685555,7.737999897829705
+16850,8152,110329.0,FC St. Pauli,STP,,st. pauli,100.0,Germany,Bundesliga,FC St. Pauli - Germany - Bundesliga.png,"St. Pauli, Germany",53.5539347,9.9594316
+17465,8406,100409.0,FC Augsburg,AUG,FC Augsburg,augsburg,100.0,Germany,Bundesliga,FC Augsburg - Germany - Bundesliga.png,"Augsburg, Germany",48.3690341,10.8979522
+18074,8194,110636.0,Fortuna Düsseldorf,FDU,,fortuna sittard,60.60606060606061,Netherlands,Eredivisie,Fortuna Sittard - Netherlands - Eredivisie.png,"Fortuna Dusseldorf, Netherlands",,
+18079,8357,165.0,SpVgg Greuther Fürth,GRF,,greuther furth,82.35294117647058,Germany,Bundesliga,Greuther Fürth - Germany - Bundesliga.png,"Spvgg Greuther Furth, Germany",49.50079805,10.995901659139138
+18691,9776,110500.0,Eintracht Braunschweig,BRA,,eintrht frankfurt,62.85714285714285,Germany,Bundesliga,Eintracht Frankfurt - Germany - Bundesliga.png,"Eintrht Braunhweig, Germany",,
+19305,8460,10030.0,SC Paderborn 07,PAD,,debreceni v,52.17391304347826,Hungary,Nemzeti Bajnokság,Debreceni VSC - Hungary - Nemzeti Bajnokság.png,"Paderborn 07, Hungary",,
+19916,8234,111239.0,FC Ingolstadt 04,ING,FC Ingolstadt,hermannstadt,48.0,Romania,SuperLiga,FC Hermannstadt - Romania - SuperLiga.png,"Ingolstadt 04, Romania",,
+19917,8262,110502.0,SV Darmstadt 98,DAR,,sv darmstadt 98,100.0,Germany,Bundesliga,SV Darmstadt 98 - Germany - Bundesliga.png,"Sv Darmstadt 98, Germany",,
+20513,8524,39.0,Atalanta,ATA,Atalanta,atalanta bc,84.21052631578947,Italy,Serie A,Atalanta BC - Italy - Serie A.png,"Atalanta, Italy",43.08828715215496,12.433227119673692
+20514,8551,1838.0,Siena,SIE,Siena,arsenal,66.66666666666667,England,Premier League,Arsenal - England - Premier League.png,"Siena, England",52.45665185,-1.8692997500000001
+20515,8529,1842.0,Cagliari,CAG,Cagliari Calcio,cagliari calcio,69.56521739130434,Italy,Serie A,Cagliari Calcio - Italy - Serie A.png,"Cagliari, Italy",39.2171994,9.113311
+20516,8543,46.0,Lazio,LAZ,Lazio,lazio,100.0,Italy,Serie A,Lazio - Italy - Serie A.png,"Lazio, Italy",41.9808038,12.7662312
+20517,8530,110364.0,Catania,CAT,Catania,casa pia,66.66666666666667,Portugal,Liga Portugal,Casa Pia AC - Portugal - Liga Portugal.png,"Catania, Portugal",,
+20518,10233,110556.0,Genoa,GEN,Genoa,genoa c,83.33333333333334,Italy,Serie A,Genoa CFC - Italy - Serie A.png,"Genoa, Italy",44.40726,8.9338624
+20519,8533,192.0,Chievo Verona,CHI,Chievo Verona,hellas verona,69.23076923076923,Italy,Serie A,Hellas Verona - Italy - Serie A.png,"Chievo Verona, Italy",45.4575984,10.9464024
+20520,8690,203.0,Reggio Calabria,REG,Reggina,r charleroi,53.84615384615385,Belgium,Jupiler Pro League,R Charleroi SC - Belgium - Jupiler Pro League.png,"Reggio Calabria, Belgium",,
+20521,8535,110374.0,Fiorentina,FIO,Fiorentina,f fiorentina,90.9090909090909,Italy,Serie A,ACF Fiorentina - Italy - Serie A.png,"Fiorentina, Italy",42.9637778,10.5348607
+20522,9885,45.0,Juventus,JUV,Juventus,juventus,100.0,Italy,Serie A,Juventus - Italy - Serie A.png,"Juventus, Italy",44.9779934,7.6151806
+20523,8564,47.0,Milan,ACM,AC Milan,milan,100.0,Italy,Serie A,AC Milan - Italy - Serie A.png,"Milan, Italy",45.4641943,9.1896346
+20524,9857,189.0,Bologna,BOL,Bologna,bologna  1909,70.0,Italy,Serie A,Bologna FC 1909 - Italy - Serie A.png,"Bologna, Italy",44.4938203,11.3426327
+20525,8686,52.0,Roma,ROM,AS Roma,as roma,72.72727272727273,Italy,Serie A,AS Roma - Italy - Serie A.png,"Roma, Italy",41.8933203,12.4829321
+20526,9875,48.0,Napoli,NAP,SSC Napoli,s napoli,85.71428571428572,Italy,Serie A,SSC Napoli - Italy - Serie A.png,"Napoli, Italy",40.8358846,14.2487679
+20527,9882,1837.0,Sampdoria,SAM,Sampdoria,uc sampdoria,85.71428571428572,Italy,Serie A,UC Sampdoria - Italy - Serie A.png,"Sampdoria, Italy",44.4155493,8.952667661712866
+20528,8636,44.0,Inter,INT,Inter,winterthur,66.66666666666667,Switzerland,Super League,FC Winterthur - Switzerland - Super League.png,"Inter, Switzerland",46.2271379,6.1217816
+20529,9804,54.0,Torino,TOR,Torino,torino,100.0,Italy,Serie A,Torino FC - Italy - Serie A.png,"Torino, Italy",45.0677551,7.6824892
+20530,9888,347.0,Lecce,LEC,Lecce,us lecce,76.92307692307692,Italy,Serie A,US Lecce - Italy - Serie A.png,"Lecce, Italy",40.152217300000004,18.2260628338229
+20531,8600,55.0,Udinese,UDI,Udinese Calcio,udinese calcio,66.66666666666667,Italy,Serie A,Udinese Calcio - Italy - Serie A.png,"Udinese, Italy",45.9434149,13.3406411
+20532,8540,1843.0,Palermo,PAL,US Palermo,r charleroi,55.55555555555556,Belgium,Jupiler Pro League,R Charleroi SC - Belgium - Jupiler Pro League.png,"Palermo, Belgium",51.210047,4.3950193
+21280,9976,1848.0,Bari,BAR,Bari,bayern,60.0,Germany,Bundesliga,FC Bayern - Germany - Bundesliga.png,"Bari, Germany",51.2588285,6.3855174
+21285,8537,1844.0,Livorno,LIV,AS Livorno,liverpool,62.5,England,Premier League,Liverpool FC - England - Premier League.png,"Livorno, England",53.8071862,-1.4494259
+21292,10167,50.0,Parma,PAR,Parma,spartak,66.66666666666667,Serbia,Super liga Srbije,Spartak - Serbia - Super liga Srbije.png,"Parma, Serbia",44.8666563,20.346283
+22042,9880,110915.0,Cesena,CES,RC Cesena,chelsea,76.92307692307692,England,Premier League,Chelsea FC - England - Premier League.png,"Cesena, England",,
+22044,9858,190.0,Brescia,BRE,Brescia,n breda,66.66666666666667,Netherlands,Eredivisie,NAC Breda - Netherlands - Eredivisie.png,"Breia, Netherlands",,
+22805,6269,112225.0,Novara,NOV,Novara,nk varazdin,58.82352941176471,Croatia,SuperSport HNL,NK Varazdin - Croatia - SuperSport HNL.png,"Novara, Croatia",,
+23523,9878,200.0,Pescara,PES,Pescara,spartak,66.66666666666667,Serbia,Super liga Srbije,Spartak - Serbia - Super liga Srbije.png,"Peara, Serbia",,
+24273,9876,206.0,Hellas Verona,VER,Hellas Verona,hellas verona,100.0,Italy,Serie A,Hellas Verona - Italy - Serie A.png,"Hellas Verona, Italy",45.4334792,10.8928406
+24288,7943,111974.0,Sassuolo,SAS,Sassuolo,us sassuolo,84.21052631578947,Italy,Serie A,US Sassuolo - Italy - Serie A.png,"Sassuolo, Italy",44.5409769,10.7829023
+25048,8534,1746.0,Empoli,EMP,FC Empoli,empoli,100.0,Italy,Serie A,FC Empoli - Italy - Serie A.png,"Empoli, Italy",43.7194884,10.9458556
+25791,9891,111657.0,Frosinone,FRO,,frosinone calcio,72.0,Italy,Serie A,Frosinone Calcio - Italy - Serie A.png,"Frosinone, Italy",41.628546799999995,13.57584977062367
+25804,208931,112409.0,Carpi,CAP,,casa pia,61.53846153846154,Portugal,Liga Portugal,Casa Pia AC - Portugal - Liga Portugal.png,"Carpi, Portugal",41.8458995,-8.4188328
+26547,8277,1909.0,Vitesse,VIT,Vitesse,vitesse arnhem,66.66666666666667,Netherlands,Eredivisie,Vitesse Arnhem - Netherlands - Eredivisie.png,"Vitesse, Netherlands",52.00993,5.8175382
+26548,8674,1915.0,FC Groningen,GRO,FC Groningen,groningen,100.0,Netherlands,Eredivisie,FC Groningen - Netherlands - Eredivisie.png,"Groningen, Netherlands",53.2190652,6.5680077
+26549,9803,1902.0,Roda JC Kerkrade,ROD,Roda JC,red star belgrade,54.54545454545454,Serbia,Super liga Srbije,Red Star Belgrade - Serbia - Super liga Srbije.png,"Roda Jc Kerkrade, Serbia",,
+26550,8611,1908.0,FC Twente,TWE,FC Twente,twente enhede,63.1578947368421,Netherlands,Eredivisie,Twente Enschede FC - Netherlands - Eredivisie.png,"Twente, Netherlands",52.3066217,6.687373934148023
+26551,8525,1907.0,Willem II,WII,Willem II,willem ii,100.0,Netherlands,Eredivisie,Willem II - Netherlands - Eredivisie.png,"Willem Ii, Netherlands",51.54269165,5.066806624191194
+26552,8593,245.0,Ajax,AJA,AFC Ajax,ajax,100.0,Netherlands,Eredivisie,Ajax - Netherlands - Eredivisie.png,"Ajax, Netherlands",52.3446377,4.9502708
+26553,8464,1910.0,N.E.C.,NEC,NEC Nijmegen,fenerbahce,37.5,Türkiye,Süper Lig,Fenerbahce - Türkiye - Süper Lig.png,"N.E.C., Türkiye",18.105483,-15.982913
+26554,8526,635.0,De Graafschap,GRA,De Graafschap,granada cf,47.61904761904761,Spain,LaLiga,Granada CF - Spain - LaLiga.png,"De Graafhap, Spain",,
+26555,9908,1903.0,FC Utrecht,UTR,FC Utrecht,utrecht,100.0,Netherlands,Eredivisie,FC Utrecht - Netherlands - Eredivisie.png,"Utrecht, Netherlands",52.0907006,5.1215634
+26556,8640,247.0,PSV,PSV,PSV Eindhoven,paksi,50.0,Hungary,Nemzeti Bajnokság,Paksi FC - Hungary - Nemzeti Bajnokság.png,"Psv, Hungary",,
+26557,9791,100634.0,Heracles Almelo,HER,,herles almelo,100.0,Netherlands,Eredivisie,Heracles Almelo - Netherlands - Eredivisie.png,"Herles Almelo, Netherlands",,
+26558,10235,246.0,Feyenoord,FEY,Feyenoord,feyenoord,100.0,Netherlands,Eredivisie,Feyenoord - Netherlands - Eredivisie.png,"Feyenoord, Netherlands",51.241244,5.9681522
+26559,8614,100646.0,Sparta Rotterdam,SPA,Sparta R.,sparta rotterdam,100.0,Netherlands,Eredivisie,Sparta Rotterdam - Netherlands - Eredivisie.png,"Sparta Rotterdam, Netherlands",51.9194555,4.433550650698857
+26560,10217,650.0,ADO Den Haag,HAA,,copenhagen,54.54545454545454,Denmark,Superliga,FC Copenhagen - Denmark - Superliga.png,"Ado Den Haag, Denmark",,
+26561,6601,,FC Volendam,VOL,,volendam,100.0,Netherlands,Eredivisie,FC Volendam - Netherlands - Eredivisie.png,"Volendam, Netherlands",52.4963759,5.0682736
+26562,10228,1913.0,SC Heerenveen,HEE,Heerenveen,heerenveen,100.0,Netherlands,Eredivisie,Heerenveen - Netherlands - Eredivisie.png,"Heerenveen, Netherlands",52.998474200000004,5.923148795038062
+26563,10229,1906.0,AZ,ALK,AZ Alkmaar,lazio,57.14285714285714,Italy,Serie A,Lazio - Italy - Serie A.png,"Az, Italy",45.1827919,9.1541648
+26564,9761,1904.0,NAC Breda,NAC,,n breda,100.0,Netherlands,Eredivisie,NAC Breda - Netherlands - Eredivisie.png,"N Breda, Netherlands",51.5887845,4.7760237
+27161,10219,1905.0,RKC Waalwijk,RKC,RKC Waalwijk,rkc waalwijk,100.0,Netherlands,Eredivisie,RKC Waalwijk - Netherlands - Eredivisie.png,"Rkc Waalwijk, Netherlands",51.6885312,5.0881794
+27168,9839,100651.0,VVV-Venlo,VEN,VVV-Venlo,vizela,42.85714285714286,Portugal,Liga Portugal,FC Vizela - Portugal - Liga Portugal.png,"Vvv-Venlo, Portugal",,
+27780,10218,1971.0,Excelsior,EXC,,excelsior rotterdam,64.28571428571428,Netherlands,Eredivisie,Excelsior Rotterdam - Netherlands - Eredivisie.png,"Excelsior, Netherlands",51.37123067044777,6.153883830856253
+29000,6413,1914.0,PEC Zwolle,ZWO,,pec zwolle,100.0,Netherlands,Eredivisie,PEC Zwolle - Netherlands - Eredivisie.png,"Pec Zwolle, Netherlands",52.517052,6.1198816
+29617,7788,647.0,SC Cambuur,CAM,,cambuur,100.0,Netherlands,Eredivisie,SC Cambuur - Netherlands - Eredivisie.png,"Cambuur, Netherlands",53.204109387252714,5.81144821817786
+29624,6433,100632.0,Go Ahead Eagles,GAE,,go ahead eagles,100.0,Netherlands,Eredivisie,Go Ahead Eagles - Netherlands - Eredivisie.png,"Go Ahead Eagles, Netherlands",,
+30222,6631,100626.0,FC Dordrecht,DOR,,r anderlecht,66.66666666666667,Belgium,Jupiler Pro League,RSC Anderlecht - Belgium - Jupiler Pro League.png,"Dordrecht, Belgium",51.204946621071315,4.459860735000204
+31443,10265,1873.0,Wisła Kraków,WIS,Wisla Kraków,wisla krakow,95.65217391304348,Poland,PKO BP Ekstraklasa,Wisla Kraków - Poland - PKO BP Ekstraklasa.png,"Wisa Krakow, Poland",,
+31444,8031,111429.0,Polonia Bytom,POB,Pol. Warsaw,polissya zhytomyr,66.66666666666667,Ukraine,Premier Liga,Polissya Zhytomyr - Ukraine - Premier Liga.png,"Polonia Bytom, Ukraine",,
+31445,8020,111429.0,Polonia Bytom,POB,Pol. Warsaw,polissya zhytomyr,66.66666666666667,Ukraine,Premier Liga,Polissya Zhytomyr - Ukraine - Premier Liga.png,"Polonia Bytom, Ukraine",,
+31446,1601,874.0,Ruch Chorzów,CHO,,ruch chorzow,100.0,Poland,PKO BP Ekstraklasa,Ruch Chorzow - Poland - PKO BP Ekstraklasa.png,"Ruch Chorzow, Poland",50.30109535,18.97563265
+31447,8673,1871.0,Legia Warszawa,LEG,Legia Warszawa,legia warszawa,100.0,Poland,PKO BP Ekstraklasa,Legia Warszawa - Poland - PKO BP Ekstraklasa.png,"Legia Warszawa, Poland",52.220641099999995,21.039798345752295
+31448,2183,1570.0,P. Warszawa,PWA,Pol. Warsaw,legia warszawa,72.0,Poland,PKO BP Ekstraklasa,Legia Warszawa - Poland - PKO BP Ekstraklasa.png,"P. Warszawa, Poland",52.2565288,20.93857286507725
+31449,8025,111092.0,Śląsk Wrocław,SLA,,slask wroclaw,96.0,Poland,PKO BP Ekstraklasa,Slask Wroclaw - Poland - PKO BP Ekstraklasa.png,"Slask Wrocaw, Poland",,
+31450,8030,111091.0,Lechia Gdańsk,LGD,,lechia gdansk,100.0,Poland,PKO BP Ekstraklasa,Lechia Gdansk - Poland - PKO BP Ekstraklasa.png,"Lechia Gdansk, Poland",54.3689105,18.6254975
+31451,8244,301.0,Widzew Łódź,LOD,,widzew lodz,95.23809523809524,Poland,PKO BP Ekstraklasa,Widzew Lodz - Poland - PKO BP Ekstraklasa.png,"Widzew Odz, Poland",,
+31452,8242,1564.0,Odra Wodzisław,ODR,,admira wker modling,50.0,Austria,Bundesliga,FC Admira Wacker Mödling - Austria - Bundesliga.png,"Odra Wodzisaw, Austria",,
+31453,2182,873.0,Lech Poznań,POZ,Lech Poznan,lech poznan,100.0,Poland,PKO BP Ekstraklasa,Lech Poznan - Poland - PKO BP Ekstraklasa.png,"Lech Poznan, Poland",52.718690300000006,16.373662178218478
+31454,8569,110744.0,GKS Bełchatów,BEL,,gks katowice,66.66666666666667,Poland,PKO BP Ekstraklasa,GKS Katowice - Poland - PKO BP Ekstraklasa.png,"Gks Bechatow, Poland",,
+31455,8322,111082.0,Arka Gdynia,ARK,,casa pia,52.63157894736843,Portugal,Liga Portugal,Casa Pia AC - Portugal - Liga Portugal.png,"Arka Gdynia, Portugal",,
+31456,1957,110745.0,Jagiellonia Białystok,BIA,,jagiellonia bialystok,97.5609756097561,Poland,PKO BP Ekstraklasa,Jagiellonia Bialystok - Poland - PKO BP Ekstraklasa.png,"Jagiellonia Biaystok, Poland",,
+31457,8028,111086.0,Piast Gliwice,PIG,,piast gliwice,100.0,Poland,PKO BP Ekstraklasa,Piast Gliwice - Poland - PKO BP Ekstraklasa.png,"Piast Gliwice, Poland",50.2888459,18.689488122169813
+31458,2186,110747.0,Cracovia,CKR,,crovia,100.0,Poland,PKO BP Ekstraklasa,Cracovia - Poland - PKO BP Ekstraklasa.png,"Crovia, Poland",,
+31925,8245,111083.0,Korona Kielce,KKI,,korona kielce,100.0,Poland,PKO BP Ekstraklasa,Korona Kielce - Poland - PKO BP Ekstraklasa.png,"Korona Kielce, Poland",50.8818631,20.6146634
+31928,8021,110749.0,Zagłębie Lubin,ZAG,,zaglebie lubin,96.2962962962963,Poland,PKO BP Ekstraklasa,Zaglebie Lubin - Poland - PKO BP Ekstraklasa.png,"Zagebie Lubin, Poland",,
+32409,8024,301.0,Widzew Łódź,WID,,widzew lodz,95.23809523809524,Poland,PKO BP Ekstraklasa,Widzew Lodz - Poland - PKO BP Ekstraklasa.png,"Widzew Odz, Poland",,
+32891,8033,111087.0,Podbeskidzie Bielsko-Biała,POD,,odense bk,48.48484848484848,Denmark,Superliga,Odense BK - Denmark - Superliga.png,"Podbeskidzie Bielsko-Biaa, Denmark",,
+33377,8023,110746.0,Pogoń Szczecin,POG,,pogon szczecin,100.0,Poland,PKO BP Ekstraklasa,Pogon Szczecin - Poland - PKO BP Ekstraklasa.png,"Pogon Szczecin, Poland",53.4328063,14.5114468
+33855,8027,112512.0,Zawisza Bydgoszcz,ZAW,,wisla plock,50.0,Poland,PKO BP Ekstraklasa,Wisla Plock - Poland - PKO BP Ekstraklasa.png,"Zawisza Bydgoszcz, Poland",53.145594200000005,18.020850655712383
+34337,8019,110565.0,Górnik Łęczna,LEC,,gornik leczna,96.0,Poland,PKO BP Ekstraklasa,Gornik Leczna - Poland - PKO BP Ekstraklasa.png,"Gornik Eczna, Poland",,
+34816,177361,,Termalica Bruk-Bet Nieciecza,TBN,,termalica,50.0,Poland,PKO BP Ekstraklasa,Termalica - Poland - PKO BP Ekstraklasa.png,"Termalica Bruk-Bet Nieciecza, Poland",50.159814600000004,20.850376997712942
+35283,9773,236.0,FC Porto,POR,FC Porto,porto,100.0,Portugal,Liga Portugal,FC Porto - Portugal - Liga Portugal.png,"Porto, Portugal",41.1494512,-8.6107884
+35284,9807,1889.0,CF Os Belenenses,BEL,Belenenses,belenenses sad,66.66666666666667,Portugal,Liga Portugal,Belenenses SAD - Portugal - Liga Portugal.png,"Os Belenenses, Portugal",39.7276869,-8.929905816368382
+35285,9768,237.0,Sporting CP,SCP,Sporting CP,sporting cp,100.0,Portugal,Liga Portugal,Sporting CP - Portugal - Liga Portugal.png,"Cp, Portugal",38.5308951,-8.8851227
+35286,7992,,Trofense,TRO,,farense,66.66666666666667,Portugal,Liga Portugal,SC Farense - Portugal - Liga Portugal.png,"Trofense, Portugal",41.3356932,-8.5606961
+35287,7844,1887.0,Vitória Guimarães,GUI,Vit. Guimarães,vit. guimaraes,83.87096774193549,Portugal,Liga Portugal,Vit. Guimarães - Portugal - Liga Portugal.png,"Vitoria Guimaraes, Portugal",41.4428381,-8.292789550000002
+35288,10238,665.0,Vitória Setúbal,SET,Vitória Setúbal,viktoria plzen,62.06896551724138,Czech Republic,Chance Liga,FC Viktoria Plzen - Czech Republic - Chance Liga.png,"Vitoria Setubal, Czech Republic",,
+35289,6403,1892.0,FC Paços de Ferreira,FER,Paços Ferreira,pos de ferreira,100.0,Portugal,Liga Portugal,FC Paços de Ferreira - Portugal - Liga Portugal.png,"Pos De Ferreira, Portugal",41.1746603,-8.597003921087204
+35290,10264,1896.0,SC Braga,BRA,Braga,braga,100.0,Portugal,Liga Portugal,SC Braga - Portugal - Liga Portugal.png,"Braga, Portugal",41.5510583,-8.4280045
+35291,10213,,Amadora,AMA,,uc sampdoria,63.1578947368421,Italy,Serie A,UC Sampdoria - Italy - Serie A.png,"Amadora, Italy",43.8306926,7.8496335
+35292,10215,1901.0,Académica de Coimbra,ACA,Coimbra,radomiak radom,56.25,Poland,PKO BP Ekstraklasa,Radomiak Radom - Poland - PKO BP Ekstraklasa.png,"Ademica De Coimbra, Poland",,
+35293,7841,744.0,Rio Ave FC,RA,Rio Ave FC,rio ave,100.0,Portugal,Liga Portugal,Rio Ave FC - Portugal - Liga Portugal.png,"Rio Ave, Portugal",41.4420431,-8.369404
+35294,9772,234.0,SL Benfica,BEN,Benfica,sl benfica,100.0,Portugal,Liga Portugal,SL Benfica - Portugal - Liga Portugal.png,"Sl Benfica, Portugal",38.7524036,-9.183121411941231
+35295,6421,10018.0,Leixões SC,LEI,,olympios,53.333333333333336,Greece,Super League 1,Olympiacos - Greece - Super League 1.png,"Leixoes, Greece",,
+35296,10214,1891.0,CD Nacional,NAC,Nacional,cd nional,100.0,Portugal,Liga Portugal,CD Nacional - Portugal - Liga Portugal.png,"Cd Nional, Portugal",,
+35297,9809,100737.0,Naval 1° de Maio,NAV,,atletico de madrid,54.54545454545454,Spain,LaLiga,Atlético de Madrid - Spain - LaLiga.png,"Naval 1 De Maio, Spain",,
+35298,10212,1893.0,CS Marítimo,MAR,Marítimo,cs maritimo,100.0,Portugal,Liga Portugal,CS Marítimo - Portugal - Liga Portugal.png,"Cs Maritimo, Portugal",,
+35769,9771,1895.0,"União de Leiria, SAD",ULE,Leiria,ud almeria,55.172413793103445,Spain,LaLiga,UD Almería - Spain - LaLiga.png,"Uniao De Leiria, Sad, Spain",,
+35774,2033,111540.0,S.C. Olhanense,OLH,,st. johnstone,59.25925925925925,Scotland,Scottish Premiership,St. Johnstone - Scotland - Scottish Premiership.png,"S.C. Olhanense, Scotland",,
+36248,9765,,Portimonense,POR,Portimonense,portimonense,100.0,Portugal,Liga Portugal,Portimonense - Portugal - Liga Portugal.png,"Portimonense, Portugal",37.1366247,-8.540189
+36253,10211,1897.0,SC Beira Mar,B-M,,real madrid,60.0,Spain,LaLiga,Real Madrid - Spain - LaLiga.png,"Beira Mar, Spain",43.707218100000006,-7.691239855329776
+36723,4064,,Feirense,FEI,Feirense,farense,80.0,Portugal,Liga Portugal,SC Farense - Portugal - Liga Portugal.png,"Feirense, Portugal",40.9271044,-8.5466116
+36735,9764,1888.0,Gil Vicente FC,GV,,gil vicente,100.0,Portugal,Liga Portugal,Gil Vicente FC - Portugal - Liga Portugal.png,"Gil Vicente, Portugal",38.7518035,-9.152244
+37210,8348,1900.0,Moreirense FC,MOR,Morelia,moreirense,100.0,Portugal,Liga Portugal,Moreirense FC - Portugal - Liga Portugal.png,"Moreirense, Portugal",41.378031699999994,-8.354995054507953
+37214,7842,10020.0,Estoril Praia,EST,,estoril praia,100.0,Portugal,Liga Portugal,Estoril Praia - Portugal - Liga Portugal.png,"Estoril Praia, Portugal",38.6932572,-9.368928726120114
+37696,158085,112513.0,FC Arouca,ARO,,arouca,100.0,Portugal,Liga Portugal,FC Arouca - Portugal - Liga Portugal.png,"Arouca, Portugal",40.9289214,-8.2441746
+38173,6547,100741.0,FC Penafiel,PEN,,copenhagen,55.55555555555556,Denmark,Superliga,FC Copenhagen - Denmark - Superliga.png,"Penafiel, Denmark",,
+38176,8613,1898.0,Boavista FC,BOA,Boavista,boavista,100.0,Portugal,Liga Portugal,Boavista FC - Portugal - Liga Portugal.png,"Boavista, Portugal",41.157648,-8.6374973
+38789,6367,,Uniao da Madeira,MAD,,puskas akademia,58.06451612903225,Hungary,Nemzeti Bajnokság,Puskás Akadémia FC - Hungary - Nemzeti Bajnokság.png,"Uniao Da Madeira, Hungary",,
+38791,188163,,Tondela,TON,,cd tondela,82.35294117647058,Portugal,Liga Portugal,CD Tondela - Portugal - Liga Portugal.png,"Tondela, Portugal",40.51642,-8.08053
+39387,8596,79.0,Falkirk,FAL,,paksi,50.0,Hungary,Nemzeti Bajnokság,Paksi FC - Hungary - Nemzeti Bajnokság.png,"Falkirk, Hungary",,
+39388,8548,86.0,Rangers,RAN,Rangers,rangers,100.0,Scotland,Scottish Premiership,Rangers FC - Scotland - Scottish Premiership.png,"Rangers, Scotland",55.9331349,-4.304716243431738
+39389,9860,80.0,Heart of Midlothian,HEA,Heart of Midl.,heart of midlothian,100.0,Scotland,Scottish Premiership,Heart of Midlothian FC - Scotland - Scottish Premiership.png,"Heart Of Midlothian, Scotland",55.9495655,-3.1914772
+39390,9927,83.0,Motherwell,MOT,Motherwell FC,motherwell,100.0,Scotland,Scottish Premiership,Motherwell FC - Scotland - Scottish Premiership.png,"Motherwell, Scotland",55.7893512,-3.9904173
+39391,8597,82.0,Kilmarnock,KIL,,kilmarnock,100.0,Scotland,Scottish Premiership,Kilmarnock FC - Scotland - Scottish Premiership.png,"Kilmarnock, Scotland",55.6100589,-4.4964652
+39392,10251,81.0,Hibernian,HIB,Hibernian FC,hibernian,100.0,Scotland,Scottish Premiership,Hibernian FC - Scotland - Scottish Premiership.png,"Hibernian, Scotland",55.9209854,-2.9269098264180213
+39393,8485,77.0,Aberdeen,ABE,,aberdeen,100.0,Scotland,Scottish Premiership,Aberdeen FC - Scotland - Scottish Premiership.png,"Aberdeen, Scotland",57.1482429,-2.0928095
+39394,8066,620.0,Inverness Caledonian Thistle,INV,,nk veres rivne,47.61904761904761,Ukraine,Premier Liga,NK Veres Rivne - Ukraine - Premier Liga.png,"Inverness Caledonian Thistle, Ukraine",,
+39395,9925,78.0,Celtic,CEL,Celtic,celtic,100.0,Scotland,Scottish Premiership,Celtic FC - Scotland - Scottish Premiership.png,"Celtic, Scotland",55.85018145,-4.2068226877121955
+39396,9800,100805.0,St. Mirren,MIR,,st. mirren,100.0,Scotland,Scottish Premiership,St. Mirren FC - Scotland - Scottish Premiership.png,"St. Mirren, Scotland",55.850534350000004,-4.444205372848037
+39397,8429,184.0,Hamilton Academical FC,HAM,Hamilton Acad.,atletico de madrid,51.42857142857142,Spain,LaLiga,Atlético de Madrid - Spain - LaLiga.png,"Hamilton Ademical, Spain",,
+39398,9938,181.0,Dundee United,DUU,,dundee united,100.0,Scotland,Scottish Premiership,Dundee United FC - Scotland - Scottish Premiership.png,"Dundee United, Scotland",56.473158,-2.9680270551715076
+39853,8467,100804.0,St. Johnstone FC,JOH,,st. johnstone,100.0,Scotland,Scottish Premiership,St. Johnstone - Scotland - Scottish Premiership.png,"St. Johnstone, Scotland",56.1519963152431,-3.8041406519906227
+40757,8457,182.0,Dunfermline Athletic,DUN,,athletic,57.14285714285714,Spain,LaLiga,Athletic - Spain - LaLiga.png,"Dunfermline Athletic, Spain",,
+41216,8284,180.0,Dundee FC,DUF,Dundee FC,dundee united,63.1578947368421,Scotland,Scottish Premiership,Dundee United FC - Scotland - Scottish Premiership.png,"Dundee, Scotland",56.4605938,-2.97019
+41217,8649,631.0,Ross County FC,ROS,,ross county,100.0,Scotland,Scottish Premiership,Ross County FC - Scotland - Scottish Premiership.png,"Ross County, Scotland",57.595873850000004,-4.419063880031938
+41673,8426,1754.0,Partick Thistle F.C.,PAR,,fk spartak subotica,46.15384615384615,Serbia,Super liga Srbije,FK Spartak Subotica - Serbia - Super liga Srbije.png,"Partick Thistle F.C., Serbia",,
+43035,10267,461.0,Valencia CF,VAL,Valencia CF,valencia,84.21052631578947,Spain,LaLiga,Valencia - Spain - LaLiga.png,"Valencia, Spain",39.4697065,-0.3763353
+43036,8661,453.0,RCD Mallorca,MAL,RCD Mallorca,rcd mallorca,100.0,Spain,LaLiga,RCD Mallorca - Spain - LaLiga.png,"Rcd Mallorca, Spain",39.5698469,2.6494492
+43037,8371,479.0,CA Osasuna,OSA,CA Osasuna,ca osasuna,100.0,Spain,LaLiga,CA Osasuna - Spain - LaLiga.png,"Ca Osasuna, Spain",42.79667355,-1.637125547008285
+43038,10205,483.0,Villarreal CF,VIL,Villarreal CF,villarreal cf,100.0,Spain,LaLiga,Villarreal CF - Spain - LaLiga.png,"Villarreal, Spain",39.9372616,-0.1004465
+43039,9783,242.0,RC Deportivo de La Coruña,COR,Dep. La Coruña,deportivo alaves,58.53658536585367,Spain,LaLiga,Deportivo Alavés - Spain - LaLiga.png,"Rc Deportivo De La Coruna, Spain",,
+43040,8633,243.0,Real Madrid CF,REA,Real Madrid,real madrid,88.0,Spain,LaLiga,Real Madrid - Spain - LaLiga.png,"Real Madrid, Spain",40.4199798,-3.7035925
+43041,8388,477.0,CD Numancia,NUM,,rcd mallorca,60.86956521739131,Spain,LaLiga,RCD Mallorca - Spain - LaLiga.png,"Cd Numancia, Spain",40.3995283,-3.6596765
+43042,8634,241.0,FC Barcelona,BAR,FC Barcelona,barcelona,100.0,Spain,LaLiga,Barcelona - Spain - LaLiga.png,"Barcelona, Spain",41.3828939,2.1774322
+43043,8696,456.0,Racing Santander,SAN,Racing,randers,57.14285714285714,Denmark,Superliga,Randers FC - Denmark - Superliga.png,"Ring Santander, Denmark",,
+43044,8302,481.0,Sevilla FC,SEV,Sevilla FC,sevilla,100.0,Spain,LaLiga,Sevilla FC - Spain - LaLiga.png,"Sevilla, Spain",37.3886303,-5.9953403
+43045,9869,459.0,Real Sporting de Gijón,SPG,Sporting Gijón,sporting cp,54.54545454545454,Portugal,Liga Portugal,Sporting CP - Portugal - Liga Portugal.png,"Real  De Gijon, Portugal",,
+43046,8305,1860.0,Getafe CF,GET,Getafe CF,getafe cf,100.0,Spain,LaLiga,Getafe CF - Spain - LaLiga.png,"Getafe, Spain",40.3070639,-3.7331808
+43047,8603,449.0,Real Betis Balompié,BET,Real Betis,real betis balompie,100.0,Spain,LaLiga,Real Betis Balompié - Spain - LaLiga.png,"Real Betis Balompie, Spain",37.308368349999995,-5.948074387220609
+43048,8479,571.0,RC Recreativo,HUE,Recr. Huelva,r seraing,54.54545454545454,Belgium,Jupiler Pro League,RFC Seraing - Belgium - Jupiler Pro League.png,"Rc Recreativo, Belgium",,
+43049,8558,452.0,RCD Espanyol,ESP,Espanyol,espanyol,80.0,Spain,LaLiga,Espanyol - Spain - LaLiga.png,"Rcd Espanyol, Spain",41.4260382,2.2119056
+43050,10281,462.0,Real Valladolid,VAL,Real Valladolid,real valladolid cf,90.9090909090909,Spain,LaLiga,Real Valladolid CF - Spain - LaLiga.png,"Real Valladolid, Spain",41.6508549,-4.7125553
+43051,8315,448.0,Athletic Club de Bilbao,BIL,Athletic Bilbao,athletic bilbao,78.94736842105263,Spain,LaLiga,Athletic Bilbao - Spain - LaLiga.png,"Athletic  De Bilbao, Spain",40.0690114,-2.138824
+43052,9865,1861.0,UD Almería,ALM,UD Almería,ud almeria,100.0,Spain,LaLiga,UD Almería - Spain - LaLiga.png,"Ud Almeria, Spain",36.8414197,-2.4628135
+43053,9906,240.0,Atlético Madrid,AMA,Atlético Madrid,atletico de madrid,90.9090909090909,Spain,LaLiga,Atlético de Madrid - Spain - LaLiga.png,"Atletico Madrid, Spain",40.37562969613464,-3.742049156756476
+43054,9864,573.0,Málaga CF,MAL,Málaga CF,granada cf,63.1578947368421,Spain,LaLiga,Granada CF - Spain - LaLiga.png,"Malaga, Spain",36.7213028,-4.4216366
+43800,9868,1742.0,Xerez Club Deportivo,XER,,deportivo alaves,50.0,Spain,LaLiga,Deportivo Alavés - Spain - LaLiga.png,"Xerez  Deportivo, Spain",36.68845801939576,-6.12159618332931
+43803,8394,244.0,Real Zaragoza,ZAR,Real Zaragoza,real madrid,58.33333333333333,Spain,LaLiga,Real Madrid - Spain - LaLiga.png,"Real Zaragoza, Spain",41.6557975,-0.8795481
+43804,9867,260.0,CD Tenerife,TEN,CD Tenerife,cd tondela,57.14285714285714,Portugal,Liga Portugal,CD Tondela - Portugal - Liga Portugal.png,"Cd Tenerife, Portugal",,
+44557,10278,100879.0,Hércules Club de Fútbol,HER,Hércules CF,herles almelo,55.55555555555556,Netherlands,Eredivisie,Heracles Almelo - Netherlands - Eredivisie.png,"Hercules  De Futbol, Netherlands",,
+44565,8581,1853.0,Levante UD,LEV,Levante UD,levante ud,100.0,Spain,LaLiga,Levante UD - Spain - LaLiga.png,"Levante Ud, Spain",39.4703751,-0.370525
+44569,8560,457.0,Real Sociedad,SOC,Real Sociedad,real sociedad,100.0,Spain,LaLiga,Real Sociedad - Spain - LaLiga.png,"Real Sociedad, Spain",43.307890400000005,-1.9742816856871923
+45330,7878,110832.0,Granada CF,GRA,Granada CF,granada cf,100.0,Spain,LaLiga,Granada CF - Spain - LaLiga.png,"Granada, Spain",37.1734995,-3.5995337
+45333,8370,480.0,Rayo Vallecano,RAY,Rayo Vallecano,rayo vallecano,100.0,Spain,LaLiga,Rayo Vallecano - Spain - LaLiga.png,"Rayo Vallecano, Spain",40.377091050000004,-3.6140329350855245
+46087,9910,450.0,RC Celta de Vigo,CEL,Celta de Vigo,celta de vigo,89.65517241379311,Spain,LaLiga,Celta de Vigo - Spain - LaLiga.png,"Rc Celta De Vigo, Spain",42.2123817,-8.7401108
+46848,10268,468.0,Elche CF,ELC,Elche CF,elche cf,100.0,Spain,LaLiga,Elche CF - Spain - LaLiga.png,"Elche, Spain",38.2653307,-0.6988391
+47605,8372,467.0,SD Eibar,EIB,SD Eibar,sl benfica,55.55555555555556,Portugal,Liga Portugal,SL Benfica - Portugal - Liga Portugal.png,"Sd Eibar, Portugal",,
+47612,7869,1867.0,Córdoba CF,COR,,granada cf,60.0,Spain,LaLiga,Granada CF - Spain - LaLiga.png,"Cordoba, Spain",37.8845813,-4.7760138
+48358,8306,472.0,UD Las Palmas,LAS,UD Las Palmas,ud las palmas,100.0,Spain,LaLiga,UD Las Palmas - Spain - LaLiga.png,"Ud Las Palmas, Spain",28.00225515,-15.4057081
+49115,9956,322.0,Grasshopper Club Zürich,GRA,Grasshoppers,grasshopper club zurich,100.0,Switzerland,Super League,Grasshopper Club Zurich - Switzerland - Super League.png,"Grasshopper  Zurich, Switzerland",47.3564463,8.536044
+49116,6493,1714.0,AC Bellinzona,BEL,,barcelona,63.1578947368421,Spain,LaLiga,Barcelona - Spain - LaLiga.png,"Bellinzona, Spain",40.517374513386414,-4.25852085562589
+49117,10192,900.0,BSC Young Boys,YB,BSC Young Boys,b young boys,100.0,Switzerland,Super League,BSC Young Boys - Switzerland - Super League.png,"B Young Boys, Switzerland",,
+49118,9931,896.0,FC Basel,BAS,FC Basel,basel 1893,66.66666666666667,Switzerland,Super League,FC Basel 1893 - Switzerland - Super League.png,"Basel, Switzerland",47.5581077,7.5878261
+49119,9930,434.0,FC Aarau,AAR,,uta arad,61.53846153846154,Romania,SuperLiga,UTA Arad - Romania - SuperLiga.png,"Aarau, Romania",,
+49120,10179,110770.0,FC Sion,SIO,FC Sion,sion,100.0,Switzerland,Super League,FC Sion - Switzerland - Super League.png,"Sion, Switzerland",46.2311749,7.3588795
+49121,10199,897.0,FC Luzern,LUZ,,luzern,100.0,Switzerland,Super League,FC Luzern - Switzerland - Super League.png,"Luzern, Switzerland",47.0505452,8.3054682
+49122,9824,286.0,FC Vaduz,VAD,,cadiz cf,46.15384615384615,Spain,LaLiga,Cádiz CF - Spain - LaLiga.png,"Vaduz, Spain",36.40916525,-6.1525787
+49123,7955,435.0,Neuchâtel Xamax,XAM,Neuchâtel Xamax,cf estrela amadora,48.48484848484848,Portugal,Liga Portugal,CF Estrela Amadora - Portugal - Liga Portugal.png,"Neuchatel Xamax, Portugal",,
+49124,10243,894.0,FC Zürich,ZUR,FC Zürich,zurich,100.0,Switzerland,Super League,FC Zürich - Switzerland - Super League.png,"Zurich, Switzerland",47.3744489,8.5410422
+49479,10190,898.0,FC St. Gallen,GAL,FC St. Gallen,st. gallen,100.0,Switzerland,Super League,FC St. Gallen - Switzerland - Super League.png,"St. Gallen, Switzerland",47.425618,9.3762397
+49837,10191,1715.0,FC Thun,THU,,oh leuven,46.15384615384615,Belgium,Jupiler Pro League,OH Leuven - Belgium - Jupiler Pro League.png,"Thun, Belgium",,
+50201,9777,324.0,Servette FC,SER,Servette FC,servette,100.0,Switzerland,Super League,Servette FC - Switzerland - Super League.png,"Servette, Switzerland",46.2134636,6.130226900852341
+50204,7730,1862.0,FC Lausanne-Sports,,,lausannesport,96.2962962962963,Switzerland,Super League,FC Lausanne-Sport - Switzerland - Super League.png,"Lausanne-Sports, Switzerland",46.5342787,6.625131155979333
+51606,7896,,Lugano,LUG,FC Lugano,lazio,54.54545454545454,Italy,Serie A,Lazio - Italy - Serie A.png,"Lugano, Italy",46.0200392,9.2369985
