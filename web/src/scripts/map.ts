@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Make sure panel is initially closed
     infoPanel.classList.remove('open');
   } else {
-    console.error("❌ Info panel element not found");
+    console.error("❌ Info panel elements not found");
   }
   
   // Function to center map with offset for the info panel
@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Create a point with 25% leftward offset (half of the 50% panel width)
     const offsetPoint = new L.Point(
-      +mapSize.x * 0.20, // 25% leftward offset
+      +mapSize.x * 0.2, // 25% leftward offset
       0  // No vertical offset
     );
     
@@ -167,6 +167,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Update active state in sidebar
     if (activeTeamElement) {
       activeTeamElement.classList.remove('active');
+    }
+    
+    // Use the sidebar element for this team if provided, or find it
+    if (!clickedElement && team.name) {
+      clickedElement = document.querySelector(`[title="${team.name}"]`) as HTMLElement;
     }
     
     activeTeamElement = clickedElement || null;
@@ -284,13 +289,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Add marker with popup that includes a "View Details" button
         const marker = L.marker(team.coords, { icon }).addTo(map);
-        marker.bindPopup(`
-          <div class="team-popup">
-            <b>${team.name}</b>
-            <br>
-            <button class="btn btn-sm btn-primary mt-2 view-team-details">View Details</button>
-          </div>
-        `);
         
         // Store extended team data
         const extendedTeam: ExtendedTeamData = {
@@ -307,28 +305,32 @@ document.addEventListener('DOMContentLoaded', () => {
         // Store extended team data
         extendedTeams[team.name] = extendedTeam;
         
-        // Add event listener to popup for the "View Details" button
-        marker.on('popupopen', () => {
-          setTimeout(() => { // Small delay to ensure DOM is updated
-            const button = document.querySelector('.view-team-details');
-            if (button) {
-              // Remove any existing listeners to prevent duplicates
-              const newButton = button.cloneNode(true);
-              if (button.parentNode) {
-                button.parentNode.replaceChild(newButton, button);
-              }
-              
-              // Add new click listener
-              newButton.addEventListener('click', () => {
-                // Find the corresponding sidebar element
-                const sidebarTeam = document.querySelector(`[title="${team.name}"]`) as HTMLElement;
-                
-                openTeamInfoPanel(extendedTeam, sidebarTeam);
-                marker.closePopup();
-              });
-            }
-          }, 50);
+        // Create popup content with button
+        const popupContent = L.DomUtil.create('div', 'team-popup');
+        const teamTitle = L.DomUtil.create('b', '', popupContent);
+        teamTitle.textContent = team.name;
+        
+        // Add line break
+        popupContent.appendChild(document.createElement('br'));
+        
+        // Create button
+        const viewDetailsBtn = L.DomUtil.create('button', 'btn btn-sm btn-primary mt-2', popupContent);
+        viewDetailsBtn.textContent = 'View Details';
+        viewDetailsBtn.style.marginTop = '5px';
+        
+        // Add click handler directly to the button
+        L.DomEvent.on(viewDetailsBtn, 'click', (e) => {
+          // Find the corresponding sidebar element
+          const sidebarTeam = document.querySelector(`[title="${team.name}"]`) as HTMLElement;
+          openTeamInfoPanel(extendedTeam, sidebarTeam);
+          marker.closePopup();
+          
+          // Prevent event from propagating to map
+          L.DomEvent.stopPropagation(e);
         });
+        
+        // Bind popup with our custom content
+        marker.bindPopup(popupContent);
         
         // Store marker reference for later
         teamMarkers[team.name] = marker;
