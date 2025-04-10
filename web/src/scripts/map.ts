@@ -93,6 +93,9 @@ document.addEventListener('DOMContentLoaded', () => {
       activeTeamElement = null;
     }
     
+    // Recenter the map to original view
+    map.setView([48.8566, 2.3522], 4);
+    
     console.log("Info panel closed");
   }
   
@@ -121,6 +124,38 @@ document.addEventListener('DOMContentLoaded', () => {
     infoPanel.classList.remove('open');
   } else {
     console.error("❌ Info panel element not found");
+  }
+  
+  // Function to center map with offset for the info panel
+  function centerMapWithOffset(coords: [number, number], zoom: number) {
+    // Calculate the center point taking into account the info panel
+    // which takes up 50% of the right side
+    
+    // Get current map size
+    const mapSize = map.getSize();
+    
+    // Create a point with 25% leftward offset (half of the 50% panel width)
+    const offsetPoint = new L.Point(
+      +mapSize.x * 0.20, // 25% leftward offset
+      0  // No vertical offset
+    );
+    
+    // Convert the target coordinates to a pixel point
+    const latLng = L.latLng(coords[0], coords[1]);
+    
+    // Get the pixel coordinates for the target point
+    const targetPoint = map.project(latLng, zoom);
+    
+    // Apply the offset to the target point
+    const offsetTargetPoint = targetPoint.add(offsetPoint);
+    
+    // Convert back to geographical coordinates
+    const offsetLatLng = map.unproject(offsetTargetPoint, zoom);
+    
+    // Fly to the offset coordinates
+    map.flyTo(offsetLatLng, zoom, {
+      duration: 1.5 // Animation duration in seconds
+    });
   }
   
   // Function to open team info panel
@@ -203,10 +238,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }, 300); // Delay to ensure the panel is visible
     
-    // Fly to the team's location on the main map
-    map.flyTo(team.coords, 10, {
-      duration: 1.5 // Animation duration in seconds
-    });
+    // Center map with offset, so the marker doesn't get hidden behind the info panel
+    centerMapWithOffset(team.coords, 10);
     
     // Open the marker popup if it exists
     const marker = teamMarkers[team.name];
