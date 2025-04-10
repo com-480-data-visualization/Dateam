@@ -2,7 +2,7 @@ import * as d3 from 'd3'
 import { loadStadiums } from './scripts/loadStadiums';
 import { stadiums, fallbackStadiums } from './scripts/constants';
 import { YearSelectorService } from './scripts/year-selector';
-import { ScrollSidebar } from './scripts/sidebar';
+// The sidebar is now initialized in map.ts
 import './scripts/map';
 
 // Initialize year selector service
@@ -54,11 +54,6 @@ async function initializeStadiums() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Initialize the sidebar
-  const sidebar = new ScrollSidebar("sidebar-scroll");
-  const itemList = Array.from({ length: 50 }, (_, i) => `Item ${i + 1}`);
-  sidebar.init(itemList);
-  
   // Initialize stadium data with a slight delay to ensure the map is ready
   setTimeout(() => {
     initializeStadiums();

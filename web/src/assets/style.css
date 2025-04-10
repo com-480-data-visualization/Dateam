@@ -107,3 +107,96 @@ border-radius: 50%;
 background-color: white;
 box-shadow: 0 1px 3px rgba(0,0,0,0.2);
 }
+
+/* Add these styles to your assets/style.css file */
+
+/* Sidebar team styling */
+#sidebar-scroll {
+    width: 80px !important; /* Slightly wider to fit team logos better */
+    scrollbar-width: thin; /* For Firefox */
+}
+
+/* Custom scrollbar for WebKit browsers (Chrome, Safari, Edge) */
+#sidebar-scroll::-webkit-scrollbar {
+width: 5px;
+}
+
+#sidebar-scroll::-webkit-scrollbar-track {
+background: #f1f1f1;
+}
+
+#sidebar-scroll::-webkit-scrollbar-thumb {
+background: #888;
+border-radius: 2px;
+}
+
+#sidebar-scroll::-webkit-scrollbar-thumb:hover {
+background: #555;
+}
+
+.sidebar-team {
+transition: background-color 0.2s;
+position: relative;
+height: 60px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 1px;
+}
+
+.sidebar-team:hover {
+background-color: #e9ecef;
+}
+
+.sidebar-team-logo {
+background-color: white;
+border-radius: 50%;
+padding: 2px;
+box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+transition: transform 0.2s;
+}
+
+.sidebar-team:hover .sidebar-team-logo {
+transform: scale(1.1);
+}
+
+/* Active state when selected */
+.sidebar-team.active {
+background-color: #e2f0ff;
+}
+
+.sidebar-team.active::after {
+content: "";
+position: absolute;
+top: 50%;
+right: 0;
+transform: translateY(-50%);
+width: 0;
+height: 0;
+border-top: 8px solid transparent;
+border-bottom: 8px solid transparent;
+border-right: 8px solid #fff;
+}
+
+/* Mini name tooltip on hover */
+.sidebar-team::before {
+content: attr(title);
+position: absolute;
+left: 85px;
+background-color: rgba(0,0,0,0.8);
+color: white;
+padding: 4px 8px;
+border-radius: 4px;
+font-size: 12px;
+opacity: 0;
+visibility: hidden;
+transition: opacity 0.2s;
+pointer-events: none;
+white-space: nowrap;
+z-index: 1000;
+}
+
+.sidebar-team:hover::before {
+opacity: 1;
+visibility: visible;
+}
