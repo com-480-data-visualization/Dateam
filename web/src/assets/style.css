@@ -24,3 +24,86 @@
 #map {
     border: 2px black;
 }
+
+/* Add these styles to your assets/style.css file */
+
+/* Team info panel styles */
+#team-info-panel {
+    border-left: 1px solid #dee2e6;
+    overflow-y: auto;
+    box-shadow: -3px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#team-info-panel.open {
+width: 50% !important; /* When open, take 50% of the map width */
+}
+
+/* Team logo in panel */
+#team-logo {
+object-fit: contain;
+background-color: #f8f9fa;
+padding: 5px;
+border-radius: 5px;
+border: 1px solid #dee2e6;
+max-height: 60px;
+}
+
+/* Enhanced team popup on map */
+.team-popup {
+text-align: center;
+padding: 5px;
+}
+
+.team-popup button {
+margin-top: 5px;
+}
+
+/* Make sure the map container positions elements correctly */
+#map {
+position: relative;
+}
+
+/* Make the exit button not overlap with the panel when it's open */
+#team-info-panel.open ~ #exit-button {
+right: calc(50% + 10px);
+transition: right 0.3s ease-in-out;
+}
+
+/* Mini map styling */
+#mini-map {
+border-radius: 4px;
+border: 1px solid #dee2e6;
+}
+
+/* Make text in cards more readable */
+.card-body p {
+margin-bottom: 0.5rem;
+display: flex;
+justify-content: space-between;
+}
+
+.card-body p span {
+font-weight: 500;
+}
+
+/* Transition for a smoother visual experience */
+#team-info-panel {
+transition: width 0.3s ease-in-out;
+}
+
+/* Make the team marker popups better looking */
+.leaflet-popup-content-wrapper {
+border-radius: 8px;
+}
+
+.leaflet-popup-content {
+margin: 10px 12px;
+}
+
+/* Enhance team logo markers */
+.team-logo-marker {
+border: 2px solid white;
+border-radius: 50%;
+background-color: white;
+box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}

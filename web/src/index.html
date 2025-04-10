@@ -110,12 +110,13 @@
         </div>
       </div>
     </div>
-    <!-- Remove conflicting height: 100vh inside 480px container -->
+        
+          <!-- Replace this section in your index.html file -->
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-md-10"> <!-- not auto -->
           <div style="position: relative; height: 600px;"> <!-- Give height here -->
-                    <!-- Sidebar (optional, scrollable) -->
+            <!-- Sidebar (optional, scrollable) -->
             <div id="sidebar-scroll"
                 class="position-absolute bg-light"
                 style="overflow-y: auto;
@@ -126,13 +127,74 @@
                       z-index: 10;">
               <!-- Sidebar content here -->
             </div>
-                    <!-- Exit button -->
+            
+            <!-- Team info panel that will slide in from the right -->
+            <div id="team-info-panel" class="position-absolute bg-white shadow-lg rounded-start" 
+                style="height: 100%; width: 0; /* starts with 0 width */
+                        right: 0; top: 0; z-index: 100; 
+                        transition: width 0.3s ease-in-out;
+                        overflow-x: hidden;">
+              <!-- Close button -->
+              <button id="close-info-panel" 
+                      type="button" 
+                      class="btn btn-sm btn-danger position-absolute"
+                      style="top: 10px; right: 10px; z-index: 101;">
+                X
+              </button>
+              
+              <!-- Content container with padding -->
+              <div class="p-3 mt-4">
+                <!-- Team header with logo and name -->
+                <div class="d-flex align-items-center mb-3">
+                  <img id="team-logo" src="./assets/placeholder-logo-svg.svg" alt="Team Logo" class="me-3" style="width: 60px; height: 60px;">
+                  <h3 id="team-name" class="mb-0">Team Name</h3>
+                </div>
+                
+                <!-- Team details -->
+                <div id="team-details" class="mt-4">
+                  <div class="card mb-3">
+                    <div class="card-header bg-primary text-white">
+                      Team Information
+                    </div>
+                    <div class="card-body">
+                      <p id="team-country">Country: <span>N/A</span></p>
+                      <p id="team-league">League: <span>N/A</span></p>
+                      <p id="team-api-id">Team API ID: <span>N/A</span></p>
+                    </div>
+                  </div>
+                  
+                  <div class="card mb-3">
+                    <div class="card-header bg-primary text-white">
+                      Stadium Location
+                    </div>
+                    <div class="card-body">
+                      <p id="stadium-coordinates">Coordinates: <span>N/A</span></p>
+                      <div id="mini-map" style="height: 150px; margin-top: 10px;"></div>
+                    </div>
+                  </div>
+                  
+                  <div class="card">
+                    <div class="card-header bg-primary text-white">
+                      Team Identifiers
+                    </div>
+                    <div class="card-body">
+                      <p id="team-short-name">Short Name: <span>N/A</span></p>
+                      <p id="team-fifa-id">FIFA API ID: <span>N/A</span></p>
+                      <p id="team-transfers-name">Transfers Name: <span>N/A</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+                        
+            <!-- Exit button -->
             <button id="exit-button"
                 type="button"
                 class="btn btn-sm btn-danger position-absolute"
                 style="top: 10px; right: 10px; z-index: 1000;">
               X
             </button>
+            
             <!-- Map -->
             <div id="map"
                 style="height: 100%; width: 100%; z-index: 1;">
@@ -141,6 +203,7 @@
         </div>
       </div>
     </div>
+
     <div class="main-wrapper">
       <div class="container-fluid">
         <hr>
