@@ -1,5 +1,5 @@
 .main-wrapper {
-    width: 55vw;
+    width: 80vw;
     margin: auto;
 }
 
@@ -200,3 +200,60 @@ z-index: 1000;
 opacity: 1;
 visibility: visible;
 }
+
+p {
+    text-align: justify;
+    font-size: 1.2rem;
+  }
+#welcome-hero {
+height: 100vh; 
+background-image: url('./background.png'); 
+background-size: cover;
+background-position: bottom center;
+background-repeat: no-repeat;
+padding: 0;
+}
+
+#welcome-hero h1,
+#welcome-hero p {
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); 
+}
+.hero-text {
+    position: relative;
+    top: -10%;
+    left: -20%;
+    text-align: left;
+    z-index: 2;
+  }
+  .scroll-down-indicator {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+  
+  .arrow {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    transform: rotate(45deg);
+    animation: bounce 2s infinite;
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translate(-50%, 0) rotate(45deg);
+    }
+    40% {
+      transform: translate(-50%, 10px) rotate(45deg);
+    }
+    60% {
+      transform: translate(-50%, 5px) rotate(45deg);
+    }
+  }
+  
