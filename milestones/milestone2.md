@@ -86,4 +86,24 @@ Once our minimum viable product is established, we may explore the following enh
 - **Map**: Enhance transition animations and UI elements in the map visualization.
 - **Filter**: Introduce filters by league, budget, or historical success to facilitate more granular comparisons.
 
+## Functional Project Prototype Review
 
+We have a first version of the website up and running. To explore the project locally, please navigate into the `web` directory and follow the instructions in the `README.md` file:
+
+```bash
+cd web
+``` 
+
+Currently, our prototype includes the core structure and key components. The initial workload distribution went smoothly, and each team member contributed effectively. The following elements are already implemented:
+- **Map** **&** **Side** **Panel**: The map features team logos, and the corresponding side panel appears upon interaction. These components were built using *Leaflet.js*.
+- **General** **website** **structure**: The main layout is functional and includes embedded visualizations.
+- **Overhead** **&** **Scrollbar**: The top navigation bar and scrollbar are implemented with active hyperlinks and dropdowns.
+
+Left to do are: 
+- **CleanUp**: The overall layout needs visual refinement, and alignment between sections must be improved.
+- **Map**: A few team logos appear misplaced and require hardcoded coordinate adjustments.
+- **Side** **Panel**: The team data displayed in the side panel must be completed and refined.
+
+## Conclussion 
+
+We are satisfied with our initial progress. Our expectations regarding both difficulty and workload have aligned well with our actual experience so far. The prototype provides a solid foundation, and we are confident in our path toward a complete and engaging final product.
