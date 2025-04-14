@@ -1,6 +1,7 @@
 # Milestone 2 
 
 Data Visualization Project — COM-480
+
 Date: April 18, 2025
 
 ## Presentation
@@ -41,23 +42,29 @@ We began with a brainstorming session and produced the following design sketches
 
 To achieve our design, we’ve identified six key interface components and linked each with the necessary tools and course concepts:
  
-- **General**, Initial concept, visual storytelling  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Course Tools*: Git/GitHub, Design Best Practices, Text Visualization, Storytelling, Perception/Color  
+- **General**, Initial concept, visual storytelling
+
+    *Course Tools*: Git/GitHub, Design Best Practices, Text Visualization, Storytelling, Perception/Color  
 
 - **Overhead**, Top bar with parameters and navigation  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Course Tools*: Basic Web Development, Interactions, D3.js  
+    
+    *Course Tools*: Basic Web Development, Interactions, D3.js  
 
 - **Map**, Geospatial view of clubs and transfers  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Course Tools*: Maps, Interactions, Leaflet.js  
+    
+    *Course Tools*: Maps, Interactions, Leaflet.js  
 
 - **Scrollbar**, Scroll/search feature for club selection  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Course Tools*: Interactions  
+    
+    *Course Tools*: Interactions  
 
 - **Plots**, Visualization of team statistics over time  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Course Tools*: Graphs, Tabular Data  
+    
+    *Course Tools*: Graphs, Tabular Data  
 
 - **Side Panel**, Dynamic sidebar with club-specific info  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Course Tools*: Interactions  
+    
+    *Course Tools*: Interactions  
 
 
 We are using an external dataset to include team logos for visual identity:
@@ -72,7 +79,6 @@ While implementing the project, we encountered several early-stage obstacles:
 - Data Integration: Aligning team names across different datasets (match stats, transfers, logos) proved more complex than expected due to inconsistencies in naming conventions and historical changes. This required extensive filtering and normalization.
 
 - Task Allocation: Initially, roles were unclear. A follow-up meeting with clearly defined objectives and task ownership helped improve clarity and focus.
-
 
 As we have begun working on the project we have faced some initial challenges we ar ein the midst of resolving. 
 - Linking team location to team logo and data. Because of different labelling, changes of european relevance the regrouping of the data per team has taking more time than anticiated. Some rigorous filtering ansd statistical analysis provided solution. 
@@ -92,6 +98,8 @@ We have a first version of the website up and running. To explore the project lo
 
 ```bash
 cd web
+npm i
+npm run start
 ``` 
 
 Currently, our prototype includes the core structure and key components. The initial workload distribution went smoothly, and each team member contributed effectively. The following elements are already implemented:
@@ -99,11 +107,12 @@ Currently, our prototype includes the core structure and key components. The ini
 - **General** **website** **structure**: The main layout is functional and includes embedded visualizations.
 - **Overhead** **&** **Scrollbar**: The top navigation bar and scrollbar are implemented with active hyperlinks and dropdowns.
 
-Left to do are: 
-- **CleanUp**: The overall layout needs visual refinement, and alignment between sections must be improved.
+Left to do are:
+- **Clean-up**: The overall layout needs visual refinement, and alignment between sections must be improved.
 - **Map**: A few team logos appear misplaced and require hardcoded coordinate adjustments.
 - **Side** **Panel**: The team data displayed in the side panel must be completed and refined.
 
-## Conclussion 
+## Conclusion 
 
 We are satisfied with our initial progress. Our expectations regarding both difficulty and workload have aligned well with our actual experience so far. The prototype provides a solid foundation, and we are confident in our path toward a complete and engaging final product.
+
