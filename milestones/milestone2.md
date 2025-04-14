@@ -69,21 +69,21 @@ We are using an external dataset to include team logos for visual identity:
 
 
 While implementing the project, we encountered several early-stage obstacles:
-    - Data Integration: Aligning team names across different datasets (match stats, transfers, logos) proved more complex than expected due to inconsistencies in naming conventions and historical changes. This required extensive filtering and normalization.
+- Data Integration: Aligning team names across different datasets (match stats, transfers, logos) proved more complex than expected due to inconsistencies in naming conventions and historical changes. This required extensive filtering and normalization.
 
-    - Task Allocation: Initially, roles were unclear. A follow-up meeting with clearly defined objectives and task ownership helped improve clarity and focus.
+- Task Allocation: Initially, roles were unclear. A follow-up meeting with clearly defined objectives and task ownership helped improve clarity and focus.
 
 
 As we have begun working on the project we have faced some initial challenges we ar ein the midst of resolving. 
-    - Linking team location to team logo and data. Because of different labelling, changes of european relevance the regrouping of the data per team has taking more time than anticiated. Some rigorous filtering ansd statistical analysis provided solution. 
-    - Task attibution. The first task distribution was bad and it was unclear who was responsible for that. A meeting which listed the main objetives and necessary steps to reach them helped in identifying priorities for each collaborator. 
+- Linking team location to team logo and data. Because of different labelling, changes of european relevance the regrouping of the data per team has taking more time than anticiated. Some rigorous filtering ansd statistical analysis provided solution. 
+- Task attibution. The first task distribution was bad and it was unclear who was responsible for that. A meeting which listed the main objetives and necessary steps to reach them helped in identifying priorities for each collaborator. 
 
 
 ## Future Ideas (Optional Enhancements)
 
 Once our minimum viable product is established, we may explore the following enhancements:
-    - **Advanced** **Team** **Analysis**: Correlate transfer activity with team strengths/weaknesses in attack/defense using deeper statistical analysis.
-    - **Map**: Enhance transition animations and UI elements in the map visualization.
-    - **Filter**: Introduce filters by league, budget, or historical success to facilitate more granular comparisons.
+- **Advanced** **Team** **Analysis**: Correlate transfer activity with team strengths/weaknesses in attack/defense using deeper statistical analysis.
+- **Map**: Enhance transition animations and UI elements in the map visualization.
+- **Filter**: Introduce filters by league, budget, or historical success to facilitate more granular comparisons.
 
 
