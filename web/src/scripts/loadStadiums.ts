@@ -216,7 +216,7 @@ function getHardcodedStadiums(): Stadium[] {
     {
       name: "Juventus",
       coords: [45.1096, 7.6409],
-      logo: "https://upload.wikimedia.org/wikipedia/commons/1/15/Juventus_FC_2017_logo.svg"
+      logo: "https://upload.wikimedia.org/wikipedia/fr/thumb/c/c5/Logo_Juventus_FC_2020.svg/500px-Logo_Juventus_FC_2020.svg.png?20241120104709"
     },
     {
       name: "AC Milan",
@@ -236,7 +236,7 @@ function getHardcodedStadiums(): Stadium[] {
     {
       name: "Atletico Madrid",
       coords: [40.4361, -3.5995],
-      logo: "https://upload.wikimedia.org/wikipedia/en/f/f4/Atletico_Madrid_2017_logo.svg"
+      logo: "https://upload.wikimedia.org/wikipedia/fr/thumb/f/fc/Logo_ATM_2024.svg/500px-Logo_ATM_2024.svg.png?20240701192148"
     }
   ];
 }
