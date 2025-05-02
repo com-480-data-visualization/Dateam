@@ -6,7 +6,7 @@
   "homepage": "https://com-480-data-visualization.github.io/Dateam/",
   "scripts": {
     "start": "parcel -p 8081",
-    "build": "parcel build src/index.html --public-url ./",
+    "build": "parcel build src/index.html --public-url ./ && cp -r src/assets/data/ src/assets/logos/ dist/assets/",
     "deploy": "npm run build && gh-pages -d dist"
   },
   "author": "",
