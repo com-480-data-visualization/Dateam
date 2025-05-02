@@ -18,6 +18,7 @@ export class YearSelectorService {
                 this.currentYearPeriod[1] = year;
                 inputElement.value = year.toString();
             }
+            document.dispatchEvent(new CustomEvent("yearSelectorChanged", {detail: {newYears: this.currentYearPeriod}}));
         }
         
         const selectFrom = document.getElementById("dropdown-years-from");

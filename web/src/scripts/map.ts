@@ -1,8 +1,8 @@
 console.log("📍 map.ts loaded");
 
-import L from 'leaflet';
+import L, { Polyline } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import { stadiums } from './constants';
+import { stadiums, Transfer, transfers } from './constants';
 import { YEARS } from './constants';
 import { ScrollSidebar } from './sidebar';
 
@@ -15,7 +15,7 @@ interface ExtendedTeamData {
   transfers_name?: string;
   country?: string;
   league?: string;
-  
+
   // Other fields
   name: string;
   coords: [number, number];
@@ -48,10 +48,35 @@ document.addEventListener('DOMContentLoaded', () => {
   }).addTo(map);
 
   console.log("✅ Map initialized");
-  
+  let lines: Polyline[] = [];
+
+  function drawTransfers(yearPeriod: number[]) {
+    lines.forEach(l => l.removeFrom(map));
+    lines = [];
+    transfers.forEach((transfer: Transfer) => {
+      const latlon_from = transfer.latlon_from, latlon_to = transfer.latlon_to;
+      if (Number.parseInt(transfer.season.split("-")[0]) < yearPeriod[0] || Number.parseInt(transfer.season.split("-")[0]) > yearPeriod[1]) {
+        return;
+      }
+      if (!!latlon_from[0] && !!latlon_from[1] && !!latlon_to[0] && !!latlon_to[1]) {
+        const line = new L.Polyline([
+          new L.LatLng(latlon_from[0], latlon_from[1]),
+          new L.LatLng(latlon_to[0], latlon_to[1])],
+          { color: 'red', weight: 1, opacity: 0.5, smoothFactor: 1 });
+        lines.push(line);
+        line.addTo(map);
+      }
+    });
+  }
+
+  document.addEventListener("yearSelectorChanged", (e: CustomEvent) => {
+    drawTransfers(e.detail.newYears);
+  });
+
+
   // Store markers for potential filtering later
   const teamMarkers: { [teamName: string]: L.Marker } = {};
-  
+
   // Team info panel elements
   const infoPanel = document.getElementById('team-info-panel');
   const closeButton = document.getElementById('close-info-panel');
@@ -65,40 +90,40 @@ document.addEventListener('DOMContentLoaded', () => {
   const teamShortName = document.getElementById('team-short-name')?.querySelector('span');
   const teamFifaId = document.getElementById('team-fifa-id')?.querySelector('span');
   const teamTransfersName = document.getElementById('team-transfers-name')?.querySelector('span');
-  
+
   // Initialize sidebar
   let sidebar: ScrollSidebar | null = null;
-  
+
   // Track current active team in sidebar
   let activeTeamElement: HTMLElement | null = null;
-  
+
   // Mini map for stadium location
   let miniMap: L.Map | null = null;
-  
+
   // Function to close the info panel
   function closeInfoPanel() {
     if (!infoPanel) return;
-    
+
     infoPanel.classList.remove('open');
-    
+
     // If mini map exists, remove it to free resources
     if (miniMap) {
       miniMap.remove();
       miniMap = null;
     }
-    
+
     // Remove active state from sidebar team
     if (activeTeamElement) {
       activeTeamElement.classList.remove('active');
       activeTeamElement = null;
     }
-    
+
     // Recenter the map to original view
     map.setView([48.8566, 2.3522], 4);
-    
+
     console.log("Info panel closed");
   }
-  
+
   // Initialize info panel functionality
   if (infoPanel) {
     // Close button functionality
@@ -107,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       console.warn("⚠️ Close button for info panel not found");
     }
-    
+
     // Exit button should also close the info panel
     if (exitButton) {
       exitButton.addEventListener('click', () => {
@@ -119,66 +144,66 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       console.warn("⚠️ Exit button not found");
     }
-    
+
     // Make sure panel is initially closed
     infoPanel.classList.remove('open');
   } else {
     console.error("❌ Info panel elements not found");
   }
-  
+
   // Function to center map with offset for the info panel
   function centerMapWithOffset(coords: [number, number], zoom: number) {
     // Calculate the center point taking into account the info panel
     // which takes up 50% of the right side
-    
+
     // Get current map size
     const mapSize = map.getSize();
-    
+
     // Create a point with 25% leftward offset (half of the 50% panel width)
     const offsetPoint = new L.Point(
       +mapSize.x * 0.2, // 25% leftward offset
       0  // No vertical offset
     );
-    
+
     // Convert the target coordinates to a pixel point
     const latLng = L.latLng(coords[0], coords[1]);
-    
+
     // Get the pixel coordinates for the target point
     const targetPoint = map.project(latLng, zoom);
-    
+
     // Apply the offset to the target point
     const offsetTargetPoint = targetPoint.add(offsetPoint);
-    
+
     // Convert back to geographical coordinates
     const offsetLatLng = map.unproject(offsetTargetPoint, zoom);
-    
+
     // Fly to the offset coordinates
     map.flyTo(offsetLatLng, zoom, {
       duration: 1.5 // Animation duration in seconds
     });
   }
-  
+
   // Function to open team info panel
   function openTeamInfoPanel(team: ExtendedTeamData, clickedElement?: HTMLElement) {
     if (!infoPanel) return;
-    
+
     console.log("Opening info panel for:", team);
-    
+
     // Update active state in sidebar
     if (activeTeamElement) {
       activeTeamElement.classList.remove('active');
     }
-    
+
     // Use the sidebar element for this team if provided, or find it
     if (!clickedElement && team.name) {
       clickedElement = document.querySelector(`[title="${team.name}"]`) as HTMLElement;
     }
-    
+
     activeTeamElement = clickedElement || null;
     if (activeTeamElement) {
       activeTeamElement.classList.add('active');
     }
-    
+
     // Update panel content with available data
     if (teamLogo) {
       teamLogo.src = team.logo;
@@ -188,27 +213,27 @@ document.addEventListener('DOMContentLoaded', () => {
         teamLogo.src = './assets/placeholder-logo.svg';
       };
     }
-    
+
     if (teamName) teamName.textContent = team.name;
-    
+
     // Update team info if available
     if (teamCountry) teamCountry.textContent = team.country || 'N/A';
     if (teamLeague) teamLeague.textContent = team.league || 'N/A';
     if (teamApiId) teamApiId.textContent = team.team_api_id?.toString() || 'N/A';
-    
+
     // Update stadium coordinates
     if (stadiumCoordinates) {
       stadiumCoordinates.textContent = `${team.coords[0].toFixed(4)}, ${team.coords[1].toFixed(4)}`;
     }
-    
+
     // Update team identifiers
     if (teamShortName) teamShortName.textContent = team.team_short_name || 'N/A';
     if (teamFifaId) teamFifaId.textContent = team.team_fifa_api_id?.toString() || 'N/A';
     if (teamTransfersName) teamTransfersName.textContent = team.transfers_name || 'N/A';
-    
+
     // Open the panel first before initializing mini-map
     infoPanel.classList.add('open');
-    
+
     // Initialize or update mini map with a slight delay to ensure container is visible
     setTimeout(() => {
       const miniMapElement = document.getElementById('mini-map');
@@ -217,22 +242,22 @@ document.addEventListener('DOMContentLoaded', () => {
         if (miniMap) {
           miniMap.remove();
         }
-        
+
         // Create mini map
         miniMap = L.map('mini-map', {
           attributionControl: false, // Remove attribution for cleaner look
           zoomControl: false // Remove zoom controls to save space
         }).setView(team.coords, 13);
-        
+
         // Add tile layer to mini map - using the same style as main map
         L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
           subdomains: 'abcd',
           maxZoom: 19
         }).addTo(miniMap);
-        
+
         // Add marker to mini map
         L.marker(team.coords).addTo(miniMap);
-        
+
         // Disable interactions on mini map
         miniMap.dragging.disable();
         miniMap.touchZoom.disable();
@@ -242,10 +267,10 @@ document.addEventListener('DOMContentLoaded', () => {
         miniMap.keyboard.disable();
       }
     }, 300); // Delay to ensure the panel is visible
-    
+
     // Center map with offset, so the marker doesn't get hidden behind the info panel
     centerMapWithOffset(team.coords, 10);
-    
+
     // Open the marker popup if it exists
     const marker = teamMarkers[team.name];
     if (marker) {
@@ -254,7 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 1500); // Delay to match the flyTo animation
     }
   }
-  
+
   // Handle sidebar team click
   function handleSidebarTeamClick(team: ExtendedTeamData, clickedElement: HTMLElement) {
     // If the info panel is already open for this team, close it
@@ -272,9 +297,9 @@ document.addEventListener('DOMContentLoaded', () => {
       console.warn("⚠️ No stadium data available for markers");
       return;
     }
-    
+
     console.log(`🏟️ Adding ${stadiums.length} stadium markers...`);
-    
+
     // Create markers for each stadium
     stadiums.forEach((team, index) => {
       try {
@@ -289,7 +314,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Add marker with popup that includes a "View Details" button
         const marker = L.marker(team.coords, { icon }).addTo(map);
-        
+
         // Store extended team data
         const extendedTeam: ExtendedTeamData = {
           ...team,
@@ -301,40 +326,40 @@ document.addEventListener('DOMContentLoaded', () => {
           country: getCountryFromCoords(team.coords), // Placeholder function
           league: getLeagueFromCountry(getCountryFromCoords(team.coords)) // Placeholder function
         };
-        
+
         // Store extended team data
         extendedTeams[team.name] = extendedTeam;
-        
+
         // Create popup content with button
         const popupContent = L.DomUtil.create('div', 'team-popup');
         const teamTitle = L.DomUtil.create('b', '', popupContent);
         teamTitle.textContent = team.name;
-        
+
         // Add line break
         popupContent.appendChild(document.createElement('br'));
-        
+
         // Create button
         const viewDetailsBtn = L.DomUtil.create('button', 'btn btn-sm btn-primary mt-2', popupContent);
         viewDetailsBtn.textContent = 'View Details';
         viewDetailsBtn.style.marginTop = '5px';
-        
+
         // Add click handler directly to the button
         L.DomEvent.on(viewDetailsBtn, 'click', (e) => {
           // Find the corresponding sidebar element
           const sidebarTeam = document.querySelector(`[title="${team.name}"]`) as HTMLElement;
           openTeamInfoPanel(extendedTeam, sidebarTeam);
           marker.closePopup();
-          
+
           // Prevent event from propagating to map
           L.DomEvent.stopPropagation(e);
         });
-        
+
         // Bind popup with our custom content
         marker.bindPopup(popupContent);
-        
+
         // Store marker reference for later
         teamMarkers[team.name] = marker;
-        
+
         // Log every 20th marker added (to avoid console spam)
         if (index % 20 === 0 || index === stadiums.length - 1) {
           console.log(`✅ Added marker ${index + 1}/${stadiums.length}: ${team.name}`);
@@ -343,19 +368,19 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error(`❌ Error adding marker for ${team.name}:`, error);
       }
     });
-    
+
     // Initialize sidebar with teams after all markers are added
     initSidebar();
-    
+
     // Fit map bounds to include all markers
     if (stadiums.length > 0) {
       const bounds = L.latLngBounds(stadiums.map(stadium => stadium.coords));
       map.fitBounds(bounds, { padding: [50, 50] });
     }
-    
+
     console.log("✅ All team markers added");
   }
-  
+
   // Initialize sidebar with teams
   function initSidebar() {
     const sidebarElement = document.getElementById('sidebar-scroll');
@@ -363,9 +388,9 @@ document.addEventListener('DOMContentLoaded', () => {
       console.error("❌ Sidebar element not found");
       return;
     }
-    
+
     sidebar = new ScrollSidebar('sidebar-scroll');
-    
+
     // Initialize sidebar with teams
     sidebar.initWithTeams(stadiums, (team) => {
       // This is called when a team is clicked in the sidebar
@@ -379,13 +404,13 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
-  
+
   // Helper function to get country from coordinates (placeholder)
   function getCountryFromCoords(coords: [number, number]): string {
     // This is a very simplified approach using coordinate ranges
     // In a real application, you would use a GeoIP service or reverse geocoding
     const [lat, lng] = coords;
-    
+
     // Some rough country estimations
     if (lat > 50 && lng < 0) return "United Kingdom";
     if (lat > 40 && lat < 45 && lng > 0 && lng < 10) return "Italy";
@@ -394,10 +419,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (lat > 45 && lng > 15) return "Eastern Europe";
     if (lat > 40 && lat < 45 && lng > 10) return "Balkans";
     if (lat > 45 && lng < 0) return "France";
-    
+
     return "Europe"; // Default fallback
   }
-  
+
   // Helper function to get league from country (placeholder)
   function getLeagueFromCountry(country: string): string {
     const leagueMap: { [country: string]: string } = {
@@ -410,26 +435,26 @@ document.addEventListener('DOMContentLoaded', () => {
       "Balkans": "Various Leagues",
       "Europe": "European League"
     };
-    
+
     return leagueMap[country] || "Unknown League";
   }
-  
+
   // Listen for year changes if needed
   document.addEventListener('yearChanged', (event: CustomEvent) => {
     const selectedYear = event.detail.year;
     console.log(`Year changed to ${selectedYear}, updating map...`);
-    
+
     // Here you could filter teams based on the selected year
     // This is just a placeholder - implement actual filtering logic
     // based on your data structure and requirements
   });
-  
+
   // Listen for stadiums loaded event
   document.addEventListener('stadiumsLoaded', (event: CustomEvent) => {
     console.log("📣 Stadiums loaded event received");
     addMarkers();
   });
-  
+
   // Add observers to detect when stadiums are loaded
   let checkTimer: number | null = null;
   const checkStadiums = () => {
@@ -440,7 +465,7 @@ document.addEventListener('DOMContentLoaded', () => {
       addMarkers();
     }
   };
-  
+
   // Check for stadiums every 100ms for up to 10 seconds
   checkTimer = window.setInterval(checkStadiums, 100);
   setTimeout(() => {
