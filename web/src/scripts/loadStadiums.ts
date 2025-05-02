@@ -12,7 +12,7 @@ export async function loadStadiums(): Promise<Stadium[]> {
     // Approach 1: Regular fetch with accept headers
     try {
       console.log("Trying approach 1: Fetch with Accept headers");
-      const response = await fetch('/data/mapping/team_logo_mapping_geocoded.csv', {
+      const response = await fetch('/data/assets/mapping/team_logo_mapping_geocoded.csv', {
         headers: {
           'Accept': 'text/csv,application/octet-stream'
         }
