@@ -122,16 +122,30 @@
         <div class="col-md-10"> <!-- not auto -->
           <div style="position: relative; height: 600px;"> <!-- Give height here -->
             <!-- Sidebar (optional, scrollable) -->
+             
             <div id="sidebar-scroll"
-                class="position-absolute bg-light"
-                style="overflow-y: auto;
-                      height: 100%;
-                      width: 100px;
-                      left: 0;
-                      top: 0;
-                      z-index: 10;">
-              <!-- Sidebar content here -->
-            </div>
+            class="position-absolute bg-light d-flex flex-column"
+            style="height: 100%;
+                   width: 100px;
+                   left: 0;
+                   top: 0;
+                   z-index: 10;">
+         
+         <!-- 🔍 Search input -->
+         <div style="padding: 4px;">
+           <input
+             type="text"
+             id="team-search"
+             placeholder="Search..."
+             style="width: 100%; font-size: 12px; padding: 5px;"
+           />
+         </div>
+       
+         <!-- 🧩 Team logos go here -->
+         <div id="sidebar-team-list" style="flex: 1; overflow-y: auto;"></div>
+       
+       </div>
+       
             
             <!-- Team info panel that will slide in from the right -->
             <div id="team-info-panel" class="position-absolute bg-white shadow-lg rounded-start" 

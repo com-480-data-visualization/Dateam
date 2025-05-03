@@ -59,7 +59,7 @@ export class ScrollSidebar {
   private addTeamToSidebar(team: Stadium) {
     // Create container
     const teamContainer = document.createElement("div");
-    teamContainer.className = "sidebar-team p-2 border-bottom text-center";
+    teamContainer.className = "sidebar-team-item sidebar-team p-2 border-bottom text-center";
     teamContainer.title = team.name; // Show name on hover
     teamContainer.style.cursor = "pointer";
     

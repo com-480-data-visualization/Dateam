@@ -391,30 +391,49 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log("✅ All team markers added");
   }
 
-  // Initialize sidebar with teams
   function initSidebar() {
-    const sidebarElement = document.getElementById('sidebar-scroll');
+    const sidebarElement = document.getElementById('sidebar-team-list');
     if (!sidebarElement) {
-      console.error("❌ Sidebar element not found");
+      console.error("❌ Sidebar team list element not found");
       return;
     }
-
-    sidebar = new ScrollSidebar('sidebar-scroll');
-
-    // Initialize sidebar with teams
+  
+    sidebar = new ScrollSidebar('sidebar-team-list');
     sidebar.initWithTeams(stadiums, (team) => {
-      // This is called when a team is clicked in the sidebar
       const extendedTeam = extendedTeams[team.name];
       if (extendedTeam) {
-        // Get the sidebar element for this team
         const clickedElement = document.querySelector(`[title="${team.name}"]`) as HTMLElement;
         if (clickedElement) {
           handleSidebarTeamClick(extendedTeam, clickedElement);
         }
       }
     });
+  
+    // 🧠 Add search filtering logic
+    const searchInput = document.getElementById('team-search') as HTMLInputElement;
+    if (searchInput) {
+      searchInput.addEventListener('input', () => {
+        const query = searchInput.value.toLowerCase();
+        const teamItems = document.querySelectorAll<HTMLElement>('#sidebar-team-list .sidebar-team-item');
+        teamItems.forEach(item => {
+          const title = item.getAttribute('title')?.toLowerCase() || '';
+          item.style.display = title.includes(query) ? '' : 'none';
+        });
+      });
+    }
   }
 
+  const searchInput = document.getElementById("team-search") as HTMLInputElement;
+searchInput?.addEventListener("input", () => {
+  const query = searchInput.value.toLowerCase();
+  const teamItems = document.querySelectorAll(".sidebar-team-item");
+
+  teamItems.forEach((item) => {
+    const title = item.getAttribute("title")?.toLowerCase() || "";
+    (item as HTMLElement).style.display = title.includes(query) ? "block" : "none";
+  });
+});
+  
   // Helper function to get country from coordinates (placeholder)
   function getCountryFromCoords(coords: [number, number]): string {
     // This is a very simplified approach using coordinate ranges
