@@ -5,3 +5,5 @@ data/transfers.csv
 web/.parcel-cache
 web/dist
 web/node_modules
+com-480-dateam@1.0.0
+parcel
