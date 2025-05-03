@@ -6,6 +6,8 @@ import { stadiums, Transfer, transfers } from './constants';
 import { YEARS } from './constants';
 import { ScrollSidebar } from './sidebar';
 
+let currentYearRange: [number, number] = [2000, 2020];
+
 // Interface for extended team data
 interface ExtendedTeamData {
   // CSV fields
@@ -70,7 +72,13 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   document.addEventListener("yearSelectorChanged", (e: CustomEvent) => {
+    currentYearRange = e.detail.newYears;
+
     drawTransfers(e.detail.newYears);
+    const teamName = document.getElementById('team-name')?.textContent;
+    if (teamName) {
+      drawTeamWinsChart(teamName);
+    }
   });
 
 
@@ -278,6 +286,8 @@ document.addEventListener('DOMContentLoaded', () => {
         marker.openPopup();
       }, 1500); // Delay to match the flyTo animation
     }
+    drawTeamWinsChart(team.name);
+
   }
 
   // Handle sidebar team click
@@ -477,3 +487,176 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }, 10000);
 });
+
+
+
+
+
+import * as d3 from "d3";
+import data from '../assets/data/team_stats.json';
+
+async function drawTeamWinsChart(teamName: string) {
+  console.log("📊 Starting chart draw for team:", teamName);
+
+  const chartContainer = document.getElementById("wins-chart");
+  if (!chartContainer) {
+    console.warn("❌ Chart container element #wins-chart not found.");
+    return;
+  }
+
+  chartContainer.innerHTML = ""; // Clear previous chart
+
+  try {
+    if (!Array.isArray(data)) {
+      console.error("❌ team_stats.json did not return an array.");
+      return;
+    }
+    console.log("🔍 Comparing team names:");
+    console.log("Team from UI:", teamName);
+
+
+    const filtered = data.filter(
+      (d: any) =>
+        (d.team === teamName || d.transfers_name === teamName) &&
+        parseInt(d.season.split("-")[0]) >= currentYearRange[0] &&
+        parseInt(d.season.split("-")[0]) <= currentYearRange[1]
+    );
+
+    if (filtered.length === 0) {
+      chartContainer.innerHTML = `<p class="text-muted">No data found for "${teamName}".</p>`;
+      return;
+    }
+
+    const teamData = filtered.map((d: any) => ({
+      season: d.season,
+      total_wins: +d.wins_home + +d.wins_away,
+      total_defeats: +d.losses_home + +d.losses_away,
+    }));
+
+    teamData.sort((a, b) => d3.ascending(a.season, b.season));
+
+    // const width = 450;
+    const containerWidth = chartContainer.clientWidth || 550;
+    const width = containerWidth;
+    const height = 320;
+    const margin = { top: 20, right: 30, bottom: 70, left: 50 };
+
+    const svg = d3.select(chartContainer)
+      .append("svg")
+      .attr("width", width)
+      .attr("height", height);
+
+    const x = d3.scalePoint()
+      .domain(teamData.map(d => d.season))
+      .range([margin.left, width - margin.right])
+      .padding(0.5);
+
+    const y = d3.scaleLinear()
+      .domain([0, d3.max(teamData, d => Math.max(d.total_wins, d.total_defeats)) || 1])
+      .nice()
+      .range([height - margin.bottom, margin.top]);
+
+    const lineWins = d3.line<any>()
+      .x(d => x(d.season)!)
+      .y(d => y(d.total_wins))
+      .curve(d3.curveMonotoneX);
+
+    const lineDefeats = d3.line<any>()
+      .x(d => x(d.season)!)
+      .y(d => y(d.total_defeats))
+      .curve(d3.curveMonotoneX);
+
+    // Add circle markers for wins
+    svg.selectAll(".dot-win")
+    .data(teamData)
+    .enter()
+    .append("circle")
+    .attr("class", "dot-win")
+    .attr("cx", d => x(d.season)!)
+    .attr("cy", d => y(d.total_wins))
+    .attr("r", 4)
+    .attr("fill", "#198754");
+
+    // Add circle markers for defeats
+    svg.selectAll(".dot-defeat")
+    .data(teamData)
+    .enter()
+    .append("circle")
+    .attr("class", "dot-defeat")
+    .attr("cx", d => x(d.season)!)
+    .attr("cy", d => y(d.total_defeats))
+    .attr("r", 4)
+    .attr("fill", "#dc3545");
+
+    // Draw wins line
+    svg.append("path")
+      .datum(teamData)
+      .attr("fill", "none")
+      .attr("stroke", "#198754") // green
+      .attr("stroke-width", 2)
+      .attr("d", lineWins);
+
+    // Draw defeats line
+    svg.append("path")
+      .datum(teamData)
+      .attr("fill", "none")
+      .attr("stroke", "#dc3545") // red
+      .attr("stroke-width", 2)
+      .attr("d", lineDefeats);
+
+    // Add X axis
+    svg.append("g")
+      .attr("transform", `translate(0,${height - margin.bottom})`)
+      .call(d3.axisBottom(x))
+      .selectAll("text")
+      .attr("transform", "rotate(-45)")
+      .style("text-anchor", "end");
+
+    // Add Y axis
+    svg.append("g")
+      .attr("transform", `translate(${margin.left},0)`)
+      .call(d3.axisLeft(y));
+
+    // Axis labels
+    svg.append("text")
+      .attr("text-anchor", "middle")
+      .attr("x", width / 2)
+      .attr("y", height)
+      .text("Season");
+
+    svg.append("text")
+      .attr("text-anchor", "middle")
+      .attr("transform", `translate(15,${height / 2})rotate(-90)`)
+      .text("Number of Matches");
+
+    // Add legend
+    const legendData = [
+      { label: "Total Wins", color: "#198754" },
+      { label: "Total Defeats", color: "#dc3545" }
+    ];
+
+    svg.selectAll(".legend")
+      .data(legendData)
+      .enter()
+      .append("circle")
+      .attr("cx", width - 100)
+      .attr("cy", (_, i) => 20 + i * 20)
+      .attr("r", 6)
+      .style("fill", d => d.color);
+
+    svg.selectAll(".legend-label")
+      .data(legendData)
+      .enter()
+      .append("text")
+      .attr("x", width - 90)
+      .attr("y", (_, i) => 20 + i * 20 + 4)
+      .text(d => d.label)
+      .style("font-size", "12px")
+      .attr("alignment-baseline", "middle");
+
+    console.log("✅ Line chart rendered.");
+  } catch (err) {
+    console.error("❌ Failed to load or draw chart:", err);
+    chartContainer.innerHTML = `<p class="text-danger">Error loading chart.</p>`;
+  }
+}
