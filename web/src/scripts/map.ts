@@ -6,7 +6,7 @@ import { stadiums, Transfer, transfers } from './constants';
 import { YEARS } from './constants';
 import { ScrollSidebar } from './sidebar';
 
-let currentYearRange: [number, number] = [2000, 2020];
+let currentYearRange: [number, number] = [2008, 2015];
 
 // Interface for extended team data
 interface ExtendedTeamData {
@@ -78,6 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const teamName = document.getElementById('team-name')?.textContent;
     if (teamName) {
       drawTeamWinsChart(teamName);
+      drawTeamSpendingChart(teamName); 
     }
   });
 
@@ -287,6 +288,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 1500); // Delay to match the flyTo animation
     }
     drawTeamWinsChart(team.name);
+    drawTeamSpendingChart(team.name);
+
 
   }
 
@@ -513,6 +516,8 @@ searchInput?.addEventListener("input", () => {
 
 import * as d3 from "d3";
 import data from '../assets/data/team_stats.json';
+import transfersData from '../assets/data/clean_transfers.json';
+
 
 async function drawTeamWinsChart(teamName: string) {
   console.log("📊 Starting chart draw for team:", teamName);
@@ -550,6 +555,8 @@ async function drawTeamWinsChart(teamName: string) {
       season: d.season,
       total_wins: +d.wins_home + +d.wins_away,
       total_defeats: +d.losses_home + +d.losses_away,
+      total_draws: +d.ties_home + +d.ties_away,
+
     }));
 
     teamData.sort((a, b) => d3.ascending(a.season, b.season));
@@ -585,8 +592,22 @@ async function drawTeamWinsChart(teamName: string) {
       .y(d => y(d.total_defeats))
       .curve(d3.curveMonotoneX);
 
-    // Add circle markers for wins
-    svg.selectAll(".dot-win")
+    const lineDraws = d3.line<any>()
+      .x(d => x(d.season)!)
+      .y(d => y(d.total_draws))
+      .curve(d3.curveMonotoneX);
+
+    const showWins = (document.getElementById("toggle-wins") as HTMLInputElement)?.checked;
+    const showDefeats = (document.getElementById("toggle-defeats") as HTMLInputElement)?.checked;
+    const showDraws = (document.getElementById("toggle-draws") as HTMLInputElement)?.checked;
+
+  if (!showWins && !showDefeats && !showDraws) {
+    chartContainer.innerHTML = `<p class="text-muted">Select at least one option to display data.</p>`;
+    return;
+  }
+
+if (showWins) {
+  svg.selectAll(".dot-win")
     .data(teamData)
     .enter()
     .append("circle")
@@ -596,8 +617,16 @@ async function drawTeamWinsChart(teamName: string) {
     .attr("r", 4)
     .attr("fill", "#198754");
 
-    // Add circle markers for defeats
-    svg.selectAll(".dot-defeat")
+  svg.append("path")
+    .datum(teamData)
+    .attr("fill", "none")
+    .attr("stroke", "#198754")
+    .attr("stroke-width", 2)
+    .attr("d", lineWins);
+}
+
+if (showDefeats) {
+  svg.selectAll(".dot-defeat")
     .data(teamData)
     .enter()
     .append("circle")
@@ -607,21 +636,33 @@ async function drawTeamWinsChart(teamName: string) {
     .attr("r", 4)
     .attr("fill", "#dc3545");
 
-    // Draw wins line
-    svg.append("path")
-      .datum(teamData)
-      .attr("fill", "none")
-      .attr("stroke", "#198754") // green
-      .attr("stroke-width", 2)
-      .attr("d", lineWins);
+  svg.append("path")
+    .datum(teamData)
+    .attr("fill", "none")
+    .attr("stroke", "#dc3545")
+    .attr("stroke-width", 2)
+    .attr("d", lineDefeats);
+}
 
-    // Draw defeats line
-    svg.append("path")
-      .datum(teamData)
-      .attr("fill", "none")
-      .attr("stroke", "#dc3545") // red
-      .attr("stroke-width", 2)
-      .attr("d", lineDefeats);
+if (showDraws) {
+  svg.selectAll(".dot-draw")
+    .data(teamData)
+    .enter()
+    .append("circle")
+    .attr("class", "dot-draw")
+    .attr("cx", d => x(d.season)!)
+    .attr("cy", d => y(d.total_draws))
+    .attr("r", 4)
+    .attr("fill", "#0d6efd");
+
+  svg.append("path")
+    .datum(teamData)
+    .attr("fill", "none")
+    .attr("stroke", "#0d6efd")
+    .attr("stroke-width", 2)
+    .attr("d", lineDraws);
+}
+
 
     // Add X axis
     svg.append("g")
@@ -650,9 +691,11 @@ async function drawTeamWinsChart(teamName: string) {
 
     // Add legend
     const legendData = [
-      { label: "Total Wins", color: "#198754" },
-      { label: "Total Defeats", color: "#dc3545" }
-    ];
+      showWins ? { label: "Total Wins", color: "#198754" } : null,
+      showDefeats ? { label: "Total Defeats", color: "#dc3545" } : null,
+      showDraws ? { label: "Total Draws", color: "#0d6efd" } : null
+    ].filter(Boolean);
+
 
     svg.selectAll(".legend")
       .data(legendData)
@@ -676,6 +719,206 @@ async function drawTeamWinsChart(teamName: string) {
     console.log("✅ Line chart rendered.");
   } catch (err) {
     console.error("❌ Failed to load or draw chart:", err);
+    chartContainer.innerHTML = `<p class="text-danger">Error loading chart.</p>`;
+  }
+  ["toggle-wins", "toggle-defeats", "toggle-draws"].forEach(id => {
+  const checkbox = document.getElementById(id) as HTMLInputElement;
+  if (checkbox) {
+    checkbox.onchange = () => {
+      const liveTeamName = document.getElementById("team-name")?.textContent;
+      if (liveTeamName) {
+        drawTeamWinsChart(liveTeamName);
+      }
+    };
+  }
+});
+
+}
+
+
+function drawTeamSpendingChart(teamName: string) {
+  const chartContainer = document.getElementById("spending-chart");
+  if (!chartContainer) {
+    console.warn("❌ Chart container element #spending-chart not found.");
+    return;
+  }
+
+  chartContainer.innerHTML = ""; // Clear previous chart
+
+  const matchedStatsEntry = data.find(
+    (d: any) => d.team === teamName || d.transfers_name === teamName
+  );
+  const resolvedTransferName = (matchedStatsEntry?.transfers_name || teamName).trim();
+
+  const showSpending = (document.getElementById("toggle-spending") as HTMLInputElement)?.checked;
+  const showSales = (document.getElementById("toggle-sales") as HTMLInputElement)?.checked;
+
+  if (!showSpending && !showSales) {
+    chartContainer.innerHTML = `<p class="text-muted">Select at least one option to display data.</p>`;
+    return;
+  }
+
+  try {
+    const filtered = transfersData.filter(
+      (d: any) =>
+        parseInt(d.season.split("-")[0]) >= currentYearRange[0] &&
+        parseInt(d.season.split("-")[0]) <= currentYearRange[1] &&
+        (d.team_to?.trim() === resolvedTransferName.trim() || d.team_from?.trim() === resolvedTransferName.trim())
+    );
+
+    const grouped = d3.rollups(
+      filtered,
+      entries => ({
+      total_spent: d3.sum(entries.filter(d => d.team_to?.trim() === resolvedTransferName), d => +d.transfer_fee),
+      total_sold: d3.sum(entries.filter(d => d.team_from?.trim() === resolvedTransferName), d => +d.transfer_fee)
+    }),
+      d => d.season
+    );
+
+    const data = grouped.map(([season, totals]) => ({
+      season,
+      total_spent: totals.total_spent,
+      total_sold: totals.total_sold
+    })).sort((a, b) => d3.ascending(a.season, b.season));
+
+    if (data.length === 0 || (data.every(d => d.total_spent === 0) && data.every(d => d.total_sold === 0))) {
+      chartContainer.innerHTML = `<p class="text-muted">No data available for "${teamName}" in selected years.</p>`;
+      return;
+      }
+
+    const width = chartContainer.clientWidth || 550;
+    const height = 300;
+    const margin = { top: 20, right: 30, bottom: 70, left: 70 };
+
+    const svg = d3.select(chartContainer)
+      .append("svg")
+      .attr("width", width)
+      .attr("height", height);
+
+    const x = d3.scalePoint()
+      .domain(data.map(d => d.season))
+      .range([margin.left, width - margin.right])
+      .padding(0.5);
+
+    const y = d3.scaleLinear()
+      .domain([0, d3.max(data, d => Math.max(d.total_spent, d.total_sold)) || 1])
+      .nice()
+      .range([height - margin.bottom, margin.top]);
+
+    const lineSpent = d3.line<any>()
+      .x(d => x(d.season)!)
+      .y(d => y(d.total_spent))
+      .curve(d3.curveMonotoneX);
+
+    const lineSold = d3.line<any>()
+      .x(d => x(d.season)!)
+      .y(d => y(d.total_sold))
+      .curve(d3.curveMonotoneX);
+
+    if (showSpending) {
+      svg.append("path")
+        .datum(data)
+        .attr("fill", "none")
+        .attr("stroke", "#0d6efd")
+        .attr("stroke-width", 2)
+        .attr("d", lineSpent);
+
+      svg.selectAll(".dot-spent")
+        .data(data)
+        .enter()
+        .append("circle")
+        .attr("class", "dot-spent")
+        .attr("cx", d => x(d.season)!)
+        .attr("cy", d => y(d.total_spent))
+        .attr("r", 4)
+        .attr("fill", "#0d6efd");
+    }
+
+    if (showSales) {
+      svg.append("path")
+        .datum(data)
+        .attr("fill", "none")
+        .attr("stroke", "#ffc107")
+        .attr("stroke-width", 2)
+        .attr("d", lineSold);
+
+      svg.selectAll(".dot-sold")
+        .data(data)
+        .enter()
+        .append("circle")
+        .attr("class", "dot-sold")
+        .attr("cx", d => x(d.season)!)
+        .attr("cy", d => y(d.total_sold))
+        .attr("r", 4)
+        .attr("fill", "#ffc107");
+    }
+
+    // X Axis
+    svg.append("g")
+      .attr("transform", `translate(0,${height - margin.bottom})`)
+      .call(d3.axisBottom(x))
+      .selectAll("text")
+      .attr("transform", "rotate(-45)")
+      .style("text-anchor", "end");
+
+    // Y Axis
+    svg.append("g")
+      .attr("transform", `translate(${margin.left},0)`)
+      .call(d3.axisLeft(y).tickFormat(d => `${(+d / 1e6).toFixed(0)}M €`));
+
+    // Labels
+    svg.append("text")
+      .attr("text-anchor", "middle")
+      .attr("x", width / 2)
+      .attr("y", height)
+      .text("Season");
+
+    svg.append("text")
+      .attr("text-anchor", "middle")
+      .attr("transform", `translate(15,${height / 2})rotate(-90)`)
+      .text("Transfer Value (€)");
+
+    // Dynamic Legend
+    const legendData = [
+      showSpending ? { label: "Total Spending", color: "#0d6efd" } : null,
+      showSales ? { label: "Total Sales", color: "#ffc107" } : null
+    ].filter(Boolean);
+
+    svg.selectAll(".legend")
+      .data(legendData)
+      .enter()
+      .append("circle")
+      .attr("cx", width - 120)
+      .attr("cy", (_, i) => 20 + i * 20)
+      .attr("r", 6)
+      .style("fill", d => d.color);
+
+    svg.selectAll(".legend-label")
+      .data(legendData)
+      .enter()
+      .append("text")
+      .attr("x", width - 110)
+      .attr("y", (_, i) => 20 + i * 20 + 4)
+      .text(d => d.label)
+      .style("font-size", "12px")
+      .attr("alignment-baseline", "middle");
+
+    // Checkbox event binding
+    ["toggle-spending", "toggle-sales"].forEach(id => {
+      const checkbox = document.getElementById(id) as HTMLInputElement;
+      if (checkbox) {
+        checkbox.onchange = () => {
+          const liveTeamName = document.getElementById("team-name")?.textContent;
+          if (liveTeamName) {
+            drawTeamSpendingChart(liveTeamName);
+          }
+        };
+      }
+    });
+
+    console.log("✅ Spending chart rendered.");
+  } catch (err) {
+    console.error("❌ Failed to load or draw spending chart:", err);
     chartContainer.innerHTML = `<p class="text-danger">Error loading chart.</p>`;
   }
 }
