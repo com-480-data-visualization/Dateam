@@ -1,5 +1,5 @@
 .main-wrapper {
-  width: 55vw;
+  width: 80vw;
   margin: auto;
 }
 
@@ -181,5 +181,65 @@
 .sidebar-team:hover:before {
   opacity: 1;
   visibility: visible;
+}
+
+p {
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+#welcome-hero {
+  background-image: url("background.2eac33cc.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 0;
+}
+
+#welcome-hero h1, #welcome-hero p {
+  text-shadow: 2px 2px 5px #0009;
+}
+
+.hero-text {
+  text-align: left;
+  z-index: 2;
+  position: relative;
+  top: -10%;
+  left: -20%;
+}
+
+.scroll-down-indicator {
+  z-index: 10;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.arrow {
+  opacity: .7;
+  cursor: pointer;
+  border-bottom: 3px solid #000;
+  border-right: 3px solid #000;
+  width: 24px;
+  height: 24px;
+  animation: 2s infinite bounce;
+  display: block;
+  transform: rotate(45deg);
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translate(-50%)rotate(45deg);
+  }
+
+  40% {
+    transform: translate(-50%, 10px)rotate(45deg);
+  }
+
+  60% {
+    transform: translate(-50%, 5px)rotate(45deg);
+  }
 }
 /*# sourceMappingURL=web.a5210753.css.map */
