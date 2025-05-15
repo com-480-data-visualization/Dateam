@@ -5,6 +5,10 @@ import 'leaflet/dist/leaflet.css';
 import { stadiums, Transfer, transfers } from './constants';
 import { YEARS } from './constants';
 import { ScrollSidebar } from './sidebar';
+import * as d3 from "d3";
+import data from '../assets/data/team_stats.json';
+import transfersData from '../assets/data/clean_transfers.json';
+
 
 let currentYearRange: [number, number] = [2008, 2015];
 
@@ -287,9 +291,13 @@ document.addEventListener('DOMContentLoaded', () => {
         marker.openPopup();
       }, 1500); // Delay to match the flyTo animation
     }
+    // drawTeamWinsChart(team.name);
+    // drawTeamSpendingChart(team.name);
+
+    setTimeout(() => {
     drawTeamWinsChart(team.name);
     drawTeamSpendingChart(team.name);
-
+  }, 500);
 
   }
 
@@ -328,6 +336,10 @@ document.addEventListener('DOMContentLoaded', () => {
         // Add marker with popup that includes a "View Details" button
         const marker = L.marker(team.coords, { icon }).addTo(map);
 
+        const matchedTeam = data.find(
+          (d: any) => d.team === team.name || d.transfers_name === team.name
+        );
+
         // Store extended team data
         const extendedTeam: ExtendedTeamData = {
           ...team,
@@ -336,8 +348,8 @@ document.addEventListener('DOMContentLoaded', () => {
           team_fifa_api_id: Math.floor(100000 + Math.random() * 900000), // Random FIFA ID
           team_short_name: team.name.split(' ')[0], // First word of name as short name
           transfers_name: team.name, // Same as name for now
-          country: getCountryFromCoords(team.coords), // Placeholder function
-          league: getLeagueFromCountry(getCountryFromCoords(team.coords)) // Placeholder function
+          country: matchedTeam?.country || getCountryFromCoords(team.coords), // Placeholder function
+          league: matchedTeam?.league || getLeagueFromCountry(matchedTeam?.country || getCountryFromCoords(team.coords)) // Placeholder function
         };
 
         // Store extended team data
@@ -514,9 +526,6 @@ searchInput?.addEventListener("input", () => {
 
 
 
-import * as d3 from "d3";
-import data from '../assets/data/team_stats.json';
-import transfersData from '../assets/data/clean_transfers.json';
 
 
 async function drawTeamWinsChart(teamName: string) {
