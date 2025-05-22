@@ -1,8 +1,11 @@
-import { YEARS } from "./constants";
-export class YearSelectorService {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.YearSelectorService = void 0;
+const constants_1 = require("./constants");
+class YearSelectorService {
     constructor() {
         this.currentYearPeriod = [];
-        this.currentYearPeriod = [YEARS[0], YEARS[YEARS.length - 1]];
+        this.currentYearPeriod = [constants_1.YEARS[0], constants_1.YEARS[constants_1.YEARS.length - 1]];
     }
     init() {
         const onYearClick = (year, from, inputElement) => {
@@ -16,6 +19,7 @@ export class YearSelectorService {
                 this.currentYearPeriod[1] = year;
                 inputElement.value = year.toString();
             }
+            document.dispatchEvent(new CustomEvent("yearSelectorChanged", { detail: { newYears: this.currentYearPeriod } }));
         };
         const selectFrom = document.getElementById("dropdown-years-from");
         const inputFrom = document.getElementById("input-years-from");
@@ -23,7 +27,7 @@ export class YearSelectorService {
         const inputTo = document.getElementById("input-years-to");
         [selectFrom, selectTo].forEach((select, i) => {
             const fragment = document.createDocumentFragment();
-            YEARS.forEach(y => {
+            constants_1.YEARS.forEach(y => {
                 const from = i == 0;
                 const link = document.createElement("a");
                 link.setAttribute("class", "dropdown-item choose-year");
@@ -40,3 +44,4 @@ export class YearSelectorService {
         console.log("Year selector init OK");
     }
 }
+exports.YearSelectorService = YearSelectorService;

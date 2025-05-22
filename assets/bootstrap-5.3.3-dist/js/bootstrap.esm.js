@@ -1,9 +1,45 @@
+"use strict";
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || (function () {
+    var ownKeys = function(o) {
+        ownKeys = Object.getOwnPropertyNames || function (o) {
+            var ar = [];
+            for (var k in o) if (Object.prototype.hasOwnProperty.call(o, k)) ar[ar.length] = k;
+            return ar;
+        };
+        return ownKeys(o);
+    };
+    return function (mod) {
+        if (mod && mod.__esModule) return mod;
+        var result = {};
+        if (mod != null) for (var k = ownKeys(mod), i = 0; i < k.length; i++) if (k[i] !== "default") __createBinding(result, mod, k[i]);
+        __setModuleDefault(result, mod);
+        return result;
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Tooltip = exports.Toast = exports.Tab = exports.ScrollSpy = exports.Popover = exports.Offcanvas = exports.Modal = exports.Dropdown = exports.Collapse = exports.Carousel = exports.Button = exports.Alert = void 0;
 /*!
   * Bootstrap v5.3.3 (https://getbootstrap.com/)
   * Copyright 2011-2024 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */
-import * as Popper from '@popperjs/core';
+const Popper = __importStar(require("@popperjs/core"));
 /**
  * --------------------------------------------------------------------------
  * Bootstrap dom/data.js
@@ -810,6 +846,7 @@ class Alert extends BaseComponent {
         });
     }
 }
+exports.Alert = Alert;
 /**
  * Data API implementation
  */
@@ -857,6 +894,7 @@ class Button extends BaseComponent {
         });
     }
 }
+exports.Button = Button;
 /**
  * Data API implementation
  */
@@ -1303,6 +1341,7 @@ class Carousel extends BaseComponent {
         });
     }
 }
+exports.Carousel = Carousel;
 /**
  * Data API implementation
  */
@@ -1539,6 +1578,7 @@ class Collapse extends BaseComponent {
         });
     }
 }
+exports.Collapse = Collapse;
 /**
  * Data API implementation
  */
@@ -1881,6 +1921,7 @@ class Dropdown extends BaseComponent {
         }
     }
 }
+exports.Dropdown = Dropdown;
 /**
  * Data API implementation
  */
@@ -2446,6 +2487,7 @@ class Modal extends BaseComponent {
         });
     }
 }
+exports.Modal = Modal;
 /**
  * Data API implementation
  */
@@ -2651,6 +2693,7 @@ class Offcanvas extends BaseComponent {
         });
     }
 }
+exports.Offcanvas = Offcanvas;
 /**
  * Data API implementation
  */
@@ -3384,6 +3427,7 @@ class Tooltip extends BaseComponent {
         });
     }
 }
+exports.Tooltip = Tooltip;
 /**
  * jQuery
  */
@@ -3444,6 +3488,7 @@ class Popover extends Tooltip {
         });
     }
 }
+exports.Popover = Popover;
 /**
  * jQuery
  */
@@ -3676,6 +3721,7 @@ class ScrollSpy extends BaseComponent {
         });
     }
 }
+exports.ScrollSpy = ScrollSpy;
 /**
  * Data API implementation
  */
@@ -3914,6 +3960,7 @@ class Tab extends BaseComponent {
         });
     }
 }
+exports.Tab = Tab;
 /**
  * Data API implementation
  */
@@ -4099,6 +4146,7 @@ class Toast extends BaseComponent {
         });
     }
 }
+exports.Toast = Toast;
 /**
  * Data API implementation
  */
@@ -4107,5 +4155,4 @@ enableDismissTrigger(Toast);
  * jQuery
  */
 defineJQueryPlugin(Toast);
-export { Alert, Button, Carousel, Collapse, Dropdown, Modal, Offcanvas, Popover, ScrollSpy, Tab, Toast, Tooltip };
 //# sourceMappingURL=bootstrap.esm.js.map
