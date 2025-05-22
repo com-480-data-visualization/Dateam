@@ -247,6 +247,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Open the panel first before initializing mini-map
     infoPanel.classList.add('open');
 
+    // Complete minimap section for openTeamInfoPanel function
     // Initialize or update mini map with a slight delay to ensure container is visible
     setTimeout(() => {
       const miniMapElement = document.getElementById('mini-map');
@@ -268,8 +269,36 @@ document.addEventListener('DOMContentLoaded', () => {
           maxZoom: 19
         }).addTo(miniMap);
 
-        // Add marker to mini map
-        L.marker(team.coords).addTo(miniMap);
+        // Create custom icon with team logo for minimap (smaller than main map)
+        const miniIcon = L.icon({
+          iconUrl: team.logo,
+          iconSize: [30, 30],  // Smaller than main map markers (which are 40x40)
+          iconAnchor: [15, 15], // Center the icon
+          popupAnchor: [0, -15], // Position popup above the icon
+          className: 'team-logo-marker mini-marker'
+        });
+
+        // Add marker with team logo to mini map
+        const miniMarker = L.marker(team.coords, { icon: miniIcon }).addTo(miniMap);
+        
+        // Add error handling for logo loading on minimap
+        const img = new Image();
+        img.onload = () => {
+          console.log(`✅ Minimap logo loaded for ${team.name}`);
+        };
+        img.onerror = () => {
+          console.warn(`⚠️ Failed to load minimap logo for ${team.name}, using fallback`);
+          // Create fallback icon with placeholder - use consistent path
+          const fallbackIcon = L.icon({
+            iconUrl: './assets/placeholder-logo-svg.svg', // Match your HTML placeholder path
+            iconSize: [30, 30],
+            iconAnchor: [15, 15],
+            popupAnchor: [0, -15],
+            className: 'team-logo-marker mini-marker fallback'
+          });
+          miniMarker.setIcon(fallbackIcon);
+        };
+        img.src = team.logo;
 
         // Disable interactions on mini map
         miniMap.dragging.disable();

@@ -6,7 +6,7 @@
   "homepage": "https://com-480-data-visualization.github.io/Dateam/",
   "scripts": {
     "start": "parcel -p 8081",
-    "build": "parcel build src/index.html --public-url ./ && cp -r src/assets/data/ src/assets/logos/ dist/assets/",
+    "build": "parcel build src/index.html --public-url ./ && mkdir -p dist/assets/data/mapping && mkdir -p dist/assets/logos && cp src/assets/data/mapping/team_logo_mapping_geocoded.csv dist/assets/data/mapping/ && cp src/assets/logos/* dist/assets/logos/",
     "deploy": "npm run build && gh-pages -d dist"
   },
   "author": "",
