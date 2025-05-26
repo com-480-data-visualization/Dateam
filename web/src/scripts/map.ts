@@ -62,19 +62,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function drawTransfers(yearPeriod: number[], all_transfers: Transfer[]) {
     const fee2Weight = (fee: number): number => {
-      if (fee > 1e8) {
+      if (fee > 20e6) {
         return 20;
       }
-      if (fee > 1e7) {
+      if (fee > 15e6) {
         return 10;
       }
-      if (fee > 1e6) {
+      if (fee > 10e6) {
         return 7;
       }
-      if (fee > 1e4) {
+      if (fee > 5e6) {
         return 3;
       }
       return 1;
+    }
+    const fee2Color = (fee: number): string => {
+      if (fee > 20e6) {
+        return "red";
+      }
+      if (fee > 15e6) {
+        return "orange";
+      }
+      if (fee > 10e6) {
+        return "yellow";
+      }
+      if (fee > 5e6) {
+        return "green";
+      }
+      return "black";
     }
     transferLines.forEach(l => l.removeFrom(map));
     transferLines = [];
@@ -87,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const line = new L.Polyline([
           new L.LatLng(latlon_from[0], latlon_from[1]),
           new L.LatLng(latlon_to[0], latlon_to[1])],
-          { color: 'red', weight: fee2Weight(transfer.transfer_fee || 0), opacity: 0.5, smoothFactor: 1 })
+          { color: fee2Color(transfer.transfer_fee), weight: fee2Weight(transfer.transfer_fee || 0), opacity: 0.5, smoothFactor: 1 })
             .arrowheads({yawn: 30, size: '40px'});
         transferLines.push(line);
         line.addTo(map);
@@ -429,7 +444,6 @@ document.addEventListener('DOMContentLoaded', () => {
           // Find the corresponding sidebar element
           const sidebarTeam = document.querySelector(`[title="${team.name}"]`) as HTMLElement;
           openTeamInfoPanel(extendedTeam, sidebarTeam);
-          marker.closePopup();
 
           // Prevent event from propagating to map
           L.DomEvent.stopPropagation(e);
@@ -444,12 +458,7 @@ document.addEventListener('DOMContentLoaded', () => {
           drawTransfers(currentYearRange, transfers.filter(transfer => transfer.team_from == extendedTeam.transfers_name || transfer.team_to == extendedTeam.transfers_name));
         });
         marker.getPopup().on("remove", () => {
-          setTimeout(() => {
-            if (!activeTeamElement) {
-              clearTransfersFromMap();
-              activeTeam = null;
-            }
-          }, 500)
+          clearTransfersFromMap();
         });
 
         // Store marker reference for later
