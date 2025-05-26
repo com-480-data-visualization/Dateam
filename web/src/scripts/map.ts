@@ -1,6 +1,6 @@
 console.log("📍 map.ts loaded");
 
-import L, { Polyline } from 'leaflet';
+import L, { extend, Polyline } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { stadiums, Transfer, transfers } from './constants';
 import { YEARS } from './constants';
@@ -54,12 +54,27 @@ document.addEventListener('DOMContentLoaded', () => {
   }).addTo(map);
 
   console.log("✅ Map initialized");
-  let lines: Polyline[] = [];
+  let transferLines: Polyline[] = [];
 
-  function drawTransfers(yearPeriod: number[]) {
-    lines.forEach(l => l.removeFrom(map));
-    lines = [];
-    transfers.forEach((transfer: Transfer) => {
+  function drawTransfers(yearPeriod: number[], all_transfers: Transfer[]) {
+    const fee2Weight = (fee: number): number => {
+      if (fee > 1e8) {
+        return 20;
+      }
+      if (fee > 1e7) {
+        return 10;
+      }
+      if (fee > 1e6) {
+        return 7;
+      }
+      if (fee > 1e4) {
+        return 3;
+      }
+      return 1;
+    }
+    transferLines.forEach(l => l.removeFrom(map));
+    transferLines = [];
+    all_transfers.forEach((transfer: Transfer) => {
       const latlon_from = transfer.latlon_from, latlon_to = transfer.latlon_to;
       if (Number.parseInt(transfer.season.split("-")[0]) < yearPeriod[0] || Number.parseInt(transfer.season.split("-")[0]) > yearPeriod[1]) {
         return;
@@ -68,8 +83,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const line = new L.Polyline([
           new L.LatLng(latlon_from[0], latlon_from[1]),
           new L.LatLng(latlon_to[0], latlon_to[1])],
-          { color: 'red', weight: 1, opacity: 0.5, smoothFactor: 1 });
-        lines.push(line);
+          { color: 'red', weight: fee2Weight(transfer.transfer_fee || 0), opacity: 0.5, smoothFactor: 1 });
+        transferLines.push(line);
         line.addTo(map);
       }
     });
@@ -77,8 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.addEventListener("yearSelectorChanged", (e: CustomEvent) => {
     currentYearRange = e.detail.newYears;
-
-    drawTransfers(e.detail.newYears);
+    drawTransfers(e.detail.newYears, transfers);
     const teamName = document.getElementById('team-name')?.textContent;
     if (teamName) {
       drawTeamWinsChart(teamName);
@@ -322,7 +336,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     // drawTeamWinsChart(team.name);
     // drawTeamSpendingChart(team.name);
-
     setTimeout(() => {
     drawTeamWinsChart(team.name);
     drawTeamSpendingChart(team.name);
@@ -376,7 +389,7 @@ document.addEventListener('DOMContentLoaded', () => {
           team_api_id: Math.floor(10000 + Math.random() * 90000), // Random ID
           team_fifa_api_id: Math.floor(100000 + Math.random() * 900000), // Random FIFA ID
           team_short_name: team.name.split(' ')[0], // First word of name as short name
-          transfers_name: team.name, // Same as name for now
+          transfers_name: team.transfers_name,
           country: matchedTeam?.country || getCountryFromCoords(team.coords), // Placeholder function
           league: matchedTeam?.league || getLeagueFromCountry(matchedTeam?.country || getCountryFromCoords(team.coords)) // Placeholder function
         };
@@ -410,6 +423,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Bind popup with our custom content
         marker.bindPopup(popupContent);
+
+        // Draw the transfers on click
+        marker.on("click", () => {
+          drawTransfers(currentYearRange, transfers.filter(transfer => transfer.team_from == extendedTeam.transfers_name || transfer.team_to == extendedTeam.transfers_name))
+        });
+        marker.getPopup().on("remove", () => transferLines.forEach(l => l.remove()));
 
         // Store marker reference for later
         teamMarkers[team.name] = marker;

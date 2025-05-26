@@ -6,6 +6,7 @@ export interface Stadium {
   name: string;
   coords: [number, number];
   logo: string;
+  transfers_name: string;  // mapping to the transfer file
 }
 
 export interface Transfer {
@@ -30,12 +31,14 @@ export const fallbackStadiums: Stadium[] = [
   {
     name: "FC Barcelona",
     coords: [41.3809, 2.1228],
-    logo: "https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg"
+    logo: "https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg",
+    transfers_name: "FC Barcelona"
   },
   {
     name: "Manchester United",
     coords: [53.4631, -2.2913],
-    logo: "https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg"
+    logo: "https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg",
+    transfers_name: "FC Barcelona"
   }
 ];
 
