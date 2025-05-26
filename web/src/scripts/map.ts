@@ -8,7 +8,7 @@ import { ScrollSidebar } from './sidebar';
 import * as d3 from "d3";
 import data from '../assets/data/team_stats.json';
 import transfersData from '../assets/data/clean_transfers.json';
-
+import 'leaflet-arrowheads';
 
 let currentYearRange: [number, number] = [2008, 2015];
 
@@ -87,7 +87,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const line = new L.Polyline([
           new L.LatLng(latlon_from[0], latlon_from[1]),
           new L.LatLng(latlon_to[0], latlon_to[1])],
-          { color: 'red', weight: fee2Weight(transfer.transfer_fee || 0), opacity: 0.5, smoothFactor: 1 });
+          { color: 'red', weight: fee2Weight(transfer.transfer_fee || 0), opacity: 0.5, smoothFactor: 1 })
+            .arrowheads({yawn: 30, size: '40px'});
         transferLines.push(line);
         line.addTo(map);
       }
@@ -96,7 +97,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.addEventListener("yearSelectorChanged", (e: CustomEvent) => {
     currentYearRange = e.detail.newYears;
-    drawTransfers(e.detail.newYears, transfers);
+    if (transferLines.length) {
+      drawTransfers(e.detail.newYears, transfers.filter(t => t.team_from == activeTeam.transfers_name || t.team_to == activeTeam.transfers_name));
+    }
     const teamName = document.getElementById('team-name')?.textContent;
     if (teamName) {
       drawTeamWinsChart(teamName);
@@ -127,6 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Track current active team in sidebar
   let activeTeamElement: HTMLElement | null = null;
+  let activeTeam: ExtendedTeamData | null;
 
   // Mini map for stadium location
   let miniMap: L.Map | null = null;
@@ -136,6 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!infoPanel) return;
 
     clearTransfersFromMap();
+    activeTeam = null;
 
     infoPanel.classList.remove('open');
 
@@ -221,6 +226,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!infoPanel) return;
 
     console.log("Opening info panel for:", team);
+    activeTeam = team;
 
     // Update active state in sidebar
     if (activeTeamElement) {
@@ -338,14 +344,14 @@ document.addEventListener('DOMContentLoaded', () => {
     if (marker) {
       setTimeout(() => {
         marker.openPopup();
-      }, 1500); // Delay to match the flyTo animation
+      }, 500); // Delay to match the flyTo animation
     }
     // drawTeamWinsChart(team.name);
     // drawTeamSpendingChart(team.name);
     setTimeout(() => {
       drawTeamWinsChart(team.name);
       drawTeamSpendingChart(team.name);
-    }, 500);
+    }, 100);
 
   }
 
@@ -434,11 +440,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Draw the transfers on click
         marker.on("click", () => {
+          activeTeam = extendedTeam;
           drawTransfers(currentYearRange, transfers.filter(transfer => transfer.team_from == extendedTeam.transfers_name || transfer.team_to == extendedTeam.transfers_name));
         });
         marker.getPopup().on("remove", () => {
           setTimeout(() => {
-            if (!activeTeamElement) clearTransfersFromMap();
+            if (!activeTeamElement) {
+              clearTransfersFromMap();
+              activeTeam = null;
+            }
           }, 500)
         });
 
