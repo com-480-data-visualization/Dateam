@@ -56,6 +56,10 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log("✅ Map initialized");
   let transferLines: Polyline[] = [];
 
+  function clearTransfersFromMap() {
+    transferLines.forEach(t => t.remove());
+  }
+
   function drawTransfers(yearPeriod: number[], all_transfers: Transfer[]) {
     const fee2Weight = (fee: number): number => {
       if (fee > 1e8) {
@@ -96,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const teamName = document.getElementById('team-name')?.textContent;
     if (teamName) {
       drawTeamWinsChart(teamName);
-      drawTeamSpendingChart(teamName); 
+      drawTeamSpendingChart(teamName);
     }
   });
 
@@ -130,6 +134,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // Function to close the info panel
   function closeInfoPanel() {
     if (!infoPanel) return;
+
+    clearTransfersFromMap();
 
     infoPanel.classList.remove('open');
 
@@ -294,7 +300,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Add marker with team logo to mini map
         const miniMarker = L.marker(team.coords, { icon: miniIcon }).addTo(miniMap);
-        
+
         // Add error handling for logo loading on minimap
         const img = new Image();
         img.onload = () => {
@@ -337,9 +343,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // drawTeamWinsChart(team.name);
     // drawTeamSpendingChart(team.name);
     setTimeout(() => {
-    drawTeamWinsChart(team.name);
-    drawTeamSpendingChart(team.name);
-  }, 500);
+      drawTeamWinsChart(team.name);
+      drawTeamSpendingChart(team.name);
+    }, 500);
 
   }
 
@@ -348,12 +354,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // If the info panel is already open for this team, close it
     if (activeTeamElement === clickedElement && infoPanel?.classList.contains('open')) {
       closeInfoPanel();
+      clearTransfersFromMap();
     } else {
       // Otherwise, open for the clicked team
       openTeamInfoPanel(team, clickedElement);
+      drawTransfers(currentYearRange, transfers.filter(transfer => transfer.team_from == team.transfers_name || transfer.team_to == team.transfers_name));
     }
   }
-  
+
   // Add markers function - will be called once stadiums are loaded
   function addMarkers() {
     if (stadiums.length === 0) {
@@ -426,9 +434,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Draw the transfers on click
         marker.on("click", () => {
-          drawTransfers(currentYearRange, transfers.filter(transfer => transfer.team_from == extendedTeam.transfers_name || transfer.team_to == extendedTeam.transfers_name))
+          drawTransfers(currentYearRange, transfers.filter(transfer => transfer.team_from == extendedTeam.transfers_name || transfer.team_to == extendedTeam.transfers_name));
         });
-        marker.getPopup().on("remove", () => transferLines.forEach(l => l.remove()));
+        marker.getPopup().on("remove", () => {
+          setTimeout(() => {
+            if (!activeTeamElement) clearTransfersFromMap();
+          }, 500)
+        });
 
         // Store marker reference for later
         teamMarkers[team.name] = marker;
@@ -460,7 +472,7 @@ document.addEventListener('DOMContentLoaded', () => {
       console.error("❌ Sidebar team list element not found");
       return;
     }
-  
+
     sidebar = new ScrollSidebar('sidebar-team-list');
     sidebar.initWithTeams(stadiums, (team) => {
       const extendedTeam = extendedTeams[team.name];
@@ -471,7 +483,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
     });
-  
+
     // 🧠 Add search filtering logic
     const searchInput = document.getElementById('team-search') as HTMLInputElement;
     if (searchInput) {
@@ -487,16 +499,16 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const searchInput = document.getElementById("team-search") as HTMLInputElement;
-searchInput?.addEventListener("input", () => {
-  const query = searchInput.value.toLowerCase();
-  const teamItems = document.querySelectorAll(".sidebar-team-item");
+  searchInput?.addEventListener("input", () => {
+    const query = searchInput.value.toLowerCase();
+    const teamItems = document.querySelectorAll(".sidebar-team-item");
 
-  teamItems.forEach((item) => {
-    const title = item.getAttribute("title")?.toLowerCase() || "";
-    (item as HTMLElement).style.display = title.includes(query) ? "block" : "none";
+    teamItems.forEach((item) => {
+      const title = item.getAttribute("title")?.toLowerCase() || "";
+      (item as HTMLElement).style.display = title.includes(query) ? "block" : "none";
+    });
   });
-});
-  
+
   // Helper function to get country from coordinates (placeholder)
   function getCountryFromCoords(coords: [number, number]): string {
     // This is a very simplified approach using coordinate ranges
@@ -658,67 +670,67 @@ async function drawTeamWinsChart(teamName: string) {
     const showDefeats = (document.getElementById("toggle-defeats") as HTMLInputElement)?.checked;
     const showDraws = (document.getElementById("toggle-draws") as HTMLInputElement)?.checked;
 
-  if (!showWins && !showDefeats && !showDraws) {
-    chartContainer.innerHTML = `<p class="text-muted">Select at least one option to display data.</p>`;
-    return;
-  }
+    if (!showWins && !showDefeats && !showDraws) {
+      chartContainer.innerHTML = `<p class="text-muted">Select at least one option to display data.</p>`;
+      return;
+    }
 
-if (showWins) {
-  svg.selectAll(".dot-win")
-    .data(teamData)
-    .enter()
-    .append("circle")
-    .attr("class", "dot-win")
-    .attr("cx", d => x(d.season)!)
-    .attr("cy", d => y(d.total_wins))
-    .attr("r", 4)
-    .attr("fill", "#198754");
+    if (showWins) {
+      svg.selectAll(".dot-win")
+        .data(teamData)
+        .enter()
+        .append("circle")
+        .attr("class", "dot-win")
+        .attr("cx", d => x(d.season)!)
+        .attr("cy", d => y(d.total_wins))
+        .attr("r", 4)
+        .attr("fill", "#198754");
 
-  svg.append("path")
-    .datum(teamData)
-    .attr("fill", "none")
-    .attr("stroke", "#198754")
-    .attr("stroke-width", 2)
-    .attr("d", lineWins);
-}
+      svg.append("path")
+        .datum(teamData)
+        .attr("fill", "none")
+        .attr("stroke", "#198754")
+        .attr("stroke-width", 2)
+        .attr("d", lineWins);
+    }
 
-if (showDefeats) {
-  svg.selectAll(".dot-defeat")
-    .data(teamData)
-    .enter()
-    .append("circle")
-    .attr("class", "dot-defeat")
-    .attr("cx", d => x(d.season)!)
-    .attr("cy", d => y(d.total_defeats))
-    .attr("r", 4)
-    .attr("fill", "#dc3545");
+    if (showDefeats) {
+      svg.selectAll(".dot-defeat")
+        .data(teamData)
+        .enter()
+        .append("circle")
+        .attr("class", "dot-defeat")
+        .attr("cx", d => x(d.season)!)
+        .attr("cy", d => y(d.total_defeats))
+        .attr("r", 4)
+        .attr("fill", "#dc3545");
 
-  svg.append("path")
-    .datum(teamData)
-    .attr("fill", "none")
-    .attr("stroke", "#dc3545")
-    .attr("stroke-width", 2)
-    .attr("d", lineDefeats);
-}
+      svg.append("path")
+        .datum(teamData)
+        .attr("fill", "none")
+        .attr("stroke", "#dc3545")
+        .attr("stroke-width", 2)
+        .attr("d", lineDefeats);
+    }
 
-if (showDraws) {
-  svg.selectAll(".dot-draw")
-    .data(teamData)
-    .enter()
-    .append("circle")
-    .attr("class", "dot-draw")
-    .attr("cx", d => x(d.season)!)
-    .attr("cy", d => y(d.total_draws))
-    .attr("r", 4)
-    .attr("fill", "#0d6efd");
+    if (showDraws) {
+      svg.selectAll(".dot-draw")
+        .data(teamData)
+        .enter()
+        .append("circle")
+        .attr("class", "dot-draw")
+        .attr("cx", d => x(d.season)!)
+        .attr("cy", d => y(d.total_draws))
+        .attr("r", 4)
+        .attr("fill", "#0d6efd");
 
-  svg.append("path")
-    .datum(teamData)
-    .attr("fill", "none")
-    .attr("stroke", "#0d6efd")
-    .attr("stroke-width", 2)
-    .attr("d", lineDraws);
-}
+      svg.append("path")
+        .datum(teamData)
+        .attr("fill", "none")
+        .attr("stroke", "#0d6efd")
+        .attr("stroke-width", 2)
+        .attr("d", lineDraws);
+    }
 
 
     // Add X axis
@@ -779,16 +791,16 @@ if (showDraws) {
     chartContainer.innerHTML = `<p class="text-danger">Error loading chart.</p>`;
   }
   ["toggle-wins", "toggle-defeats", "toggle-draws"].forEach(id => {
-  const checkbox = document.getElementById(id) as HTMLInputElement;
-  if (checkbox) {
-    checkbox.onchange = () => {
-      const liveTeamName = document.getElementById("team-name")?.textContent;
-      if (liveTeamName) {
-        drawTeamWinsChart(liveTeamName);
-      }
-    };
-  }
-});
+    const checkbox = document.getElementById(id) as HTMLInputElement;
+    if (checkbox) {
+      checkbox.onchange = () => {
+        const liveTeamName = document.getElementById("team-name")?.textContent;
+        if (liveTeamName) {
+          drawTeamWinsChart(liveTeamName);
+        }
+      };
+    }
+  });
 
 }
 
@@ -826,9 +838,9 @@ function drawTeamSpendingChart(teamName: string) {
     const grouped = d3.rollups(
       filtered,
       entries => ({
-      total_spent: d3.sum(entries.filter(d => d.team_to?.trim() === resolvedTransferName), d => +d.transfer_fee),
-      total_sold: d3.sum(entries.filter(d => d.team_from?.trim() === resolvedTransferName), d => +d.transfer_fee)
-    }),
+        total_spent: d3.sum(entries.filter(d => d.team_to?.trim() === resolvedTransferName), d => +d.transfer_fee),
+        total_sold: d3.sum(entries.filter(d => d.team_from?.trim() === resolvedTransferName), d => +d.transfer_fee)
+      }),
       d => d.season
     );
 
@@ -841,7 +853,7 @@ function drawTeamSpendingChart(teamName: string) {
     if (data.length === 0 || (data.every(d => d.total_spent === 0) && data.every(d => d.total_sold === 0))) {
       chartContainer.innerHTML = `<p class="text-muted">No data available for "${teamName}" in selected years.</p>`;
       return;
-      }
+    }
 
     const width = chartContainer.clientWidth || 550;
     const height = 300;
