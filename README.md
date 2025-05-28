@@ -21,28 +21,30 @@ This website is designed for a wide audience:
 - **📈 Analysts and scouts** seeking patterns in transfer spending and squad development.
 - **🎓 Researchers and students** studying the intersection of sports, economics, and data visualization.
 
-## Accessing our website
+## 🌐 Accessing our website
 Our website can be easily accessed at:  
 [https://com-480-data-visualization.github.io/Dateam/](https://com-480-data-visualization.github.io/Dateam/)
 
+### 🛠️ Running Locally
+
 If you want to run the website on your local machine, follow these steps:
-1. **Clone the repository**  
+1. **📥 Clone the repository**  
    ```bash
    git clone https://github.com/com-480-data-visualization/Dateam.git
-2. **Navigate to the web directory**  
+2. **📂 Navigate to the web directory**  
    ```bash
    cd Dateam/web
-3. **Start the development server**  
+3. **▶️ Start the development server**  
    ```bash
    npm run start
-4. **Open the website in your browser**  
+4. **🌍 Open the website in your browser**  
    Once the server is running, open your browser and go to:  
    [http://localhost:8081](http://localhost:8081)
 
 
 For more details regarding development mode and deployment, check [`/web/README.md`](web/README.md).
 
-## Datasets
+## 📚 Datasets
 - **Mathien**, “European Soccer Database”, 2017.  
    [Dataset Link](https://www.kaggle.com/datasets/hugomathien/soccer)
 
@@ -51,7 +53,7 @@ For more details regarding development mode and deployment, check [`/web/README.
 
 
 
-## Previous milestones
+## 📔 Previous milestones
 
 Milestone 1 can be found here : [**Milestone 1**](/milestones/milestone1.md)  
 Milestone 2 can be found here : [**Milestone 2**](/milestones/milestone2.md)  
