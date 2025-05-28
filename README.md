@@ -7,12 +7,9 @@
 | Gafsi Amene| 345583 |
 
 
-Our final report can be found [here](com-480_process_book.pdf).  
-
-Our final screencast can be found [here](screencast.mp4).
-
+Our final report can be found [here](com-480_process_book.pdf).  \\
+Our final screencast can be found [here](screencast.mp4). \\
 Our final website can be accessed [here](https://com-480-data-visualization.github.io/Dateam/)
-
 
 # When Football meets Data
 Our project explores the intersection of European football and data visualization. Using historical match data and transfer records, we’ve built an interactive platform that allows users to explore how clubs perform, spend, and evolve over time.
@@ -56,6 +53,5 @@ For more details regarding development mode and deployment, check [`/web/README.
 
 ## Previous milestones
 
-Milestone 1 can be found here : [**Milestone 1**](/milestones/milestone1.md)
-
+Milestone 1 can be found here : [**Milestone 1**](/milestones/milestone1.md) \\
 Milestone 2 can be found here : [**Milestone 2**](/milestones/milestone2.md)
