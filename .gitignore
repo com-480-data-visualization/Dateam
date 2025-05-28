@@ -7,3 +7,4 @@ web/dist
 web/node_modules
 com-480-dateam@1.0.0
 parcel
+.DS_Store
