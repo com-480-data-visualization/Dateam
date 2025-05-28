@@ -1,0 +1,297 @@
+original_team,normalized_team,matched_logo_name,match_score,matched_deduped_team,match_score_meta,logo_country,logo_league,logo_filename
+KRC Genk,krc genk,krc genk,100.0,krc genk,100.0,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Beerschot AC,beerhot,beerhot va,82.35294117647058,beerhot,100.0,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+SV Zulte-Waregem,sv zulte waregem,sv zulte waregem,100.0,zulte waregem,85.71428571428572,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Sporting Lokeren,sporting lokeren,sporting cp,66.66666666666667,krc genk,33.333333333333336,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+KSV Cercle Brugge,ksv cercle brugge,cercle brugge,86.66666666666667,krc genk,48.0,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+RSC Anderlecht,r anderlecht,r anderlecht,100.0,beerhot,42.10526315789473,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+KAA Gent,kaa gent,kaa gent,100.0,krc genk,62.5,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+RAEC Mons,raec mons,as mono,62.5,krc genk,47.05882352941176,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+FCV Dender EH,v dender eh,v dender eh,100.0,beerhot,44.44444444444444,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Standard de Liège,standard de liege,standard liege,90.32258064516128,zulte waregem,40.0,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+KV Mechelen,kv mechelen,kv mechelen,100.0,krc genk,42.10526315789473,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Club Brugge KV,club brugge kv,club brugge kv,100.0,krc genk,45.45454545454546,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+KSV Roeselare,ksv roeselare,kv mechelen,58.33333333333333,zulte waregem,30.76923076923077,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+KV Kortrijk,kv kortrijk,kv kortrijk,100.0,krc genk,31.57894736842105,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Tubize,tubize,vizela,50.0,beerhot,30.76923076923077,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Royal Excel Mouscron,royal excel mouron,royal antwerp,51.61290322580645,zulte waregem,32.25806451612904,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+KVC Westerlo,kvc westerlo,kvc westerlo,100.0,beerhot,42.10526315789473,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Sporting Charleroi,sporting charleroi,r charleroi,75.86206896551724,zulte waregem,32.25806451612904,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Sint-Truidense VV,sint truidense vv,sint truidense vv,100.0,zulte waregem,27.58620689655172,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Lierse SK,lierse sk,odense bk,55.55555555555556,zulte waregem,36.36363636363637,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+KAS Eupen,kas eupen,kas eupen,100.0,krc genk,47.05882352941176,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Oud-Heverlee Leuven,oud heverlee leuven,oud heverlee leuven,100.0,zulte waregem,38.70967741935484,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Waasland-Beveren,waasland beveren,slovan liberec,60.0,beerhot,36.36363636363637,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+KV Oostende,kv oostende,kv oostende,100.0,krc genk,42.10526315789473,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Manchester United,manchester united,manchester united,100.0,beerhot,33.333333333333336,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Newcastle United,newcastle united,newcastle united,100.0,zulte waregem,34.48275862068966,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Arsenal,arsenal,arsenal,100.0,krc genk,40.0,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+West Bromwich Albion,west bromwich albion,brighton & hove albion,52.38095238095239,beerhot,29.629629629629623,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Sunderland,sunderland,nordsjaelland,60.86956521739131,zulte waregem,26.086956521739136,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Liverpool,liverpool,liverpool,100.0,beerhot,37.5,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+West Ham United,west ham united,west ham united,100.0,zulte waregem,28.57142857142857,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Wigan Athletic,wigan athletic,athletic,72.72727272727273,zulte waregem,22.22222222222222,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Aston Villa,aston villa,aston villa,100.0,zulte waregem,25.0,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Manchester City,manchester city,manchester city,100.0,beerhot,36.36363636363637,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Everton,everton,everton,100.0,beerhot,57.14285714285714,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Blackburn Rovers,blkburn rovers,caykur rizespor,48.27586206896552,krc genk,36.36363636363637,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Middlesbrough,middlesbrough,if elfsborg,50.0,zulte waregem,30.76923076923077,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Tottenham Hotspur,tottenham hotspur,tottenham hotspur,100.0,beerhot,33.333333333333336,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Bolton Wanderers,bolton wanderers,wolverhampton wanderers,76.92307692307692,zulte waregem,48.27586206896552,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Stoke City,stoke city,leicester city,66.66666666666667,zulte waregem,26.086956521739136,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Hull City,hull city,almere city,60.0,zulte waregem,27.27272727272727,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Fulham,fulham,fulham,100.0,zulte waregem,42.10526315789473,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Chelsea,chelsea,chelsea,100.0,zulte waregem,30.000000000000004,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Portsmouth,portsmouth,porto,66.66666666666667,beerhot,35.29411764705882,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Birmingham City,birmingham city,man city,60.86956521739131,beerhot,36.36363636363637,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Wolverhampton Wanderers,wolverhampton wanderers,wolverhampton wanderers,100.0,zulte waregem,38.888888888888886,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Burnley,burnley,burnley,100.0,zulte waregem,30.000000000000004,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Blackpool,blkpool,liverpool,62.5,beerhot,28.57142857142857,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Swansea City,swansea city,man city,70.0,zulte waregem,24.0,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Queens Park Rangers,queens park rangers,sparta prague,56.25,zulte waregem,43.75,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Norwich City,norwich city,norwich,73.6842105263158,beerhot,31.57894736842105,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Southampton,southampton,southampton,100.0,zulte waregem,33.333333333333336,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Reading,reading,r seraing,75.0,krc genk,40.0,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Crystal Palace,crystal pale,crystal pale,100.0,zulte waregem,32.0,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Cardiff City,cardiff city,almere city,60.86956521739131,beerhot,21.052631578947366,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Leicester City,leicester city,leicester city,100.0,beerhot,38.095238095238095,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Bournemouth,bournemouth,a bournemouth,91.66666666666666,beerhot,44.44444444444444,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Watford,watford,watford,100.0,zulte waregem,30.000000000000004,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+AJ Auxerre,aj auxerre,aj auxerre,100.0,zulte waregem,34.78260869565217,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+FC Nantes,nantes,nantes,100.0,zulte waregem,21.052631578947366,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Girondins de Bordeaux,girondins de bordeaux,g bordeaux,64.51612903225806,zulte waregem,23.529411764705888,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+SM Caen,sm caen,st gallen,62.5,krc genk,40.0,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Le Havre AC,le havre,le havre,100.0,zulte waregem,57.14285714285714,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+OGC Nice,ogc nice,ogc nice,100.0,krc genk,37.5,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Le Mans FC,le mans,lechia gdansk,60.0,zulte waregem,40.0,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+FC Lorient,lorient,lorient,100.0,krc genk,40.0,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Olympique Lyonnais,olympique lyonnais,olympique lyon,87.5,zulte waregem,25.806451612903224,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Toulouse FC,toulouse,toulouse,100.0,zulte waregem,28.57142857142857,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+AS Monaco,as mono,as mono,100.0,krc genk,26.66666666666667,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Paris Saint-Germain,paris saint germain,paris saint germain,100.0,krc genk,38.46153846153846,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+AS Nancy-Lorraine,as nancy lorraine,paris saint germain,55.55555555555556,zulte waregem,27.58620689655172,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+LOSC Lille,lo lille,lo lille,100.0,zulte waregem,28.57142857142857,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Stade Rennais FC,stade rennais,stade rennais,100.0,zulte waregem,38.46153846153846,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Olympique de Marseille,olympique de marseille,olympique marseille,92.6829268292683,zulte waregem,40.0,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+FC Sochaux-Montbéliard,sochaux montbeliard,montpellier,53.333333333333336,zulte waregem,32.25806451612904,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Grenoble Foot 38,grenoble foot 38,clermont foot 63,56.25,beerhot,34.78260869565217,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Valenciennes FC,valenciennes,valencia cf,60.86956521739131,zulte waregem,32.0,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+AS Saint-Étienne,as saint etienne,as saint etienne,100.0,zulte waregem,28.57142857142857,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+RC Lens,rc lens,rc lens,100.0,krc genk,66.66666666666667,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Montpellier Hérault SC,montpellier herault,montpellier,73.33333333333334,beerhot,38.46153846153846,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+US Boulogne Cote D'Opale,us boulogne cote d'opale,sv zulte waregem,44.99999999999999,zulte waregem,37.83783783783784,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+AC Arles-Avignon,arles avignon,celta de vigo,53.84615384615385,zulte waregem,32.0,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Stade Brestois 29,stade brestois 29,stade brestois 29,100.0,zulte waregem,33.333333333333336,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+AC Ajaccio,ajcio,ajcio,100.0,beerhot,16.666666666666664,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Évian Thonon Gaillard FC,evian thonon gaillard,aston villa,56.25,zulte waregem,23.529411764705888,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Dijon FCO,dijon o,sion,54.54545454545454,beerhot,14.28571428571429,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Stade de Reims,stade de reims,stade reims,88.0,zulte waregem,44.44444444444444,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+SC Bastia,bastia,boavista,71.42857142857143,beerhot,30.76923076923077,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+ES Troyes AC,es troyes,est troyes,94.73684210526316,beerhot,37.5,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+En Avant de Guingamp,en avant de guingamp,levante ud,53.333333333333336,zulte waregem,36.36363636363637,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+FC Metz,metz,metz,100.0,beerhot,36.36363636363637,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Angers SCO,angers o,angers o,100.0,beerhot,40.0,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+GFC Ajaccio,g ajcio,ajcio,83.33333333333334,zulte waregem,20.0,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+FC Bayern Munich,bayern munich,bayern munich,100.0,beerhot,40.0,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Hamburger SV,hamburger sv,rangers,52.63157894736843,zulte waregem,32.0,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Bayer 04 Leverkusen,bayer 04 leverkusen,bayer 04 leverkusen,100.0,beerhot,30.76923076923077,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Borussia Dortmund,borussia dortmund,borussia dortmund,100.0,beerhot,33.333333333333336,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+FC Schalke 04,halke 04,halke 04,100.0,zulte waregem,28.57142857142857,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Hannover 96,hannover 96,angers o,52.63157894736843,beerhot,22.22222222222222,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+VfL Wolfsburg,vfl wolfsburg,vfl wolfsburg,100.0,zulte waregem,38.46153846153846,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+1. FC Köln,1  koln,1 koln,92.3076923076923,krc genk,25.0,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Eintracht Frankfurt,eintrht frankfurt,eintrht frankfurt,100.0,beerhot,33.333333333333336,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Hertha BSC Berlin,hertha b berlin,hertha b,69.56521739130434,krc genk,34.78260869565217,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+DSC Arminia Bielefeld,d arminia bielefeld,arminia bielefeld,94.44444444444444,zulte waregem,31.25,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+SV Werder Bremen,sv werder bremen,sv werder bremen,100.0,zulte waregem,41.3793103448276,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+FC Energie Cottbus,energie cottbus,fenerbahce sk,50.0,beerhot,45.45454545454546,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+TSG 1899 Hoffenheim,tsg 1899 hoffenheim,tsg 1899 hoffenheim,100.0,zulte waregem,31.25,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Borussia Mönchengladbach,borussia monchengladbh,borussia monchengladbh,100.0,krc genk,26.66666666666667,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+VfB Stuttgart,vfb stuttgart,vfb stuttgart,100.0,zulte waregem,30.76923076923077,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Karlsruher SC,karlsruher,kas eupen,52.63157894736843,krc genk,33.333333333333336,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+VfL Bochum,vfl bochum,vfl bochum,100.0,zulte waregem,26.086956521739136,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+SC Freiburg,freiburg,freiburg,100.0,zulte waregem,28.57142857142857,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+1. FC Nürnberg,1  nurnberg,1 union berlin,56.00000000000001,zulte waregem,32.0,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+1. FSV Mainz 05,1 fsv mainz 05,1fsv mainz 05,96.2962962962963,krc genk,17.391304347826086,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+1. FC Kaiserslautern,1  kaiserslautern,kas eupen,53.84615384615385,krc genk,30.76923076923077,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+FC St. Pauli,st pauli,st pauli,100.0,zulte waregem,27.27272727272727,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+FC Augsburg,augsburg,augsburg,100.0,zulte waregem,28.57142857142857,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Fortuna Düsseldorf,fortuna dusseldorf,fortuna sittard,60.60606060606061,krc genk,23.076923076923077,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+SpVgg Greuther Fürth,spvgg greuther furth,greuther furth,82.35294117647058,zulte waregem,30.303030303030297,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Eintracht Braunschweig,eintrht braunhweig,eintrht frankfurt,62.85714285714285,zulte waregem,32.25806451612904,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+SC Paderborn 07,paderborn 07,degerfors if,50.0,beerhot,31.57894736842105,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+FC Ingolstadt 04,ingolstadt 04,livingston,43.47826086956522,zulte waregem,23.076923076923077,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+SV Darmstadt 98,sv darmstadt 98,sv darmstadt 98,100.0,zulte waregem,28.57142857142857,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Atalanta,atalanta,atalanta bc,84.21052631578947,zulte waregem,28.57142857142857,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Siena,siena,arsenal,66.66666666666667,krc genk,30.76923076923077,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Cagliari,cagliari,cagliari calcio,69.56521739130434,zulte waregem,28.57142857142857,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Lazio,lazio,lazio,100.0,zulte waregem,22.22222222222222,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Catania,catania,casa pia,66.66666666666667,krc genk,26.66666666666667,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Genoa,genoa,genoa c,83.33333333333334,krc genk,46.15384615384615,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Chievo Verona,chievo verona,hellas verona,69.23076923076923,beerhot,40.0,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Reggio Calabria,reggio calabria,r charleroi,53.84615384615385,zulte waregem,28.57142857142857,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Fiorentina,fiorentina,f fiorentina,90.9090909090909,krc genk,33.333333333333336,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Juventus,juventus,juventus,100.0,beerhot,26.66666666666667,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Milan,milan,milan,100.0,zulte waregem,22.22222222222222,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Bologna,bologna,bologna  1909,70.0,beerhot,28.57142857142857,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Roma,roma,as roma,72.72727272727273,beerhot,36.36363636363637,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Napoli,napoli,s napoli,85.71428571428572,beerhot,15.384615384615383,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Sampdoria,sampdoria,sampdoria,100.0,zulte waregem,18.181818181818176,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Inter,inter,winterthur,66.66666666666667,beerhot,33.333333333333336,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Torino,torino,torino,100.0,beerhot,30.76923076923077,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Lecce,lecce,us lecce,76.92307692307692,beerhot,33.333333333333336,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Udinese,udinese,udinese calcio,66.66666666666667,zulte waregem,30.000000000000004,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Palermo,palermo,r charleroi,55.55555555555556,beerhot,42.85714285714286,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Bari,bari,bayern,60.0,beerhot,36.36363636363637,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Livorno,livorno,liverpool,62.5,beerhot,28.57142857142857,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Parma,parma,as roma,66.66666666666667,zulte waregem,33.333333333333336,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Cesena,cesena,chelsea,76.92307692307692,krc genk,42.85714285714286,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Brescia,breia,n breda,66.66666666666667,beerhot,33.333333333333336,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Novara,novara,nk varazdin,58.82352941176471,zulte waregem,21.052631578947366,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Pescara,peara,spartak,66.66666666666667,beerhot,33.333333333333336,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Hellas Verona,hellas verona,hellas verona,100.0,beerhot,40.0,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Sassuolo,sassuolo,sassuolo,100.0,zulte waregem,19.047619047619047,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Empoli,empoli,empoli,100.0,beerhot,30.76923076923077,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Frosinone,frosinone,frosinone calcio,72.0,beerhot,25.0,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Carpi,carpi,casa pia,61.53846153846154,zulte waregem,22.22222222222222,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Vitesse,vitesse,vitesse,100.0,zulte waregem,30.000000000000004,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+FC Groningen,groningen,groningen,100.0,krc genk,47.05882352941176,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Roda JC Kerkrade,roda jc kerkrade,red star belgrade,54.54545454545454,krc genk,41.66666666666666,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+FC Twente,twente,twente enhede,63.1578947368421,zulte waregem,42.10526315789473,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Willem II,willem ii,willem ii,100.0,zulte waregem,27.27272727272727,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Ajax,ajax,ajax,100.0,zulte waregem,11.764705882352944,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+N.E.C.,nec,fenerbahce,46.15384615384615,beerhot,15.384615384615383,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+De Graafschap,de graafhap,granada cf,47.61904761904761,beerhot,33.333333333333336,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+FC Utrecht,utrecht,utrecht,100.0,beerhot,42.85714285714286,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+PSV,psv,spurs,50.0,krc genk,0.0,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Heracles Almelo,herles almelo,herles almelo,100.0,zulte waregem,38.46153846153846,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Feyenoord,feyenoord,feyenoord,100.0,beerhot,37.5,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Sparta Rotterdam,sparta rotterdam,sparta rotterdam,100.0,zulte waregem,34.48275862068966,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+ADO Den Haag,ado den haag,copenhagen,54.54545454545454,zulte waregem,32.0,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+FC Volendam,volendam,volendam,100.0,zulte waregem,38.095238095238095,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+SC Heerenveen,heerenveen,heerenveen,100.0,beerhot,35.29411764705882,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+AZ,az,lazio,57.14285714285714,zulte waregem,13.33333333333333,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+NAC Breda,n breda,n breda,100.0,zulte waregem,30.000000000000004,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+RKC Waalwijk,rkc waalwijk,rkc waalwijk,100.0,krc genk,40.0,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+VVV-Venlo,vvv venlo,kvc westerlo,47.61904761904761,beerhot,26.66666666666667,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Excelsior,excelsior,excelsior rotterdam,64.28571428571428,beerhot,37.5,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+PEC Zwolle,pec zwolle,pec zwolle,100.0,zulte waregem,34.78260869565217,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+SC Cambuur,cambuur,cambuur,100.0,beerhot,28.57142857142857,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Go Ahead Eagles,go ahead eagles,go ahead eagles,100.0,zulte waregem,35.71428571428571,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+FC Dordrecht,dordrecht,r anderlecht,66.66666666666667,beerhot,37.5,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Wisła Kraków,wisa krakow,wisla krakow,95.65217391304348,krc genk,31.57894736842105,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Polonia Bytom,polonia bytom,fk polissya zhytomyr,60.60606060606061,zulte waregem,23.076923076923077,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Ruch Chorzów,ruch chorzow,ruch chorzow,100.0,beerhot,31.57894736842105,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Legia Warszawa,legia warszawa,legia warszawa,100.0,zulte waregem,44.44444444444444,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+P. Warszawa,p warszawa,legia warszawa,75.0,zulte waregem,33.333333333333336,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Śląsk Wrocław,slask wrocaw,slask wroclaw,96.0,zulte waregem,32.0,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Lechia Gdańsk,lechia gdansk,lechia gdansk,100.0,krc genk,47.61904761904761,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Widzew Łódź,widzew odz,widzew lodz,95.23809523809524,zulte waregem,26.086956521739136,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Odra Wodzisław,odra wodzisaw,admira wker modling,50.0,zulte waregem,23.076923076923077,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Lech Poznań,lech poznan,lech poznan,100.0,beerhot,33.333333333333336,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+GKS Bełchatów,gks bechatow,gks katowice,66.66666666666667,beerhot,42.10526315789473,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Arka Gdynia,arka gdynia,radnik,58.82352941176471,krc genk,42.10526315789473,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Jagiellonia Białystok,jagiellonia biaystok,jagiellonia bialystok,97.5609756097561,krc genk,28.57142857142857,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Piast Gliwice,piast gliwice,piast gliwice,100.0,zulte waregem,30.76923076923077,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Cracovia,crovia,crovia,100.0,beerhot,30.76923076923077,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Korona Kielce,korona kielce,korona kielce,100.0,krc genk,38.095238095238095,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Zagłębie Lubin,zagebie lubin,zaglebie lubin,96.2962962962963,zulte waregem,30.76923076923077,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Podbeskidzie Bielsko-Biała,podbeskidzie bielsko biaa,odense boldklub,50.0,beerhot,25.806451612903224,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Pogoń Szczecin,pogon szczecin,pogon szczecin,100.0,krc genk,27.27272727272727,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Zawisza Bydgoszcz,zawisza bydgoszcz,wisla plock,50.0,zulte waregem,26.66666666666667,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Górnik Łęczna,gornik eczna,gornik leczna,96.0,krc genk,40.0,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Termalica Bruk-Bet Nieciecza,termalica bruk bet nieciecza,termalica,48.64864864864865,zulte waregem,30.000000000000004,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+FC Porto,porto,porto,100.0,beerhot,33.333333333333336,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+CF Os Belenenses,cf os belenenses,belenenses sad,66.66666666666667,krc genk,33.333333333333336,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Sporting CP,sporting cp,sporting cp,100.0,beerhot,22.22222222222222,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Trofense,trofense,farense,66.66666666666667,zulte waregem,38.095238095238095,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Vitória Guimarães,vitoria guimaraes,vitoria guimaraes,100.0,zulte waregem,33.333333333333336,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Vitória Setúbal,vitoria setubal,vitoria guimaraes,62.5,krc genk,26.086956521739136,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+FC Paços de Ferreira,pos de ferreira,pos de ferreira,100.0,zulte waregem,28.57142857142857,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+SC Braga,braga,braga,100.0,beerhot,33.333333333333336,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Amadora,amadora,sampdoria,75.0,zulte waregem,20.0,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Académica de Coimbra,ademica de coimbra,radomiak radom,56.25,zulte waregem,25.806451612903224,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Rio Ave FC,rio ave,rio ave,100.0,krc genk,40.0,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+SL Benfica,sl benfica,sl benfica,100.0,krc genk,33.333333333333336,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Leixões SC,leixoes,olympios,53.333333333333336,zulte waregem,30.000000000000004,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+CD Nacional,cd nional,cd nional,100.0,krc genk,35.29411764705882,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Naval 1° de Maio,naval 1 de maio,atletico de madrid,54.54545454545454,zulte waregem,28.57142857142857,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+CS Marítimo,cs maritimo,cs maritimo,100.0,zulte waregem,33.333333333333336,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+"União de Leiria, SAD",uniao de leiria sad,ud almeria,55.172413793103445,zulte waregem,31.25,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+S.C. Olhanense,sc olhanense,cd leganes,63.63636363636363,krc genk,36.36363636363637,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Portimonense,portimonense,portimonense,100.0,krc genk,30.000000000000004,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+SC Beira Mar,beira mar,real madrid,60.0,beerhot,37.5,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Feirense,feirense,farense,80.0,zulte waregem,38.095238095238095,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Gil Vicente FC,gil vicente,gil vicente,100.0,zulte waregem,33.333333333333336,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Moreirense FC,moreirense,moreirense,100.0,zulte waregem,34.78260869565217,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Estoril Praia,estoril praia,estoril praia,100.0,zulte waregem,23.076923076923077,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+FC Arouca,arouca,arouca,100.0,beerhot,30.76923076923077,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+FC Penafiel,penafiel,copenhagen,55.55555555555556,zulte waregem,28.57142857142857,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Boavista FC,boavista,boavista,100.0,beerhot,40.0,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Uniao da Madeira,uniao da madeira,ud almeria,53.84615384615385,zulte waregem,27.58620689655172,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Tondela,tondela,cd tondela,82.35294117647058,zulte waregem,30.000000000000004,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Falkirk,falkirk,basaksehir fk,50.0,krc genk,40.0,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Rangers,rangers,rangers,100.0,krc genk,40.0,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Heart of Midlothian,heart of midlothian,heart of midlothian,100.0,beerhot,30.76923076923077,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Motherwell,motherwell,motherwell,100.0,zulte waregem,34.78260869565217,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Kilmarnock,kilmarnock,kilmarnock,100.0,krc genk,44.44444444444444,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Hibernian,hibernian,hibernian,100.0,beerhot,37.5,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Aberdeen,aberdeen,aberdeen,100.0,beerhot,40.0,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Inverness Caledonian Thistle,inverness caledonian thistle,nk veres rivne,47.61904761904761,zulte waregem,24.390243902439025,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Celtic,celtic,celtic,100.0,beerhot,30.76923076923077,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+St. Mirren,st mirren,st mirren,100.0,zulte waregem,34.78260869565217,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Hamilton Academical FC,hamilton ademical,heart of midl,53.333333333333336,zulte waregem,40.0,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Dundee United,dundee united,dundee united,100.0,zulte waregem,30.76923076923077,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+St. Johnstone FC,st johnstone,st johnstone,100.0,zulte waregem,23.076923076923077,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Dunfermline Athletic,dunfermline athletic,athletic,57.14285714285714,zulte waregem,36.36363636363637,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Dundee FC,dundee,dundee,100.0,zulte waregem,31.57894736842105,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Ross County FC,ross county,ross county,100.0,beerhot,33.333333333333336,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Partick Thistle F.C.,partick thistle fc,fk spartak subotica,48.64864864864865,krc genk,28.57142857142857,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Valencia CF,valencia cf,valencia cf,100.0,zulte waregem,25.0,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+RCD Mallorca,rcd mallorca,rcd mallorca,100.0,krc genk,30.000000000000004,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+CA Osasuna,ca osasuna,ca osasuna,100.0,krc genk,33.333333333333336,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Villarreal CF,villarreal cf,villarreal cf,100.0,zulte waregem,30.76923076923077,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+RC Deportivo de La Coruña,rc deportivo de la coruna,deportivo alaves,58.53658536585367,krc genk,30.303030303030297,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Real Madrid CF,real madrid cf,real madrid,88.0,zulte waregem,29.629629629629623,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+CD Numancia,cd numancia,rcd mallorca,60.86956521739131,krc genk,31.57894736842105,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+FC Barcelona,barcelona,barcelona,100.0,krc genk,47.05882352941176,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Racing Santander,ring santander,randers,57.14285714285714,krc genk,27.27272727272727,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Sevilla FC,sevilla,sevilla,100.0,zulte waregem,20.0,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Real Sporting de Gijón,real sporting de gijon,sporting cp,54.54545454545454,krc genk,33.333333333333336,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Getafe CF,getafe cf,getafe cf,100.0,zulte waregem,27.27272727272727,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Real Betis Balompié,real betis balompie,real betis balompie,100.0,zulte waregem,31.25,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+RC Recreativo,rc recreativo,r seraing,54.54545454545454,krc genk,38.095238095238095,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+RCD Espanyol,rcd espanyol,espanyol,80.0,krc genk,50.0,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Real Valladolid,real valladolid,real valladolid cf,90.9090909090909,zulte waregem,21.42857142857143,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Athletic Club de Bilbao,athletic club de bilbao,athletic bilbao,78.94736842105263,zulte waregem,27.77777777777778,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+UD Almería,ud almeria,ud almeria,100.0,zulte waregem,34.78260869565217,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Atlético Madrid,atletico madrid,atletico de madrid,90.9090909090909,zulte waregem,35.71428571428571,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Málaga CF,malaga cf,granada cf,63.1578947368421,zulte waregem,27.27272727272727,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Xerez Club Deportivo,xerez club deportivo,deportivo alaves,50.0,beerhot,29.629629629629623,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Real Zaragoza,real zaragoza,real madrid,58.33333333333333,zulte waregem,38.46153846153846,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+CD Tenerife,cd tenerife,cd leganes,57.14285714285714,krc genk,42.10526315789473,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Hércules Club de Fútbol,hercules club de futbol,herles almelo,55.55555555555556,zulte waregem,27.77777777777778,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Levante UD,levante ud,levante ud,100.0,zulte waregem,34.78260869565217,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Real Sociedad,real sociedad,real sociedad,100.0,krc genk,28.57142857142857,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Granada CF,granada cf,granada cf,100.0,krc genk,22.22222222222222,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+Rayo Vallecano,rayo vallecano,rayo vallecano,100.0,krc genk,36.36363636363637,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+RC Celta de Vigo,rc celta de vigo,celta de vigo,89.65517241379311,zulte waregem,34.48275862068966,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Elche CF,elche cf,elche cf,100.0,zulte waregem,28.57142857142857,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+SD Eibar,sd eibar,sl benfica,55.55555555555556,zulte waregem,28.57142857142857,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Córdoba CF,cordoba cf,granada cf,60.0,beerhot,23.529411764705888,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+UD Las Palmas,ud las palmas,ud las palmas,100.0,zulte waregem,38.46153846153846,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Grasshopper Club Zürich,grasshopper club zurich,grasshopper club zurich,100.0,beerhot,20.0,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+AC Bellinzona,bellinzona,barcelona,63.1578947368421,beerhot,35.29411764705882,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+BSC Young Boys,b young boys,b young boys,100.0,beerhot,21.052631578947366,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+FC Basel,basel,basel,100.0,beerhot,33.333333333333336,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+FC Aarau,aarau,aarhus gf,57.14285714285714,zulte waregem,22.22222222222222,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+FC Sion,sion,sion,100.0,beerhot,18.181818181818176,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+FC Luzern,luzern,luzern,100.0,zulte waregem,31.57894736842105,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+FC Vaduz,vaduz,cadiz cf,46.15384615384615,zulte waregem,11.111111111111116,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+Neuchâtel Xamax,neuchatel xamax,cf estrela amadora,48.48484848484848,zulte waregem,42.85714285714286,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+FC Zürich,zurich,zurich,100.0,zulte waregem,31.57894736842105,Belgium,Pro League,Zulte Waregem - Belgium - Pro League.png
+FC St. Gallen,st gallen,st gallen,100.0,krc genk,44.44444444444444,Belgium,Pro League,KRC Genk - Belgium - Pro League.png
+FC Thun,thun,oh leuven,46.15384615384615,beerhot,18.181818181818176,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Servette FC,servette,servette,100.0,beerhot,40.0,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+FC Lausanne-Sports,lausanne sports,lausanne sport,96.55172413793105,beerhot,28.57142857142857,Belgium,Pro League,Beerschot - Belgium - Pro League.png
+Lugano,lugano,lugano,100.0,krc genk,28.57142857142857,Belgium,Pro League,KRC Genk - Belgium - Pro League.png

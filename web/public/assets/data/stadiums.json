@@ -1,0 +1,1253 @@
+[
+  {
+    "name": "KRC Genk",
+    "coords": [
+      50.9654864,
+      5.5001456
+    ],
+    "logo": "/assets/logos/KRC Genk - Belgium - Jupiler Pro League.png",
+    "transfers_name": "KRC Genk"
+  },
+  {
+    "name": "RSC Anderlecht",
+    "coords": [
+      50.845386412012935,
+      4.340770380198071
+    ],
+    "logo": "/assets/logos/RSC Anderlecht - Belgium - Jupiler Pro League.png",
+    "transfers_name": "RSC Anderlecht"
+  },
+  {
+    "name": "Standard de Liège",
+    "coords": [
+      50.61095765,
+      5.54393415
+    ],
+    "logo": "/assets/logos/Standard Liège - Belgium - Jupiler Pro League.png",
+    "transfers_name": "Standard Liège"
+  },
+  {
+    "name": "KV Mechelen",
+    "coords": [
+      51.0371829,
+      4.4863913
+    ],
+    "logo": "/assets/logos/KV Mechelen - Belgium - Jupiler Pro League.png",
+    "transfers_name": "KV Mechelen"
+  },
+  {
+    "name": "Club Brugge KV",
+    "coords": [
+      51.2085526,
+      3.226772
+    ],
+    "logo": "/assets/logos/Club Brugge - Belgium - Jupiler Pro League.png",
+    "transfers_name": "Club Brugge"
+  },
+  {
+    "name": "KV Kortrijk",
+    "coords": [
+      50.8276429,
+      3.2659884
+    ],
+    "logo": "/assets/logos/KV Kortrijk - Belgium - Jupiler Pro League.png",
+    "transfers_name": ""
+  },
+  {
+    "name": "KVC Westerlo",
+    "coords": [
+      51.094091,
+      4.92812145796815
+    ],
+    "logo": "/assets/logos/KVC Westerlo - Belgium - Jupiler Pro League.png",
+    "transfers_name": "KVC Westerlo"
+  },
+  {
+    "name": "KAS Eupen",
+    "coords": [
+      50.6263653,
+      6.0453424
+    ],
+    "logo": "/assets/logos/KAS Eupen - Belgium - Jupiler Pro League.png",
+    "transfers_name": "KAS Eupen"
+  },
+  {
+    "name": "Oud-Heverlee Leuven",
+    "coords": [
+      50.8376275,
+      4.6629253
+    ],
+    "logo": "/assets/logos/Oud-Heverlee Leuven - Belgium - Jupiler Pro League.png",
+    "transfers_name": ""
+  },
+  {
+    "name": "KV Oostende",
+    "coords": [
+      51.2258565,
+      2.919496
+    ],
+    "logo": "/assets/logos/KV Oostende - Belgium - Jupiler Pro League.png",
+    "transfers_name": "KV Oostende"
+  },
+  {
+    "name": "Manchester United",
+    "coords": [
+      53.4649481,
+      -2.2906349
+    ],
+    "logo": "/assets/logos/Manchester United - England - Premier League.png",
+    "transfers_name": "Man Utd"
+  },
+  {
+    "name": "Newcastle United",
+    "coords": [
+      55.0041755,
+      -1.5649326866735827
+    ],
+    "logo": "/assets/logos/Newcastle United - England - Premier League.png",
+    "transfers_name": "Newcastle"
+  },
+  {
+    "name": "Arsenal",
+    "coords": [
+      51.5583839,
+      -0.1074866
+    ],
+    "logo": "/assets/logos/Arsenal - England - Premier League.png",
+    "transfers_name": "Arsenal"
+  },
+  {
+    "name": "Liverpool",
+    "coords": [
+      53.4071991,
+      -2.99168
+    ],
+    "logo": "/assets/logos/Liverpool FC - England - Premier League.png",
+    "transfers_name": "Liverpool"
+  },
+  {
+    "name": "West Ham United",
+    "coords": [
+      51.5697731,
+      0.460239
+    ],
+    "logo": "/assets/logos/West Ham United - England - Premier League.png",
+    "transfers_name": "West Ham"
+  },
+  {
+    "name": "Aston Villa",
+    "coords": [
+      51.32041745,
+      -2.5063290769304234
+    ],
+    "logo": "/assets/logos/Aston Villa - England - Premier League.png",
+    "transfers_name": "Aston Villa"
+  },
+  {
+    "name": "Manchester City",
+    "coords": [
+      53.48309105,
+      -2.2002520023433307
+    ],
+    "logo": "/assets/logos/Manchester United - England - Premier League.png",
+    "transfers_name": "Man City"
+  },
+  {
+    "name": "Everton",
+    "coords": [
+      52.1462041,
+      -0.2430129
+    ],
+    "logo": "/assets/logos/Everton FC - England - Premier League.png",
+    "transfers_name": "Everton"
+  },
+  {
+    "name": "Tottenham Hotspur",
+    "coords": [
+      51.604157,
+      -0.0662604100000004
+    ],
+    "logo": "/assets/logos/Tottenham Hotspur - England - Premier League.png",
+    "transfers_name": "Spurs"
+  },
+  {
+    "name": "Fulham",
+    "coords": [
+      51.474408,
+      -0.206809
+    ],
+    "logo": "/assets/logos/Fulham FC - England - Premier League.png",
+    "transfers_name": "Fulham"
+  },
+  {
+    "name": "Chelsea",
+    "coords": [
+      51.4875167,
+      -0.1687007
+    ],
+    "logo": "/assets/logos/Chelsea FC - England - Premier League.png",
+    "transfers_name": "Chelsea"
+  },
+  {
+    "name": "Wolverhampton Wanderers",
+    "coords": [
+      52.58927385,
+      -2.1293414704232267
+    ],
+    "logo": "/assets/logos/Wolverhampton Wanderers - England - Premier League.png",
+    "transfers_name": "Wolves"
+  },
+  {
+    "name": "Burnley",
+    "coords": [
+      53.7907262,
+      -2.2439196
+    ],
+    "logo": "/assets/logos/Burnley - England - Premier League.png",
+    "transfers_name": "Burnley"
+  },
+  {
+    "name": "Southampton",
+    "coords": [
+      50.9025349,
+      -1.404189
+    ],
+    "logo": "/assets/logos/Southampton FC - England - Premier League.png",
+    "transfers_name": "Southampton"
+  },
+  {
+    "name": "Leicester City",
+    "coords": [
+      52.6232734,
+      -1.1350487
+    ],
+    "logo": "/assets/logos/Leicester City - England - Premier League.png",
+    "transfers_name": "Leicester"
+  },
+  {
+    "name": "Bournemouth",
+    "coords": [
+      50.7201514,
+      -1.8799118
+    ],
+    "logo": "/assets/logos/AFC Bournemouth - England - Premier League.png",
+    "transfers_name": "Bournemouth"
+  },
+  {
+    "name": "Watford",
+    "coords": [
+      51.6553875,
+      -0.3957425
+    ],
+    "logo": "/assets/logos/Watford FC - England - Premier League.png",
+    "transfers_name": "Watford"
+  },
+  {
+    "name": "AJ Auxerre",
+    "coords": [
+      47.7865182,
+      3.5873446
+    ],
+    "logo": "/assets/logos/AJ Auxerre - France - Ligue 1.png",
+    "transfers_name": "AJ Auxerre"
+  },
+  {
+    "name": "FC Nantes",
+    "coords": [
+      47.2186371,
+      -1.5541362
+    ],
+    "logo": "/assets/logos/FC Nantes - France - Ligue 1.png",
+    "transfers_name": "FC Nantes"
+  },
+  {
+    "name": "Le Havre AC",
+    "coords": [
+      49.4938975,
+      0.1079732
+    ],
+    "logo": "/assets/logos/Le Havre AC - France - Ligue 1.png",
+    "transfers_name": "AC Le Havre"
+  },
+  {
+    "name": "OGC Nice",
+    "coords": [
+      43.7041331,
+      7.1936019
+    ],
+    "logo": "/assets/logos/OGC Nice - France - Ligue 1.png",
+    "transfers_name": "OGC Nice"
+  },
+  {
+    "name": "FC Lorient",
+    "coords": [
+      47.7477336,
+      -3.3660907
+    ],
+    "logo": "/assets/logos/FC Lorient - France - Ligue 1.png",
+    "transfers_name": "FC Lorient"
+  },
+  {
+    "name": "Olympique Lyonnais",
+    "coords": [
+      45.9878622,
+      4.7185309
+    ],
+    "logo": "/assets/logos/Olympique Lyon - France - Ligue 1.png",
+    "transfers_name": "Olympique Lyon"
+  },
+  {
+    "name": "Toulouse FC",
+    "coords": [
+      43.6044622,
+      1.4442469
+    ],
+    "logo": "/assets/logos/FC Toulouse - France - Ligue 1.png",
+    "transfers_name": "Toulouse"
+  },
+  {
+    "name": "Paris Saint-Germain",
+    "coords": [
+      48.8715545,
+      2.3031549
+    ],
+    "logo": "/assets/logos/Paris Saint-Germain - France - Ligue 1.png",
+    "transfers_name": "Paris SG"
+  },
+  {
+    "name": "LOSC Lille",
+    "coords": [
+      50.6365654,
+      3.0635282
+    ],
+    "logo": "/assets/logos/LOSC Lille - France - Ligue 1.png",
+    "transfers_name": "LOSC Lille"
+  },
+  {
+    "name": "Stade Rennais FC",
+    "coords": [
+      47.6359676,
+      -2.95758165
+    ],
+    "logo": "/assets/logos/Stade Rennais - France - Ligue 1.png",
+    "transfers_name": "Stade Rennais"
+  },
+  {
+    "name": "Olympique de Marseille",
+    "coords": [
+      43.3063963,
+      5.4609981
+    ],
+    "logo": "/assets/logos/Olympique Marseille - France - Ligue 1.png",
+    "transfers_name": "Marseille"
+  },
+  {
+    "name": "AS Saint-Étienne",
+    "coords": [
+      44.409448749999996,
+      0.6947147630053399
+    ],
+    "logo": "/assets/logos/AS Saint-Étienne - France - Ligue 1.png",
+    "transfers_name": "Saint-Étienne"
+  },
+  {
+    "name": "Stade Brestois 29",
+    "coords": [
+      48.4276292,
+      -4.4699827
+    ],
+    "logo": "/assets/logos/Stade Brestois 29 - France - Ligue 1.png",
+    "transfers_name": "Stade Brest 29"
+  },
+  {
+    "name": "FC Metz",
+    "coords": [
+      49.1196964,
+      6.1763552
+    ],
+    "logo": "/assets/logos/FC Metz - France - Ligue 1.png",
+    "transfers_name": "FC Metz"
+  },
+  {
+    "name": "Angers SCO",
+    "coords": [
+      47.4739884,
+      -0.5515588
+    ],
+    "logo": "/assets/logos/Angers SCO - France - Ligue 1.png",
+    "transfers_name": "SCO Angers"
+  },
+  {
+    "name": "FC Bayern Munich",
+    "coords": [
+      48.1768926,
+      11.5325626
+    ],
+    "logo": "/assets/logos/Bayern Munich - Germany - Bundesliga.png",
+    "transfers_name": "Bayern Munich"
+  },
+  {
+    "name": "Bayer 04 Leverkusen",
+    "coords": [
+      51.015165709387816,
+      6.994099896740656
+    ],
+    "logo": "/assets/logos/Bayer 04 Leverkusen - Germany - Bundesliga.png",
+    "transfers_name": "Bay. Leverkusen"
+  },
+  {
+    "name": "Borussia Dortmund",
+    "coords": [
+      51.4926667,
+      7.4517778
+    ],
+    "logo": "/assets/logos/Borussia Dortmund - Germany - Bundesliga.png",
+    "transfers_name": "Bor. Dortmund"
+  },
+  {
+    "name": "FC Schalke 04",
+    "coords": [
+      51.4787857,
+      6.2582643
+    ],
+    "logo": "/assets/logos/FC Schalke 04 - Germany - Bundesliga.png",
+    "transfers_name": "FC Schalke 04"
+  },
+  {
+    "name": "VfL Wolfsburg",
+    "coords": [
+      52.434490800000006,
+      10.806857351231887
+    ],
+    "logo": "/assets/logos/VfL Wolfsburg - Germany - Bundesliga.png",
+    "transfers_name": "VfL Wolfsburg"
+  },
+  {
+    "name": "1. FC Köln",
+    "coords": [
+      51.0849669,
+      6.8476485
+    ],
+    "logo": "/assets/logos/1. FC Köln - Germany - Bundesliga.png",
+    "transfers_name": "1. FC Köln"
+  },
+  {
+    "name": "SV Werder Bremen",
+    "coords": [
+      53.0717335,
+      8.841534813937642
+    ],
+    "logo": "/assets/logos/SV Werder Bremen - Germany - Bundesliga.png",
+    "transfers_name": "Werder Bremen"
+  },
+  {
+    "name": "TSG 1899 Hoffenheim",
+    "coords": [
+      49.27807285,
+      8.84247955656506
+    ],
+    "logo": "/assets/logos/TSG 1899 Hoffenheim - Germany - Bundesliga.png",
+    "transfers_name": "TSG Hoffenheim"
+  },
+  {
+    "name": "VfB Stuttgart",
+    "coords": [
+      48.7788452,
+      9.1783022
+    ],
+    "logo": "/assets/logos/VfB Stuttgart - Germany - Bundesliga.png",
+    "transfers_name": "VfB Stuttgart"
+  },
+  {
+    "name": "VfL Bochum",
+    "coords": [
+      51.5042713,
+      7.238554021441496
+    ],
+    "logo": "/assets/logos/VfL Bochum - Germany - Bundesliga.png",
+    "transfers_name": "VfL Bochum"
+  },
+  {
+    "name": "SC Freiburg",
+    "coords": [
+      47.9960901,
+      7.8494005
+    ],
+    "logo": "/assets/logos/SC Freiburg - Germany - Bundesliga.png",
+    "transfers_name": "SC Freiburg"
+  },
+  {
+    "name": "1. FSV Mainz 05",
+    "coords": [
+      50.00087035,
+      8.245562992298598
+    ],
+    "logo": "/assets/logos/1.FSV Mainz 05 - Germany - Bundesliga.png",
+    "transfers_name": "1.FSV Mainz 05"
+  },
+  {
+    "name": "FC St. Pauli",
+    "coords": [
+      53.5539347,
+      9.9594316
+    ],
+    "logo": "/assets/logos/FC St. Pauli - Germany - Bundesliga.png",
+    "transfers_name": ""
+  },
+  {
+    "name": "FC Augsburg",
+    "coords": [
+      48.3690341,
+      10.8979522
+    ],
+    "logo": "/assets/logos/FC Augsburg - Germany - Bundesliga.png",
+    "transfers_name": "FC Augsburg"
+  },
+  {
+    "name": "SpVgg Greuther Fürth",
+    "coords": [
+      49.50079805,
+      10.995901659139138
+    ],
+    "logo": "/assets/logos/Greuther Fürth - Germany - Bundesliga.png",
+    "transfers_name": ""
+  },
+  {
+    "name": "Atalanta",
+    "coords": [
+      43.08828715215496,
+      12.433227119673692
+    ],
+    "logo": "/assets/logos/Atalanta BC - Italy - Serie A.png",
+    "transfers_name": "Atalanta"
+  },
+  {
+    "name": "Lazio",
+    "coords": [
+      41.9808038,
+      12.7662312
+    ],
+    "logo": "/assets/logos/Lazio - Italy - Serie A.png",
+    "transfers_name": "Lazio"
+  },
+  {
+    "name": "Genoa",
+    "coords": [
+      44.40726,
+      8.9338624
+    ],
+    "logo": "/assets/logos/Genoa CFC - Italy - Serie A.png",
+    "transfers_name": "Genoa"
+  },
+  {
+    "name": "Fiorentina",
+    "coords": [
+      42.9637778,
+      10.5348607
+    ],
+    "logo": "/assets/logos/ACF Fiorentina - Italy - Serie A.png",
+    "transfers_name": "Fiorentina"
+  },
+  {
+    "name": "Juventus",
+    "coords": [
+      44.9779934,
+      7.6151806
+    ],
+    "logo": "/assets/logos/Juventus - Italy - Serie A.png",
+    "transfers_name": "Juventus"
+  },
+  {
+    "name": "Milan",
+    "coords": [
+      45.4641943,
+      9.1896346
+    ],
+    "logo": "/assets/logos/AC Milan - Italy - Serie A.png",
+    "transfers_name": "AC Milan"
+  },
+  {
+    "name": "Napoli",
+    "coords": [
+      40.8358846,
+      14.2487679
+    ],
+    "logo": "/assets/logos/SSC Napoli - Italy - Serie A.png",
+    "transfers_name": "SSC Napoli"
+  },
+  {
+    "name": "Sampdoria",
+    "coords": [
+      44.4155493,
+      8.952667661712866
+    ],
+    "logo": "/assets/logos/UC Sampdoria - Italy - Serie A.png",
+    "transfers_name": "Sampdoria"
+  },
+  {
+    "name": "Torino",
+    "coords": [
+      45.0677551,
+      7.6824892
+    ],
+    "logo": "/assets/logos/Torino FC - Italy - Serie A.png",
+    "transfers_name": "Torino"
+  },
+  {
+    "name": "Hellas Verona",
+    "coords": [
+      45.4334792,
+      10.8928406
+    ],
+    "logo": "/assets/logos/Hellas Verona - Italy - Serie A.png",
+    "transfers_name": "Hellas Verona"
+  },
+  {
+    "name": "Sassuolo",
+    "coords": [
+      44.5409769,
+      10.7829023
+    ],
+    "logo": "/assets/logos/US Sassuolo - Italy - Serie A.png",
+    "transfers_name": "Sassuolo"
+  },
+  {
+    "name": "Empoli",
+    "coords": [
+      43.7194884,
+      10.9458556
+    ],
+    "logo": "/assets/logos/FC Empoli - Italy - Serie A.png",
+    "transfers_name": "FC Empoli"
+  },
+  {
+    "name": "FC Groningen",
+    "coords": [
+      53.2190652,
+      6.5680077
+    ],
+    "logo": "/assets/logos/FC Groningen - Netherlands - Eredivisie.png",
+    "transfers_name": "FC Groningen"
+  },
+  {
+    "name": "Willem II",
+    "coords": [
+      51.54269165,
+      5.066806624191194
+    ],
+    "logo": "/assets/logos/Willem II - Netherlands - Eredivisie.png",
+    "transfers_name": "Willem II"
+  },
+  {
+    "name": "Ajax",
+    "coords": [
+      52.3446377,
+      4.9502708
+    ],
+    "logo": "/assets/logos/Ajax - Netherlands - Eredivisie.png",
+    "transfers_name": "AFC Ajax"
+  },
+  {
+    "name": "FC Utrecht",
+    "coords": [
+      52.0907006,
+      5.1215634
+    ],
+    "logo": "/assets/logos/FC Utrecht - Netherlands - Eredivisie.png",
+    "transfers_name": "FC Utrecht"
+  },
+  {
+    "name": "Feyenoord",
+    "coords": [
+      51.241244,
+      5.9681522
+    ],
+    "logo": "/assets/logos/Feyenoord - Netherlands - Eredivisie.png",
+    "transfers_name": "Feyenoord"
+  },
+  {
+    "name": "Sparta Rotterdam",
+    "coords": [
+      51.9194555,
+      4.433550650698857
+    ],
+    "logo": "/assets/logos/Sparta Rotterdam - Netherlands - Eredivisie.png",
+    "transfers_name": "Sparta R."
+  },
+  {
+    "name": "FC Volendam",
+    "coords": [
+      52.4963759,
+      5.0682736
+    ],
+    "logo": "/assets/logos/FC Volendam - Netherlands - Eredivisie.png",
+    "transfers_name": ""
+  },
+  {
+    "name": "SC Heerenveen",
+    "coords": [
+      52.998474200000004,
+      5.923148795038062
+    ],
+    "logo": "/assets/logos/Heerenveen - Netherlands - Eredivisie.png",
+    "transfers_name": "Heerenveen"
+  },
+  {
+    "name": "NAC Breda",
+    "coords": [
+      51.5887845,
+      4.7760237
+    ],
+    "logo": "/assets/logos/NAC Breda - Netherlands - Eredivisie.png",
+    "transfers_name": ""
+  },
+  {
+    "name": "RKC Waalwijk",
+    "coords": [
+      51.6885312,
+      5.0881794
+    ],
+    "logo": "/assets/logos/RKC Waalwijk - Netherlands - Eredivisie.png",
+    "transfers_name": "RKC Waalwijk"
+  },
+  {
+    "name": "PEC Zwolle",
+    "coords": [
+      52.517052,
+      6.1198816
+    ],
+    "logo": "/assets/logos/PEC Zwolle - Netherlands - Eredivisie.png",
+    "transfers_name": ""
+  },
+  {
+    "name": "SC Cambuur",
+    "coords": [
+      53.204109387252714,
+      5.81144821817786
+    ],
+    "logo": "/assets/logos/SC Cambuur - Netherlands - Eredivisie.png",
+    "transfers_name": ""
+  },
+  {
+    "name": "Ruch Chorzów",
+    "coords": [
+      50.30109535,
+      18.97563265
+    ],
+    "logo": "/assets/logos/Ruch Chorzow - Poland - PKO BP Ekstraklasa.png",
+    "transfers_name": ""
+  },
+  {
+    "name": "Legia Warszawa",
+    "coords": [
+      52.220641099999995,
+      21.039798345752295
+    ],
+    "logo": "/assets/logos/Legia Warszawa - Poland - PKO BP Ekstraklasa.png",
+    "transfers_name": "Legia Warszawa"
+  },
+  {
+    "name": "Lechia Gdańsk",
+    "coords": [
+      54.3689105,
+      18.6254975
+    ],
+    "logo": "/assets/logos/Lechia Gdansk - Poland - PKO BP Ekstraklasa.png",
+    "transfers_name": ""
+  },
+  {
+    "name": "Lech Poznań",
+    "coords": [
+      52.718690300000006,
+      16.373662178218478
+    ],
+    "logo": "/assets/logos/Lech Poznan - Poland - PKO BP Ekstraklasa.png",
+    "transfers_name": "Lech Poznan"
+  },
+  {
+    "name": "Piast Gliwice",
+    "coords": [
+      50.2888459,
+      18.689488122169813
+    ],
+    "logo": "/assets/logos/Piast Gliwice - Poland - PKO BP Ekstraklasa.png",
+    "transfers_name": ""
+  },
+  {
+    "name": "Korona Kielce",
+    "coords": [
+      50.8818631,
+      20.6146634
+    ],
+    "logo": "/assets/logos/Korona Kielce - Poland - PKO BP Ekstraklasa.png",
+    "transfers_name": ""
+  },
+  {
+    "name": "Pogoń Szczecin",
+    "coords": [
+      53.4328063,
+      14.5114468
+    ],
+    "logo": "/assets/logos/Pogon Szczecin - Poland - PKO BP Ekstraklasa.png",
+    "transfers_name": ""
+  },
+  {
+    "name": "FC Porto",
+    "coords": [
+      41.1494512,
+      -8.6107884
+    ],
+    "logo": "/assets/logos/FC Porto - Portugal - Liga Portugal.png",
+    "transfers_name": "FC Porto"
+  },
+  {
+    "name": "Sporting CP",
+    "coords": [
+      38.5308951,
+      -8.8851227
+    ],
+    "logo": "/assets/logos/Sporting CP - Portugal - Liga Portugal.png",
+    "transfers_name": "Sporting CP"
+  },
+  {
+    "name": "Vitória Guimarães",
+    "coords": [
+      41.4428381,
+      -8.292789550000002
+    ],
+    "logo": "/assets/logos/Vit. Guimarães - Portugal - Liga Portugal.png",
+    "transfers_name": "Vit. Guimarães"
+  },
+  {
+    "name": "FC Paços de Ferreira",
+    "coords": [
+      41.1746603,
+      -8.597003921087204
+    ],
+    "logo": "/assets/logos/FC Paços de Ferreira - Portugal - Liga Portugal.png",
+    "transfers_name": "Paços Ferreira"
+  },
+  {
+    "name": "SC Braga",
+    "coords": [
+      41.5510583,
+      -8.4280045
+    ],
+    "logo": "/assets/logos/SC Braga - Portugal - Liga Portugal.png",
+    "transfers_name": "Braga"
+  },
+  {
+    "name": "Rio Ave FC",
+    "coords": [
+      41.4420431,
+      -8.369404
+    ],
+    "logo": "/assets/logos/Rio Ave FC - Portugal - Liga Portugal.png",
+    "transfers_name": "Rio Ave FC"
+  },
+  {
+    "name": "SL Benfica",
+    "coords": [
+      38.7524036,
+      -9.183121411941231
+    ],
+    "logo": "/assets/logos/SL Benfica - Portugal - Liga Portugal.png",
+    "transfers_name": "Benfica"
+  },
+  {
+    "name": "Portimonense",
+    "coords": [
+      37.1366247,
+      -8.540189
+    ],
+    "logo": "/assets/logos/Portimonense - Portugal - Liga Portugal.png",
+    "transfers_name": "Portimonense"
+  },
+  {
+    "name": "Gil Vicente FC",
+    "coords": [
+      38.7518035,
+      -9.152244
+    ],
+    "logo": "/assets/logos/Gil Vicente FC - Portugal - Liga Portugal.png",
+    "transfers_name": ""
+  },
+  {
+    "name": "Moreirense FC",
+    "coords": [
+      41.378031699999994,
+      -8.354995054507953
+    ],
+    "logo": "/assets/logos/Moreirense FC - Portugal - Liga Portugal.png",
+    "transfers_name": "Morelia"
+  },
+  {
+    "name": "Estoril Praia",
+    "coords": [
+      38.6932572,
+      -9.368928726120114
+    ],
+    "logo": "/assets/logos/Estoril Praia - Portugal - Liga Portugal.png",
+    "transfers_name": ""
+  },
+  {
+    "name": "FC Arouca",
+    "coords": [
+      40.9289214,
+      -8.2441746
+    ],
+    "logo": "/assets/logos/FC Arouca - Portugal - Liga Portugal.png",
+    "transfers_name": ""
+  },
+  {
+    "name": "Boavista FC",
+    "coords": [
+      41.157648,
+      -8.6374973
+    ],
+    "logo": "/assets/logos/Boavista FC - Portugal - Liga Portugal.png",
+    "transfers_name": "Boavista"
+  },
+  {
+    "name": "Tondela",
+    "coords": [
+      40.51642,
+      -8.08053
+    ],
+    "logo": "/assets/logos/CD Tondela - Portugal - Liga Portugal.png",
+    "transfers_name": ""
+  },
+  {
+    "name": "Rangers",
+    "coords": [
+      55.9331349,
+      -4.304716243431738
+    ],
+    "logo": "/assets/logos/Rangers FC - Scotland - Scottish Premiership.png",
+    "transfers_name": "Rangers"
+  },
+  {
+    "name": "Heart of Midlothian",
+    "coords": [
+      55.9495655,
+      -3.1914772
+    ],
+    "logo": "/assets/logos/Heart of Midlothian FC - Scotland - Scottish Premiership.png",
+    "transfers_name": "Heart of Midl."
+  },
+  {
+    "name": "Motherwell",
+    "coords": [
+      55.7893512,
+      -3.9904173
+    ],
+    "logo": "/assets/logos/Motherwell FC - Scotland - Scottish Premiership.png",
+    "transfers_name": "Motherwell FC"
+  },
+  {
+    "name": "Kilmarnock",
+    "coords": [
+      55.6100589,
+      -4.4964652
+    ],
+    "logo": "/assets/logos/Kilmarnock FC - Scotland - Scottish Premiership.png",
+    "transfers_name": ""
+  },
+  {
+    "name": "Hibernian",
+    "coords": [
+      55.9209854,
+      -2.9269098264180213
+    ],
+    "logo": "/assets/logos/Hibernian FC - Scotland - Scottish Premiership.png",
+    "transfers_name": "Hibernian FC"
+  },
+  {
+    "name": "Aberdeen",
+    "coords": [
+      57.1482429,
+      -2.0928095
+    ],
+    "logo": "/assets/logos/Aberdeen FC - Scotland - Scottish Premiership.png",
+    "transfers_name": ""
+  },
+  {
+    "name": "Celtic",
+    "coords": [
+      55.85018145,
+      -4.2068226877121955
+    ],
+    "logo": "/assets/logos/Celtic FC - Scotland - Scottish Premiership.png",
+    "transfers_name": "Celtic"
+  },
+  {
+    "name": "St. Mirren",
+    "coords": [
+      55.850534350000004,
+      -4.444205372848037
+    ],
+    "logo": "/assets/logos/St. Mirren FC - Scotland - Scottish Premiership.png",
+    "transfers_name": ""
+  },
+  {
+    "name": "Dundee United",
+    "coords": [
+      56.473158,
+      -2.9680270551715076
+    ],
+    "logo": "/assets/logos/Dundee United FC - Scotland - Scottish Premiership.png",
+    "transfers_name": ""
+  },
+  {
+    "name": "St. Johnstone FC",
+    "coords": [
+      56.1519963152431,
+      -3.8041406519906227
+    ],
+    "logo": "/assets/logos/St. Johnstone - Scotland - Scottish Premiership.png",
+    "transfers_name": ""
+  },
+  {
+    "name": "Ross County FC",
+    "coords": [
+      57.595873850000004,
+      -4.419063880031938
+    ],
+    "logo": "/assets/logos/Ross County FC - Scotland - Scottish Premiership.png",
+    "transfers_name": ""
+  },
+  {
+    "name": "Valencia CF",
+    "coords": [
+      39.4697065,
+      -0.3763353
+    ],
+    "logo": "/assets/logos/Valencia - Spain - LaLiga.png",
+    "transfers_name": "Valencia CF"
+  },
+  {
+    "name": "RCD Mallorca",
+    "coords": [
+      39.5698469,
+      2.6494492
+    ],
+    "logo": "/assets/logos/RCD Mallorca - Spain - LaLiga.png",
+    "transfers_name": "RCD Mallorca"
+  },
+  {
+    "name": "CA Osasuna",
+    "coords": [
+      42.79667355,
+      -1.637125547008285
+    ],
+    "logo": "/assets/logos/CA Osasuna - Spain - LaLiga.png",
+    "transfers_name": "CA Osasuna"
+  },
+  {
+    "name": "Villarreal CF",
+    "coords": [
+      39.9372616,
+      -0.1004465
+    ],
+    "logo": "/assets/logos/Villarreal CF - Spain - LaLiga.png",
+    "transfers_name": "Villarreal CF"
+  },
+  {
+    "name": "Real Madrid CF",
+    "coords": [
+      40.4199798,
+      -3.7035925
+    ],
+    "logo": "/assets/logos/Real Madrid - Spain - LaLiga.png",
+    "transfers_name": "Real Madrid"
+  },
+  {
+    "name": "FC Barcelona",
+    "coords": [
+      41.3828939,
+      2.1774322
+    ],
+    "logo": "/assets/logos/Barcelona - Spain - LaLiga.png",
+    "transfers_name": "FC Barcelona"
+  },
+  {
+    "name": "Sevilla FC",
+    "coords": [
+      37.3886303,
+      -5.9953403
+    ],
+    "logo": "/assets/logos/Sevilla FC - Spain - LaLiga.png",
+    "transfers_name": "Sevilla FC"
+  },
+  {
+    "name": "Getafe CF",
+    "coords": [
+      40.3070639,
+      -3.7331808
+    ],
+    "logo": "/assets/logos/Getafe CF - Spain - LaLiga.png",
+    "transfers_name": "Getafe CF"
+  },
+  {
+    "name": "Real Betis Balompié",
+    "coords": [
+      37.308368349999995,
+      -5.948074387220609
+    ],
+    "logo": "/assets/logos/Real Betis Balompié - Spain - LaLiga.png",
+    "transfers_name": "Real Betis"
+  },
+  {
+    "name": "Real Valladolid",
+    "coords": [
+      41.6508549,
+      -4.7125553
+    ],
+    "logo": "/assets/logos/Real Valladolid CF - Spain - LaLiga.png",
+    "transfers_name": "Real Valladolid"
+  },
+  {
+    "name": "UD Almería",
+    "coords": [
+      36.8414197,
+      -2.4628135
+    ],
+    "logo": "/assets/logos/UD Almería - Spain - LaLiga.png",
+    "transfers_name": "UD Almería"
+  },
+  {
+    "name": "Atlético Madrid",
+    "coords": [
+      40.37562969613464,
+      -3.742049156756476
+    ],
+    "logo": "/assets/logos/Atlético de Madrid - Spain - LaLiga.png",
+    "transfers_name": "Atlético Madrid"
+  },
+  {
+    "name": "Levante UD",
+    "coords": [
+      39.4703751,
+      -0.370525
+    ],
+    "logo": "/assets/logos/Levante UD - Spain - LaLiga.png",
+    "transfers_name": "Levante UD"
+  },
+  {
+    "name": "Real Sociedad",
+    "coords": [
+      43.307890400000005,
+      -1.9742816856871923
+    ],
+    "logo": "/assets/logos/Real Sociedad - Spain - LaLiga.png",
+    "transfers_name": "Real Sociedad"
+  },
+  {
+    "name": "Granada CF",
+    "coords": [
+      37.1734995,
+      -3.5995337
+    ],
+    "logo": "/assets/logos/Granada CF - Spain - LaLiga.png",
+    "transfers_name": "Granada CF"
+  },
+  {
+    "name": "Rayo Vallecano",
+    "coords": [
+      40.377091050000004,
+      -3.6140329350855245
+    ],
+    "logo": "/assets/logos/Rayo Vallecano - Spain - LaLiga.png",
+    "transfers_name": "Rayo Vallecano"
+  },
+  {
+    "name": "RC Celta de Vigo",
+    "coords": [
+      42.2123817,
+      -8.7401108
+    ],
+    "logo": "/assets/logos/Celta de Vigo - Spain - LaLiga.png",
+    "transfers_name": "Celta de Vigo"
+  },
+  {
+    "name": "Elche CF",
+    "coords": [
+      38.2653307,
+      -0.6988391
+    ],
+    "logo": "/assets/logos/Elche CF - Spain - LaLiga.png",
+    "transfers_name": "Elche CF"
+  },
+  {
+    "name": "UD Las Palmas",
+    "coords": [
+      28.00225515,
+      -15.4057081
+    ],
+    "logo": "/assets/logos/UD Las Palmas - Spain - LaLiga.png",
+    "transfers_name": "UD Las Palmas"
+  },
+  {
+    "name": "Grasshopper Club Zürich",
+    "coords": [
+      47.3564463,
+      8.536044
+    ],
+    "logo": "/assets/logos/Grasshopper Club Zurich - Switzerland - Super League.png",
+    "transfers_name": "Grasshoppers"
+  },
+  {
+    "name": "FC Sion",
+    "coords": [
+      46.2311749,
+      7.3588795
+    ],
+    "logo": "/assets/logos/FC Sion - Switzerland - Super League.png",
+    "transfers_name": "FC Sion"
+  },
+  {
+    "name": "FC Luzern",
+    "coords": [
+      47.0505452,
+      8.3054682
+    ],
+    "logo": "/assets/logos/FC Luzern - Switzerland - Super League.png",
+    "transfers_name": ""
+  },
+  {
+    "name": "FC Zürich",
+    "coords": [
+      47.3744489,
+      8.5410422
+    ],
+    "logo": "/assets/logos/FC Zürich - Switzerland - Super League.png",
+    "transfers_name": "FC Zürich"
+  },
+  {
+    "name": "FC St. Gallen",
+    "coords": [
+      47.425618,
+      9.3762397
+    ],
+    "logo": "/assets/logos/FC St. Gallen - Switzerland - Super League.png",
+    "transfers_name": "FC St. Gallen"
+  },
+  {
+    "name": "Servette FC",
+    "coords": [
+      46.2134636,
+      6.130226900852341
+    ],
+    "logo": "/assets/logos/Servette FC - Switzerland - Super League.png",
+    "transfers_name": "Servette FC"
+  },
+  {
+    "name": "FC Lausanne-Sports",
+    "coords": [
+      46.5342787,
+      6.625131155979333
+    ],
+    "logo": "/assets/logos/FC Lausanne-Sport - Switzerland - Super League.png",
+    "transfers_name": ""
+  }
+]

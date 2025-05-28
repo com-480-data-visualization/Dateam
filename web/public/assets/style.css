@@ -1,0 +1,259 @@
+.main-wrapper {
+    width: 80vw;
+    margin: auto;
+}
+
+.choose-year:hover {
+    cursor: pointer;
+}
+
+.input-year-group {
+    width: 180px !important;
+}
+
+.custom-navbar {
+    position: fixed;
+    width: 100vw;
+    height: 62px;
+}
+
+.custom-navbar-spacer {
+    height: 62px;
+}
+
+#map {
+    border: 2px black;
+}
+
+/* Add these styles to your assets/style.css file */
+
+/* Team info panel styles */
+#team-info-panel {
+    border-left: 1px solid #dee2e6;
+    overflow-y: auto;
+    box-shadow: -3px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#team-info-panel.open {
+width: 50% !important; /* When open, take 50% of the map width */
+}
+
+/* Team logo in panel */
+#team-logo {
+object-fit: contain;
+background-color: #f8f9fa;
+padding: 5px;
+border-radius: 5px;
+border: 1px solid #dee2e6;
+max-height: 60px;
+}
+
+/* Enhanced team popup on map */
+.team-popup {
+text-align: center;
+padding: 5px;
+}
+
+.team-popup button {
+margin-top: 5px;
+}
+
+/* Make sure the map container positions elements correctly */
+#map {
+position: relative;
+}
+
+/* Make the exit button not overlap with the panel when it's open */
+#team-info-panel.open ~ #exit-button {
+right: calc(50% + 10px);
+transition: right 0.3s ease-in-out;
+}
+
+/* Mini map styling */
+#mini-map {
+border-radius: 4px;
+border: 1px solid #dee2e6;
+}
+
+/* Make text in cards more readable */
+.card-body p {
+margin-bottom: 0.5rem;
+display: flex;
+justify-content: space-between;
+}
+
+.card-body p span {
+font-weight: 500;
+}
+
+/* Transition for a smoother visual experience */
+#team-info-panel {
+transition: width 0.3s ease-in-out;
+}
+
+/* Make the team marker popups better looking */
+.leaflet-popup-content-wrapper {
+border-radius: 8px;
+}
+
+.leaflet-popup-content {
+margin: 10px 12px;
+}
+
+/* Enhance team logo markers */
+.team-logo-marker {
+border: 2px solid white;
+border-radius: 50%;
+background-color: white;
+box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+/* Add these styles to your assets/style.css file */
+
+/* Sidebar team styling */
+#sidebar-scroll {
+    width: 80px !important; /* Slightly wider to fit team logos better */
+    scrollbar-width: thin; /* For Firefox */
+}
+
+/* Custom scrollbar for WebKit browsers (Chrome, Safari, Edge) */
+#sidebar-scroll::-webkit-scrollbar {
+width: 5px;
+}
+
+#sidebar-scroll::-webkit-scrollbar-track {
+background: #f1f1f1;
+}
+
+#sidebar-scroll::-webkit-scrollbar-thumb {
+background: #888;
+border-radius: 2px;
+}
+
+#sidebar-scroll::-webkit-scrollbar-thumb:hover {
+background: #555;
+}
+
+.sidebar-team {
+transition: background-color 0.2s;
+position: relative;
+height: 60px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 1px;
+}
+
+.sidebar-team:hover {
+background-color: #e9ecef;
+}
+
+.sidebar-team-logo {
+background-color: white;
+border-radius: 50%;
+padding: 2px;
+box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+transition: transform 0.2s;
+}
+
+.sidebar-team:hover .sidebar-team-logo {
+transform: scale(1.1);
+}
+
+/* Active state when selected */
+.sidebar-team.active {
+background-color: #e2f0ff;
+}
+
+.sidebar-team.active::after {
+content: "";
+position: absolute;
+top: 50%;
+right: 0;
+transform: translateY(-50%);
+width: 0;
+height: 0;
+border-top: 8px solid transparent;
+border-bottom: 8px solid transparent;
+border-right: 8px solid #fff;
+}
+
+/* Mini name tooltip on hover */
+.sidebar-team::before {
+content: attr(title);
+position: absolute;
+left: 85px;
+background-color: rgba(0,0,0,0.8);
+color: white;
+padding: 4px 8px;
+border-radius: 4px;
+font-size: 12px;
+opacity: 0;
+visibility: hidden;
+transition: opacity 0.2s;
+pointer-events: none;
+white-space: nowrap;
+z-index: 1000;
+}
+
+.sidebar-team:hover::before {
+opacity: 1;
+visibility: visible;
+}
+
+p {
+    text-align: justify;
+    font-size: 1.2rem;
+  }
+#welcome-hero {
+height: 100vh; 
+background-image: url('./background.png'); 
+background-size: cover;
+background-position: bottom center;
+background-repeat: no-repeat;
+padding: 0;
+}
+
+#welcome-hero h1,
+#welcome-hero p {
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); 
+}
+.hero-text {
+    position: relative;
+    top: -10%;
+    left: -20%;
+    text-align: left;
+    z-index: 2;
+  }
+  .scroll-down-indicator {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+  
+  .arrow {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    transform: rotate(45deg);
+    animation: bounce 2s infinite;
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translate(-50%, 0) rotate(45deg);
+    }
+    40% {
+      transform: translate(-50%, 10px) rotate(45deg);
+    }
+    60% {
+      transform: translate(-50%, 5px) rotate(45deg);
+    }
+  }
+  

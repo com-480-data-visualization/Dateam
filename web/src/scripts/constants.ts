@@ -1,4 +1,6 @@
+import iStadiums from "../assets/data/stadiums.json";
 import iTransfers from "../assets/data/transfers_with_geodata.json";
+
 
 export const YEARS = [2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015]; //, 2016, 2017, 2018
 
@@ -24,7 +26,13 @@ export interface Transfer {
 }
 
 // This empty array will be populated by loadStadiums() function
-export let stadiums: Stadium[] = [];
+export let stadiums: Stadium[] = iStadiums.map(iStadium => {
+  return {
+    name: iStadium.name,
+    coords: iStadium.coords as [number, number],
+    transfers_name: iStadium.transfers_name,
+    logo: iStadium.logo,
+}});
 
 // Fallback stadiums in case the CSV loading fails
 export const fallbackStadiums: Stadium[] = [

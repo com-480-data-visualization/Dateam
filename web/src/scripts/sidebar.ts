@@ -2,6 +2,9 @@ import { Stadium } from './constants';
 
 type TeamClickCallback = (team: Stadium) => void;
 
+const basePath = window.location.pathname.includes('Dateam')
+  ? '/Dateam/'
+  : '/';
 export class ScrollSidebar {
   private container: HTMLElement;
   private onTeamClick: TeamClickCallback | null = null;
@@ -65,7 +68,7 @@ export class ScrollSidebar {
     
     // Create logo image
     const logo = document.createElement("img");
-    logo.src = team.logo;
+    logo.src = basePath+team.logo;
     logo.alt = team.name;
     logo.className = "sidebar-team-logo";
     logo.style.width = "40px";

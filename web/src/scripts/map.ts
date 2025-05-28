@@ -1,14 +1,13 @@
 console.log("📍 map.ts loaded");
 
-import L, { extend, Polyline } from 'leaflet';
-import 'leaflet/dist/leaflet.css';
-import { stadiums, Transfer, transfers } from './constants';
-import { YEARS } from './constants';
-import { ScrollSidebar } from './sidebar';
 import * as d3 from "d3";
-import data from '../assets/data/team_stats.json';
-import transfersData from '../assets/data/clean_transfers.json';
+import L, { Polyline } from 'leaflet';
 import 'leaflet-arrowheads';
+import 'leaflet/dist/leaflet.css';
+import transfersData from '../assets/data/clean_transfers.json';
+import data from '../assets/data/team_stats.json';
+import { stadiums, Transfer, transfers } from './constants';
+import { ScrollSidebar } from './sidebar';
 
 let currentYearRange: [number, number] = [2008, 2015];
 
@@ -30,7 +29,9 @@ interface ExtendedTeamData {
 
 // Map of teams with extended data
 const extendedTeams: { [teamName: string]: ExtendedTeamData } = {};
-
+const basePath = window.location.pathname.includes('Dateam')
+  ? '/Dateam/'
+  : '/';
 // Initialize map when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
   console.log("✅ DOM ready");
@@ -260,7 +261,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Update panel content with available data
     if (teamLogo) {
-      teamLogo.src = team.logo;
+      teamLogo.src = basePath+team.logo;
       // Add error handler for logo loading - use fallback if image fails to load
       teamLogo.onerror = () => {
         console.warn(`Failed to load logo for ${team.name}, using fallback`);
@@ -312,7 +313,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Create custom icon with team logo for minimap (smaller than main map)
         const miniIcon = L.icon({
-          iconUrl: team.logo,
+          iconUrl: basePath+team.logo,
           iconSize: [30, 30],  // Smaller than main map markers (which are 40x40)
           iconAnchor: [15, 15], // Center the icon
           popupAnchor: [0, -15], // Position popup above the icon
@@ -339,7 +340,7 @@ document.addEventListener('DOMContentLoaded', () => {
           });
           miniMarker.setIcon(fallbackIcon);
         };
-        img.src = team.logo;
+        img.src = basePath+team.logo;
 
         // Disable interactions on mini map
         miniMap.dragging.disable();
@@ -397,7 +398,7 @@ document.addEventListener('DOMContentLoaded', () => {
       try {
         // Create custom icon with team logo
         const icon = L.icon({
-          iconUrl: team.logo,
+          iconUrl: basePath+team.logo,
           iconSize: [40, 40],
           iconAnchor: [20, 20],
           popupAnchor: [0, -20],

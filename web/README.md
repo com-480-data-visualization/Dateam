@@ -14,9 +14,7 @@ $ npm --version
 ```bash
 cd web/  # you must be inside the (repository-root)/web/ directory
 npm install
-npm install leaflet
-npm install --save-dev @types/leaflet
-npm install papaparse
+npm run build  # important for local development
 npm run start
 ```
 
