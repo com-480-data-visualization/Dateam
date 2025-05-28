@@ -8,7 +8,9 @@
 
 
 Our final report can be found [here](com-480_process_book.pdf).  
+
 Our final screencast can be found [here](screencast.mp4).
+
 Our final website can be accessed [here](https://com-480-data-visualization.github.io/Dateam/)
 
 
@@ -43,7 +45,7 @@ If you want to run the website on your local machine, follow these steps:
 
 For more details regarding development mode and deployment, check [`/web/README.md`](web/README.md).
 
-## Datasets used
+## Datasets
 - **Mathien**, “European Soccer Database”, 2017.  
    [Dataset Link](https://www.kaggle.com/datasets/hugomathien/soccer)
 
@@ -53,5 +55,7 @@ For more details regarding development mode and deployment, check [`/web/README.
 
 
 ## Previous milestones
+
 Milestone 1 can be found here : [**Milestone 1**](/milestones/milestone1.md)
-Milestone2 1 can be found here : [**Milestone 2**](/milestones/milestone2.md)
+
+Milestone 2 can be found here : [**Milestone 2**](/milestones/milestone2.md)
