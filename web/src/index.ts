@@ -1,5 +1,5 @@
 import * as d3 from 'd3'
-import { loadStadiums } from './scripts/loadStadiums';
+import { loadStatiums } from './scripts/loadStadiums';
 import { stadiums, fallbackStadiums } from './scripts/constants';
 import { YearSelectorService } from './scripts/year-selector';
 // The sidebar is now initialized in map.ts
@@ -17,7 +17,7 @@ async function initializeStadiums() {
   
   try {
     // Load stadiums from CSV
-    const loadedStadiums = await loadStadiums();
+    const loadedStadiums = await loadStatiums();
     
     // Update the stadiums array in constants.ts
     if (loadedStadiums && loadedStadiums.length > 0) {
