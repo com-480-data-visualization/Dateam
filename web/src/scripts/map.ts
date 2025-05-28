@@ -366,7 +366,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
       drawTeamWinsChart(team.name);
       drawTeamSpendingChart(team.name);
-    }, 100);
+    }, 500);
 
   }
 
