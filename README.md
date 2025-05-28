@@ -31,7 +31,6 @@ If you want to run the website on your local machine, follow these steps:
 **10% of the final grade**
 
 <!-- [Milestone 1 report](milestones/milestone1.md) -->
-# Milestone 1 
 
 ## **Dataset**
 
@@ -142,11 +141,6 @@ Our initial source of inspiration came from this website : [World in Maps - Euro
 
 <!-- [Milestone 2 report](milestones/milestone2.md) -->
 
-# Milestone 2 
-
-Data Visualization Project — COM-480
-
-Date: April 18, 2025
 
 ## Presentation
 
