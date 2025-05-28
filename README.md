@@ -112,7 +112,7 @@ To better understand the dataset, we conducted Exploratory Data Analysis (EDA). 
 
 <p align="center">
   For a detailed analysis, refer to our Jupyter Notebook: <br>
-  <a href="analysis.ipynb">Exploratory Data Analysis Notebook</a>
+  <a href="/src/preliminary/analysis.ipynb">Exploratory Data Analysis Notebook</a>
 </p>
 
 
@@ -260,6 +260,15 @@ We are satisfied with our initial progress. Our expectations regarding both diff
 
 **80% of the final grade**
 
+Our final report can be found [here](com-480_process_book.pdf).  
+Our final screencast can be found [here](screencast.mp4).
+
+Our website can be accessed at:  
+👉 [https://com-480-data-visualization.github.io/Dateam/](https://com-480-data-visualization.github.io/Dateam/)
+
+To run it locally, first clone the repository using `git clone https://github.com/com-480-data-visualization/Dateam.git`, then navigate to the `web` directory with `cd Dateam/web`, and start the development server using `npm run start`. Once the server is running, open your browser and go to [http://localhost:8081](http://localhost:8081).
+
+For more details regarding development mode and deployment, check [`/web/README.md`](web/README.md).
 
 ## Late policy
 
