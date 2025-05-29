@@ -27,6 +27,8 @@ Our website can be easily accessed at:
 
 ### 🛠️ Running Locally
 
+#### Running the website
+
 If you want to run the website on your local machine, follow these steps:
 1. **📥 Clone the repository**  
    ```bash
@@ -45,6 +47,10 @@ If you want to run the website on your local machine, follow these steps:
 
 
 For more details regarding development mode and deployment, check [`/web/README.md`](web/README.md).
+
+#### Running the preprocessing pipeline
+
+Simply install the requirements from [requirements.txt](./requirements.txt) and run the notebooks located in `./src/` depending on your needs.
 
 ## 📚 Datasets
 - **Mathien**, “European Soccer Database”, 2017.  
