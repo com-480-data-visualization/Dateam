@@ -36,6 +36,8 @@ If you want to run the website on your local machine, follow these steps:
    cd Dateam/web
 3. **▶️ Start the development server**  
    ```bash
+   npm i
+   npm run build
    npm run start
 4. **🌍 Open the website in your browser**  
    Once the server is running, open your browser and go to:  
